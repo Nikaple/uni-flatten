@@ -26,6 +26,7 @@
     "build": "rimraf -rf dist && tsc -p tsconfig.build.json",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:cov": "vitest --coverage",
     "doc": "typedoc src/index.ts --tsconfig tsconfig.build.json",
     "lint": "eslint src/**/*.ts --fix",
     "lint:dontfix": "eslint src/**/*.ts",
