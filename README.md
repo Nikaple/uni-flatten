@@ -7,7 +7,6 @@
 <a href="https://www.npmjs.com/package/uni-flatten"><img src="https://img.shields.io/npm/l/uni-flatten.svg" alt="Package License" /></a>
 <a href="https://www.npmjs.com/package/uni-flatten"><img src="https://img.shields.io/npm/dm/uni-flatten.svg" alt="NPM Downloads" /></a>
 <a href="https://github.com/Nikaple/uni-flatten/actions/workflows/build.yml"><img src="https://github.com/Nikaple/uni-flatten/workflows/build/badge.svg" alt="build" /></a>
-<a href="https://coveralls.io/github/Nikaple/uni-flatten?branch=main"><img src="https://coveralls.io/repos/github/Nikaple/uni-flatten/badge.svg?branch=main" alt="Coverage" /></a>
 </p>
 
 ## Features

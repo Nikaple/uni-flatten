@@ -44,11 +44,6 @@ jobs:
       - name: Coverage
         run: pnpm run test:cov
 
-      - name: Report to coveralls
-        uses: coverallsapp/github-action@v2.2.0
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Build before release
         run: pnpm run build
 
