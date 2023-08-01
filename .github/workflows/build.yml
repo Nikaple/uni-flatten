@@ -1,0 +1,54 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+
+name: build
+
+on:
+  push:
+    branches: [main, next, alpha]
+  pull_request:
+    branches: [main, next, alpha]
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: https://registry.npmjs.org/
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Lint
+        run: pnpm run lint:dontfix
+
+      - name: Check Formatting
+        run: pnpm run format:dontfix
+
+      - name: Coverage
+        run: pnpm run test:cov
+
+      - name: Report to coveralls
+        uses: coverallsapp/github-action@v2.2.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build
+        run: pnpm run build

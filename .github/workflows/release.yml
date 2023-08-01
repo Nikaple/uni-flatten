@@ -1,0 +1,56 @@
+# This workflow release uni-flatten to npm registry
+
+name: release
+
+on:
+  push:
+    branches: [main, next, alpha]
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Setup Github Action account
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Lint
+        run: pnpm run lint:dontfix
+
+      - name: Check Formatting
+        run: pnpm run format:dontfix
+
+      - name: Coverage
+        run: pnpm run test:cov
+
+      - name: Report to coveralls
+        uses: coverallsapp/github-action@v2.2.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build before release
+        run: pnpm run build
+
+      - name: Release
+        run: pnpm run release
