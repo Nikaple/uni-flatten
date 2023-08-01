@@ -11,7 +11,6 @@ today! As a contributor, here are the guidelines we would like you to follow:
 - [Coding Rules](#rules)
 - [Commit Message Guidelines](#commit)
 
-
 ## <a name="issue"></a> Found a Bug?
 
 If you find a bug in the source code, you can help us by
