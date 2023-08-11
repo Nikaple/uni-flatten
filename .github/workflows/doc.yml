@@ -10,15 +10,27 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  pages: write # to deploy to Pages
-  id-token: write # to verify the deployment originates from an appropriate source
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
@@ -43,14 +55,12 @@ jobs:
       - name: Generate documentation
         run: pnpm run doc
 
-      - name: Deploy to Github Pages
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          # Build directory to deploy
-          build_dir: docs
-          # The author name and email address
-          author: typedoc
-          # Allow Jekyll to build your site
-          jekyll: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Upload entire repository
+          path: './docs'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
