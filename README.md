@@ -1,7 +1,5 @@
 <h1 align="center">Uni-flatten</h1>
 
-<h3 align="center">Never write strings to read config again.</h3>
-
 <p align="center">
 <a href="https://www.npmjs.com/package/uni-flatten"><img src="https://img.shields.io/npm/v/uni-flatten.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/package/uni-flatten"><img src="https://img.shields.io/npm/l/uni-flatten.svg" alt="Package License" /></a>
@@ -16,8 +14,6 @@
 ```bash
 $ npm i --save uni-flatten
 ```
-
-`Uni-flatten` will install the dependencies for all loaders by default. If you care about dependency size and bootstrap time, please checkout [the guide to skip optional dependencies](./OPTIONAL-DEP.md).
 
 ## Inspiration
 
