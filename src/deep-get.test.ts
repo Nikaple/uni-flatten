@@ -23,6 +23,10 @@ describe('deepGet', () => {
     };
   });
 
+  it('should return root for empty string', () => {
+    expect(deepGet(obj, '')).toBe(obj);
+  });
+
   it('should return value for single-level keys', () => {
     expect(deepGet({ a: 1 }, 'a')).toBe(1);
   });
@@ -41,6 +45,6 @@ describe('deepGet', () => {
   });
 
   it('should return undefined if obj is not an object', () => {
-    expect(deepGet('test', 'key')).toBe(undefined);
+    expect(deepGet('test' as any, 'key')).toBe(undefined);
   });
 });

@@ -118,7 +118,28 @@ describe('flattenObject', () => {
     );
   });
 
+  it('should handle circular dependency', () => {
+    const obj1 = {} as Record<string, any>;
+    obj1.a = obj1;
+    const target1 = { a: '[Circular->""]' };
+    expect(flatten(obj1)).toEqual(target1);
+    expect(unflatten(target1)).toEqual(obj1);
+
+    const obj2 = { a: { b: { e: 1 } }, c: {} } as Record<string, any>;
+    obj2.c.d = obj2.a.b;
+    const flattened2 = flatten(obj2, { circularReference: 'symbol' });
+    const target2 = {
+      'a.b.e': 1,
+      'c.d': `Symbol([Circular->"a.b"])`,
+    };
+    expect({
+      ...flattened2,
+      'c.d': String(flattened2['c.d']),
+    }).toEqual(target2);
+    expect(unflatten(target2, { circularReference: 'symbol' })).toEqual(obj2);
+  });
+
   it('should not throw on illegal input', () => {
-    expect(flatten('')).toEqual({});
+    expect(flatten('' as any)).toEqual({});
   });
 });
