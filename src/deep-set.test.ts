@@ -79,6 +79,6 @@ describe('deepSet', () => {
   });
 
   it('should not set value if obj is not an object', () => {
-    expect(deepSet('test', 'key', 'value')).toBe('test');
+    expect(deepSet('test' as any, 'key', 'value')).toBe('test');
   });
 });
