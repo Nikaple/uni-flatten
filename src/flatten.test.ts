@@ -93,10 +93,12 @@ describe('flattenObject', () => {
         '"a"': {
           '"b"': 'nested quote',
         },
+        ' ': 'space',
       },
       {
         '["\\""]': 'quote',
         '["\\"a\\""]["\\"b\\""]': 'nested quote',
+        '[" "]': 'space',
       },
     );
   });

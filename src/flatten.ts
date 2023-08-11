@@ -8,7 +8,7 @@ export const flatten = (obj: any) => {
   const getKey = (key: string, prefix: string, isNumber: boolean) => {
     let k;
     if (
-      /[.'"\\\b\f\n\r\t\v{}()[\].;,<>=!+\-*%&|^~?:]/.test(key) ||
+      /[.'"\s\\\b\f\n\r\t\v{}()[\];,<>=!+\-*%&|^~?:]/.test(key) ||
       key === ''
     ) {
       // use brackets if key contains special characters
