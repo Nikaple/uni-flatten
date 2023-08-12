@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [1.2.0](https://github.com/Nikaple/uni-flatten/compare/v1.1.0...v1.2.0) (2023-08-12)
+
+### ✨ Features
+
+- support circular dependency [`6d8eec6`](https://github.com/Nikaple/uni-flatten/commit/6d8eec61015687573ba791de4cc8b2c4b4428999).
+
 ## [1.1.0](https://github.com/Nikaple/uni-flatten/compare/v1.0.0...v1.1.0) (2023-08-11)
 
 ### ✨ Features
