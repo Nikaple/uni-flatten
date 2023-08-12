@@ -1,14 +1,20 @@
 import { parsePath } from './internal';
 
 /**
- * deeply get value by key
+ * Deeply get value by key.
+ *
+ * @example
+ *
+ * deepGet({ a: { b: 1 } }, "a.b") // 1
+ * deepGet({ a: { b: [1] } }, "a.b.0") // 1
+ * deepGet({ a: { '?': [1] } }， 'a["?"][0]') // 1
  */
-export const deepGet = (obj: any, path: string) => {
+export const deepGet = (obj: Record<string, unknown>, path: string) => {
   const keys = parsePath(path);
 
-  let result: unknown = undefined;
+  let result: any = obj;
   keys.forEach(part => {
-    result = (result || obj)[part];
+    result = result[part];
   });
   return result;
 };
