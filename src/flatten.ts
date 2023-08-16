@@ -1,9 +1,16 @@
 import { deepSet } from './deep-set';
-import { extractCircularKey, formatCircularKey } from './internal';
+import {
+  extractCircularKey,
+  formatCircularKey,
+  isObject,
+  isPlainObject,
+} from './internal';
 import { UniFlattenOptions } from './type';
 
 /**
  * Flatten an object to single depth.
+ * The flattened key is represented with standard
+ * javascript object notation.
  *
  * @example
  *
@@ -33,7 +40,7 @@ export const flatten = <T>(
     return prefix ? `${prefix}${/^\[/.test(k) ? '' : '.'}${k}` : k;
   };
   const helper = (obj: any, prefix: string, result: any = {}) => {
-    if (typeof obj !== 'object') {
+    if (!isObject(obj)) {
       return result;
     }
     const previous = seen.get(obj);
@@ -42,10 +49,12 @@ export const flatten = <T>(
       return result;
     }
     seen.set(obj, prefix);
+
+    // recursively handle arrays
     if (Array.isArray(obj)) {
       obj.forEach((item, i) => {
         const key = getKey(String(i), prefix, true);
-        if (typeof item === 'object') {
+        if (isObject(item)) {
           const res = helper(item, key, result);
           return res;
         }
@@ -54,14 +63,21 @@ export const flatten = <T>(
       return result;
     }
 
-    Object.entries(obj).forEach(([k, item]) => {
-      const key = getKey(k, prefix, false);
-      if (typeof item === 'object') {
-        const res = helper(item, key, result);
-        return res;
-      }
-      result[key] = item;
-    });
+    // recursively handle plain objects
+    if (isPlainObject(obj)) {
+      Object.entries(obj).forEach(([k, item]) => {
+        const key = getKey(k, prefix, false);
+        if (isObject(item)) {
+          const res = helper(item, key, result);
+          return res;
+        }
+        result[key] = item;
+      });
+      return result;
+    }
+
+    // others
+    result[prefix] = obj;
     return result;
   };
 
@@ -71,7 +87,7 @@ export const flatten = <T>(
 };
 
 /**
- * The reverse action of flatten. Transform a flattened object to original un-flattened object.
+ * The reverse action of `flatten`. Transform a flattened object to original un-flattened object.
  *
  * @example
  *

@@ -71,3 +71,14 @@ export function extractCircularKey(
 export function extractCircularValue(value: unknown, circularKey: string) {
   return deepGet(value as any, circularKey);
 }
+
+export function isObject(obj: unknown) {
+  return !!(typeof obj === 'object' && obj);
+}
+
+export function isPlainObject(obj: unknown) {
+  return (
+    Object.prototype.toString.call(obj) === '[object Object]' &&
+    Object.getPrototypeOf(obj) === Object.prototype
+  );
+}

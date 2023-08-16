@@ -17,11 +17,78 @@ $ npm i --save uni-flatten
 
 ## Inspiration
 
-There are various popular configuration modules to flatten an object, but they lost context such as numeric keys, dot in object key, special characters etc. These behaviors disabled converting flattened object to original object. This is when `uni-flatten` becomes handy.
+There are various popular modules to flatten an object, but they lost context such as numeric keys, dot in object key, special characters etc. These behaviors disabled converting flattened object to original object. This is when `uni-flatten` becomes handy.
 
 ## Quick Start
 
-## FAQ
+### Flatten a nested object
+
+```ts
+import { flatten } from 'uni-flatten';
+
+flatten({
+  a: {
+    b: {
+      c: 123,
+    },
+    d: [
+      {
+        e: { f: 456 },
+      },
+    ],
+  },
+  'a.b.c': 789,
+});
+/*
+result:
+{
+  'a.b.c': 123, // normal nested object
+  'a.d[0].e.f': 456, // nested object array, use brackets to represent array index
+  '["a.b.c"]': 789, // object with special character in keys
+},
+*/
+```
+
+### Unflatten a flat object
+
+```ts
+import { unflatten } from 'uni-flatten';
+
+unflatten({
+  'a.b.c': 123, // normal nested object
+  'a.d[0].e.f': 456, // nested object array, use brackets to represent array index
+  '["a.b.c"]': 789, // object with special character in keys
+});
+/*
+result:
+{
+  a: {
+    b: {
+      c: 123,
+    },
+    d: [
+      {
+        e: { f: 456 },
+      },
+    ],
+  },
+  'a.b.c': 789,
+}
+*/
+```
+
+### Flatten a cyclic object
+
+Circular references are serialized as `[Circular->"<path>"]` when flattened, which is useful for unflattening.
+
+```ts
+import { flatten, unflatten } from 'uni-flatten';
+
+const obj = { a: { b: { c: 1 } } };
+obj.a.d = obj.a;
+const flattened = flatten(obj); // { 'a.b.c': 1, 'a.d': '[Circular->"a"]' }
+const restored = unflatten(obj); // { a: <ref *1> { b: { c: 1 }, d: [Circular *1] }
+```
 
 ## API
 

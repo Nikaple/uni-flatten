@@ -63,6 +63,8 @@ describe('flattenObject', () => {
         'a[1].c["5"][0]': 6,
       },
     );
+
+    expect(unflatten({ 'a[1]': 0 })).toEqual({ a: [, 0] });
   });
 
   it('should handle numeric keys', () => {
@@ -126,12 +128,12 @@ describe('flattenObject', () => {
     expect(unflatten(target1)).toEqual(obj1);
   });
   it('should handle circular dependency, circularReference = symbol', () => {
-    const obj2 = { a: { b: { e: '1' } }, c: {} } as Record<string, any>;
-    obj2.c.d = obj2.a.b;
+    const obj2 = { a: { 'b[]': { e: '1' } }, c: {} } as Record<string, any>;
+    obj2.c.d = obj2.a['b[]'];
     const flattened2 = flatten(obj2, { circularReference: 'symbol' });
     const target2 = {
-      'a.b.e': '1',
-      'c.d': `Symbol([Circular->"a.b"])`,
+      'a["b[]"].e': '1',
+      'c.d': `Symbol([Circular->"a[\\"b[]\\"]"])`,
     };
     expect({
       ...flattened2,
@@ -147,6 +149,24 @@ describe('flattenObject', () => {
     expect(
       unflatten({ a: null, b: '1' }, { circularReference: 'null' }),
     ).toEqual({ a: null, b: '1' });
+  });
+
+  it('should not flatten Map/Set/Date/etc', () => {
+    testFlatten(
+      { map: new Map(), set: new Set(), date: new Date() },
+      { map: new Map(), set: new Set(), date: new Date() },
+    );
+  });
+
+  it('should not flatten cats', () => {
+    class Cat {
+      constructor(public name: string) {}
+      meow() {
+        return 'Meow!';
+      }
+    }
+    const cat = new Cat('cutie');
+    testFlatten({ cat }, { cat });
   });
 
   it('should not throw on illegal input', () => {

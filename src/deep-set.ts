@@ -1,6 +1,7 @@
 import {
   extractCircularKey,
   extractCircularValue,
+  isObject,
   parsePath,
 } from './internal';
 import { UniFlattenOptions } from './type';
@@ -20,7 +21,7 @@ export const deepSet = <T extends Record<string, unknown>>(
   value: unknown,
   options?: UniFlattenOptions,
 ) => {
-  if (typeof obj !== 'object' && obj) return obj;
+  if (!isObject(obj)) return obj;
 
   const keys = parsePath(path);
   const lastIndex = keys.length - 1;
@@ -29,7 +30,7 @@ export const deepSet = <T extends Record<string, unknown>>(
 
   keys.forEach((key, i, arr) => {
     const isNextArray = typeof arr[i + 1] === 'number';
-    if (typeof current[key] !== 'object') {
+    if (!isObject(current[key])) {
       current[key] = isNextArray ? [] : {};
     }
     if (i === lastIndex) {
