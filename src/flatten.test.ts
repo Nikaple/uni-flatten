@@ -152,9 +152,10 @@ describe('flattenObject', () => {
   });
 
   it('should not flatten Map/Set/Date/etc', () => {
+    const date = new Date();
     testFlatten(
-      { map: new Map(), set: new Set(), date: new Date() },
-      { map: new Map(), set: new Set(), date: new Date() },
+      { map: new Map(), set: new Set(), date },
+      { map: new Map(), set: new Set(), date },
     );
   });
 
