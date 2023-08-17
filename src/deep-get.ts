@@ -14,6 +14,7 @@ export const deepGet = (obj: Record<string, unknown>, path: string) => {
 
   let result: any = obj;
   keys.forEach(part => {
+    if (!result) return;
     result = result[part];
   });
   return result;

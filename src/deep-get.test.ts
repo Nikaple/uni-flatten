@@ -27,6 +27,10 @@ describe('deepGet', () => {
     expect(deepGet(obj, '')).toBe(obj);
   });
 
+  it('should', () => {
+    expect(deepGet(obj, 'b.c')).toBe(undefined);
+  });
+
   it('should return value for single-level keys', () => {
     expect(deepGet({ a: 1 }, 'a')).toBe(1);
   });
