@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+### [1.3.1](https://github.com/Nikaple/uni-flatten/compare/v1.3.0...v1.3.1) (2023-08-17)
+
+### 🐛 Fixes
+
+- error on deepGet [`04480ab`](https://github.com/Nikaple/uni-flatten/commit/04480ab59dc254cf619cc75c1adf57488ad2f4c3).
+
 ## [1.3.0](https://github.com/Nikaple/uni-flatten/compare/v1.2.0...v1.3.0) (2023-08-16)
 
 ### ✨ Features
