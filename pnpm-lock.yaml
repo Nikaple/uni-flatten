@@ -12,7 +12,7 @@ specifiers:
   eslint-plugin-import: 2.28.1
   eslint-plugin-prettier: 4.2.1
   husky: 8.0.3
-  lint-staged: 14.0.0
+  lint-staged: 14.0.1
   prettier: 2.8.8
   rimraf: 5.0.1
   semantic-release: ^21.0.0
@@ -37,7 +37,7 @@ devDependencies:
   eslint-plugin-import: 2.28.1_d2ajlqlsbxlpxgtbsghthbjqlq
   eslint-plugin-prettier: 4.2.1_jxdcjwcaulnltakxg6doah5w2e
   husky: 8.0.3
-  lint-staged: 14.0.0
+  lint-staged: 14.0.1
   prettier: mirrors.tencent.com/prettier/2.8.8
   rimraf: mirrors.tencent.com/rimraf/5.0.1
   semantic-release: 21.0.7
@@ -1828,8 +1828,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /lint-staged/14.0.0:
-    resolution: {integrity: sha512-0tLf0pqZYkar/wu3nTctk4rVIG+d7PanDYv4/IQR4qwdqfQkTDziLRFnqMcLuLBTuUqmcLwsHPD2EjQ18d/oaA==}
+  /lint-staged/14.0.1:
+    resolution: {integrity: sha512-Mw0cL6HXnHN1ag0mN/Dg4g6sr8uf8sn98w2Oc1ECtFto9tvRF7nkXGJRbx8gPlHyoR0pLyBr2lQHbWwmUHe1Sw==}
     engines: {node: ^16.14.0 || >=18.0.0}
     hasBin: true
     dependencies:
@@ -2423,6 +2423,11 @@ packages:
 
   /signal-exit/3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
+    dev: true
+
+  /signal-exit/4.1.0:
+    resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
+    engines: {node: '>=14'}
     dev: true
 
   /slice-ansi/5.0.0:
@@ -4297,17 +4302,6 @@ packages:
     version: 1.1.1
     dev: true
 
-  mirrors.tencent.com/cross-spawn/7.0.3:
-    resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/cross-spawn/-/cross-spawn-7.0.3.tgz}
-    name: cross-spawn
-    version: 7.0.3
-    engines: {node: '>= 8'}
-    dependencies:
-      path-key: 3.1.1
-      shebang-command: 2.0.0
-      which: 2.0.2
-    dev: true
-
   mirrors.tencent.com/crypto-random-string/4.0.0:
     resolution: {integrity: sha512-x8dy3RnvYdlUcPOjkEHqozhiwzKNSq7GcPuXFbnyMOCHxX8V3OgIg/pYuabl2sbUPfIJaeAQB7PMOK8DFIdoRA==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/crypto-random-string/-/crypto-random-string-4.0.0.tgz}
     name: crypto-random-string
@@ -4722,8 +4716,8 @@ packages:
     version: 3.1.1
     engines: {node: '>=14'}
     dependencies:
-      cross-spawn: mirrors.tencent.com/cross-spawn/7.0.3
-      signal-exit: mirrors.tencent.com/signal-exit/4.1.0
+      cross-spawn: 7.0.3
+      signal-exit: 4.1.0
     dev: true
 
   mirrors.tencent.com/from2/2.3.0:
@@ -6317,13 +6311,6 @@ packages:
       jsonc-parser: mirrors.tencent.com/jsonc-parser/3.2.0
       vscode-oniguruma: mirrors.tencent.com/vscode-oniguruma/1.7.0
       vscode-textmate: mirrors.tencent.com/vscode-textmate/8.0.0
-    dev: true
-
-  mirrors.tencent.com/signal-exit/4.1.0:
-    resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/signal-exit/-/signal-exit-4.1.0.tgz}
-    name: signal-exit
-    version: 4.1.0
-    engines: {node: '>=14'}
     dev: true
 
   mirrors.tencent.com/signale/1.4.0:
