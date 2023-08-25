@@ -19,7 +19,7 @@ specifiers:
   tsx: ^3.12.7
   typedoc: 0.24.8
   typescript: 5.2.2
-  vitest: 0.34.2
+  vitest: 0.34.3
   yaml: 2.3.1
 
 dependencies:
@@ -31,7 +31,7 @@ devDependencies:
   '@latipun7/releaserc': mirrors.tencent.com/@latipun7/releaserc/2.2.0_semantic-release@21.0.7
   '@typescript-eslint/eslint-plugin': mirrors.tencent.com/@typescript-eslint/eslint-plugin/5.62.0_jkm4zv3ijokxgddfzejucr72i4
   '@typescript-eslint/parser': mirrors.tencent.com/@typescript-eslint/parser/5.62.0_sf2ha5dxxfjuf3a4egfvu5wr24
-  '@vitest/coverage-v8': mirrors.tencent.com/@vitest/coverage-v8/0.34.1_vitest@0.34.2
+  '@vitest/coverage-v8': mirrors.tencent.com/@vitest/coverage-v8/0.34.1_vitest@0.34.3
   eslint: 8.47.0
   eslint-config-prettier: mirrors.tencent.com/eslint-config-prettier/9.0.0_eslint@8.47.0
   eslint-plugin-import: 2.28.1_d2ajlqlsbxlpxgtbsghthbjqlq
@@ -43,7 +43,7 @@ devDependencies:
   semantic-release: 21.0.7
   typedoc: mirrors.tencent.com/typedoc/0.24.8_typescript@5.2.2
   typescript: 5.2.2
-  vitest: 0.34.2
+  vitest: 0.34.3
   yaml: mirrors.tencent.com/yaml/2.3.1
 
 packages:
@@ -594,38 +594,38 @@ packages:
     resolution: {integrity: sha512-8e2HYcg7ohnTUbHk8focoklEQYvemQmu9M/f43DZVx43kHn0tE3BY/6gSDxS7k0SprtS0NHvj+L80cGLnoOUcQ==}
     dev: true
 
-  /@vitest/expect/0.34.2:
-    resolution: {integrity: sha512-EZm2dMNlLyIfDMha17QHSQcg2KjeAZaXd65fpPzXY5bvnfx10Lcaz3N55uEe8PhF+w4pw+hmrlHLLlRn9vkBJg==}
+  /@vitest/expect/0.34.3:
+    resolution: {integrity: sha512-F8MTXZUYRBVsYL1uoIft1HHWhwDbSzwAU9Zgh8S6WFC3YgVb4AnFV2GXO3P5Em8FjEYaZtTnQYoNwwBrlOMXgg==}
     dependencies:
-      '@vitest/spy': 0.34.2
-      '@vitest/utils': 0.34.2
+      '@vitest/spy': 0.34.3
+      '@vitest/utils': 0.34.3
       chai: 4.3.7
     dev: true
 
-  /@vitest/runner/0.34.2:
-    resolution: {integrity: sha512-8ydGPACVX5tK3Dl0SUwxfdg02h+togDNeQX3iXVFYgzF5odxvaou7HnquALFZkyVuYskoaHUOqOyOLpOEj5XTA==}
+  /@vitest/runner/0.34.3:
+    resolution: {integrity: sha512-lYNq7N3vR57VMKMPLVvmJoiN4bqwzZ1euTW+XXYH5kzr3W/+xQG3b41xJn9ChJ3AhYOSoweu974S1V3qDcFESA==}
     dependencies:
-      '@vitest/utils': 0.34.2
+      '@vitest/utils': 0.34.3
       p-limit: 4.0.0
       pathe: 1.1.1
     dev: true
 
-  /@vitest/snapshot/0.34.2:
-    resolution: {integrity: sha512-qhQ+xy3u4mwwLxltS4Pd4SR+XHv4EajiTPNY3jkIBLUApE6/ce72neJPSUQZ7bL3EBuKI+NhvzhGj3n5baRQUQ==}
+  /@vitest/snapshot/0.34.3:
+    resolution: {integrity: sha512-QyPaE15DQwbnIBp/yNJ8lbvXTZxS00kRly0kfFgAD5EYmCbYcA+1EEyRalc93M0gosL/xHeg3lKAClIXYpmUiQ==}
     dependencies:
       magic-string: 0.30.2
       pathe: 1.1.1
       pretty-format: 29.6.2
     dev: true
 
-  /@vitest/spy/0.34.2:
-    resolution: {integrity: sha512-yd4L9OhfH6l0Av7iK3sPb3MykhtcRN5c5K5vm1nTbuN7gYn+yvUVVsyvzpHrjqS7EWqn9WsPJb7+0c3iuY60tA==}
+  /@vitest/spy/0.34.3:
+    resolution: {integrity: sha512-N1V0RFQ6AI7CPgzBq9kzjRdPIgThC340DGjdKdPSE8r86aUSmeliTUgkTqLSgtEwWWsGfBQ+UetZWhK0BgJmkQ==}
     dependencies:
       tinyspy: 2.1.1
     dev: true
 
-  /@vitest/utils/0.34.2:
-    resolution: {integrity: sha512-Lzw+kAsTPubhoQDp1uVAOP6DhNia1GMDsI9jgB0yMn+/nDaPieYQ88lKqz/gGjSHL4zwOItvpehec9OY+rS73w==}
+  /@vitest/utils/0.34.3:
+    resolution: {integrity: sha512-kiSnzLG6m/tiT0XEl4U2H8JDBjFtwVlaE8I3QfGiMFR0QvnRDfYfdP3YvTBWM/6iJDAyaPY6yVQiCTUc7ZzTHA==}
     dependencies:
       diff-sequences: 29.4.3
       loupe: 2.3.6
@@ -2720,8 +2720,8 @@ packages:
       punycode: 2.3.0
     dev: true
 
-  /vite-node/0.34.2_@types+node@20.4.9:
-    resolution: {integrity: sha512-JtW249Zm3FB+F7pQfH56uWSdlltCo1IOkZW5oHBzeQo0iX4jtC7o1t9aILMGd9kVekXBP2lfJBEQt9rBh07ebA==}
+  /vite-node/0.34.3_@types+node@20.4.9:
+    resolution: {integrity: sha512-+0TzJf1g0tYXj6tR2vEyiA42OPq68QkRZCu/ERSo2PtsDJfBpDyEfuKbRvLmZqi/CgC7SCBtyC+WjTGNMRIaig==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
     dependencies:
@@ -2778,8 +2778,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.34.2:
-    resolution: {integrity: sha512-WgaIvBbjsSYMq/oiMlXUI7KflELmzM43BEvkdC/8b5CAod4ryAiY2z8uR6Crbi5Pjnu5oOmhKa9sy7uk6paBxQ==}
+  /vitest/0.34.3:
+    resolution: {integrity: sha512-7+VA5Iw4S3USYk+qwPxHl8plCMhA5rtfwMjgoQXMT7rO5ldWcdsdo3U1QD289JgglGK4WeOzgoLTsGFu6VISyQ==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
     peerDependencies:
@@ -2812,11 +2812,11 @@ packages:
       '@types/chai': 4.3.5
       '@types/chai-subset': 1.3.3
       '@types/node': 20.4.9
-      '@vitest/expect': 0.34.2
-      '@vitest/runner': 0.34.2
-      '@vitest/snapshot': 0.34.2
-      '@vitest/spy': 0.34.2
-      '@vitest/utils': 0.34.2
+      '@vitest/expect': 0.34.3
+      '@vitest/runner': 0.34.3
+      '@vitest/snapshot': 0.34.3
+      '@vitest/spy': 0.34.3
+      '@vitest/utils': 0.34.3
       acorn: 8.10.0
       acorn-walk: 8.2.0
       cac: 6.7.14
@@ -2831,7 +2831,7 @@ packages:
       tinybench: 2.5.0
       tinypool: 0.7.0
       vite: 4.4.9_@types+node@20.4.9
-      vite-node: 0.34.2_@types+node@20.4.9
+      vite-node: 0.34.3_@types+node@20.4.9
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
@@ -3301,7 +3301,7 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       '@jridgewell/set-array': mirrors.tencent.com/@jridgewell/set-array/1.1.2
-      '@jridgewell/sourcemap-codec': mirrors.tencent.com/@jridgewell/sourcemap-codec/1.4.15
+      '@jridgewell/sourcemap-codec': 1.4.15
       '@jridgewell/trace-mapping': mirrors.tencent.com/@jridgewell/trace-mapping/0.3.19
     dev: true
 
@@ -3319,19 +3319,13 @@ packages:
     engines: {node: '>=6.0.0'}
     dev: true
 
-  mirrors.tencent.com/@jridgewell/sourcemap-codec/1.4.15:
-    resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz}
-    name: '@jridgewell/sourcemap-codec'
-    version: 1.4.15
-    dev: true
-
   mirrors.tencent.com/@jridgewell/trace-mapping/0.3.19:
     resolution: {integrity: sha512-kf37QtfW+Hwx/buWGMPcR60iF9ziHa6r/CZJIHbmcm4+0qrXiVdxegAH0F6yddEVQ7zdkjcGCgCzUu+BcbhQxw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@jridgewell/trace-mapping/-/trace-mapping-0.3.19.tgz}
     name: '@jridgewell/trace-mapping'
     version: 0.3.19
     dependencies:
       '@jridgewell/resolve-uri': mirrors.tencent.com/@jridgewell/resolve-uri/3.1.1
-      '@jridgewell/sourcemap-codec': mirrors.tencent.com/@jridgewell/sourcemap-codec/1.4.15
+      '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
   mirrors.tencent.com/@jridgewell/trace-mapping/0.3.9:
@@ -3904,7 +3898,7 @@ packages:
       eslint-visitor-keys: mirrors.tencent.com/eslint-visitor-keys/3.4.2
     dev: true
 
-  mirrors.tencent.com/@vitest/coverage-v8/0.34.1_vitest@0.34.2:
+  mirrors.tencent.com/@vitest/coverage-v8/0.34.1_vitest@0.34.3:
     resolution: {integrity: sha512-lRgUwjTMr8idXEbUPSNH4jjRZJXJCVY3BqUa+LDXyJVe3pldxYMn/r0HMqatKUGTp0Kyf1j5LfFoY6kRqRp7jw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@vitest/coverage-v8/-/coverage-v8-0.34.1.tgz}
     id: mirrors.tencent.com/@vitest/coverage-v8/0.34.1
     name: '@vitest/coverage-v8'
@@ -3923,7 +3917,7 @@ packages:
       std-env: mirrors.tencent.com/std-env/3.3.3
       test-exclude: mirrors.tencent.com/test-exclude/6.0.0
       v8-to-istanbul: mirrors.tencent.com/v8-to-istanbul/9.1.0
-      vitest: 0.34.2
+      vitest: 0.34.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5420,7 +5414,7 @@ packages:
     version: 0.30.2
     engines: {node: '>=12'}
     dependencies:
-      '@jridgewell/sourcemap-codec': mirrors.tencent.com/@jridgewell/sourcemap-codec/1.4.15
+      '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
   mirrors.tencent.com/make-dir/4.0.0:
