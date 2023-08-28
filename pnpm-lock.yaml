@@ -20,7 +20,7 @@ specifiers:
   typedoc: 0.25.0
   typescript: 5.2.2
   vitest: 0.34.3
-  yaml: 2.3.1
+  yaml: 2.3.2
 
 dependencies:
   tsx: mirrors.tencent.com/tsx/3.12.7
@@ -44,7 +44,7 @@ devDependencies:
   typedoc: 0.25.0_typescript@5.2.2
   typescript: 5.2.2
   vitest: 0.34.3
-  yaml: mirrors.tencent.com/yaml/2.3.1
+  yaml: 2.3.2
 
 packages:
 
@@ -3014,6 +3014,11 @@ packages:
 
   /yaml/2.3.1:
     resolution: {integrity: sha512-2eHWfjaoXgTBC2jNM1LRef62VQa0umtvRiDSk6HSzW7RvS5YtkabJrwYLLEKWBc8a5U2PTSCs+dJjUTJdlHsWQ==}
+    engines: {node: '>= 14'}
+    dev: true
+
+  /yaml/2.3.2:
+    resolution: {integrity: sha512-N/lyzTPaJasoDmfV7YTrYCI0G/3ivm/9wdG0aHuheKowWQwGTsK0Eoiw6utmzAnI6pkJa0DUVygvp3spqqEKXg==}
     engines: {node: '>= 14'}
     dev: true
 
@@ -6801,13 +6806,6 @@ packages:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/yallist/-/yallist-4.0.0.tgz}
     name: yallist
     version: 4.0.0
-    dev: true
-
-  mirrors.tencent.com/yaml/2.3.1:
-    resolution: {integrity: sha512-2eHWfjaoXgTBC2jNM1LRef62VQa0umtvRiDSk6HSzW7RvS5YtkabJrwYLLEKWBc8a5U2PTSCs+dJjUTJdlHsWQ==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/yaml/-/yaml-2.3.1.tgz}
-    name: yaml
-    version: 2.3.1
-    engines: {node: '>= 14'}
     dev: true
 
   mirrors.tencent.com/yargs-parser/20.2.9:
