@@ -19,7 +19,7 @@ specifiers:
   tsx: ^3.12.7
   typedoc: 0.25.1
   typescript: 5.2.2
-  vitest: 0.34.3
+  vitest: 0.34.4
   yaml: 2.3.2
 
 dependencies:
@@ -31,7 +31,7 @@ devDependencies:
   '@latipun7/releaserc': mirrors.tencent.com/@latipun7/releaserc/2.2.0_semantic-release@21.0.7
   '@typescript-eslint/eslint-plugin': 6.6.0_vt4saesn3ecaumaytn5wzbmrxe
   '@typescript-eslint/parser': 6.6.0_w2g2uv42be7wag4oipwkfv43p4
-  '@vitest/coverage-v8': mirrors.tencent.com/@vitest/coverage-v8/0.34.1_vitest@0.34.3
+  '@vitest/coverage-v8': mirrors.tencent.com/@vitest/coverage-v8/0.34.1_vitest@0.34.4
   eslint: 8.48.0
   eslint-config-prettier: mirrors.tencent.com/eslint-config-prettier/9.0.0_eslint@8.48.0
   eslint-plugin-import: 2.28.1_hymxkmfcc2zm7cg5ykz3byzyk4
@@ -43,7 +43,7 @@ devDependencies:
   semantic-release: 21.0.7
   typedoc: 0.25.1_typescript@5.2.2
   typescript: 5.2.2
-  vitest: 0.34.3
+  vitest: 0.34.4
   yaml: 2.3.2
 
 packages:
@@ -594,6 +594,10 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
+  /@types/node/20.4.7:
+    resolution: {integrity: sha512-bUBrPjEry2QUTsnuEjzjbS7voGWCc30W0qzgMf90GPeDGFRakvrz47ju+oqDAKCXLUCe39u57/ORMl/O/04/9g==}
+    dev: true
+
   /@types/node/20.4.9:
     resolution: {integrity: sha512-8e2HYcg7ohnTUbHk8focoklEQYvemQmu9M/f43DZVx43kHn0tE3BY/6gSDxS7k0SprtS0NHvj+L80cGLnoOUcQ==}
     dev: true
@@ -733,38 +737,38 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@vitest/expect/0.34.3:
-    resolution: {integrity: sha512-F8MTXZUYRBVsYL1uoIft1HHWhwDbSzwAU9Zgh8S6WFC3YgVb4AnFV2GXO3P5Em8FjEYaZtTnQYoNwwBrlOMXgg==}
+  /@vitest/expect/0.34.4:
+    resolution: {integrity: sha512-XlMKX8HyYUqB8dsY8Xxrc64J2Qs9pKMt2Z8vFTL4mBWXJsg4yoALHzJfDWi8h5nkO4Zua4zjqtapQ/IluVkSnA==}
     dependencies:
-      '@vitest/spy': 0.34.3
-      '@vitest/utils': 0.34.3
+      '@vitest/spy': 0.34.4
+      '@vitest/utils': 0.34.4
       chai: 4.3.7
     dev: true
 
-  /@vitest/runner/0.34.3:
-    resolution: {integrity: sha512-lYNq7N3vR57VMKMPLVvmJoiN4bqwzZ1euTW+XXYH5kzr3W/+xQG3b41xJn9ChJ3AhYOSoweu974S1V3qDcFESA==}
+  /@vitest/runner/0.34.4:
+    resolution: {integrity: sha512-hwwdB1StERqUls8oV8YcpmTIpVeJMe4WgYuDongVzixl5hlYLT2G8afhcdADeDeqCaAmZcSgLTLtqkjPQF7x+w==}
     dependencies:
-      '@vitest/utils': 0.34.3
+      '@vitest/utils': 0.34.4
       p-limit: 4.0.0
       pathe: 1.1.1
     dev: true
 
-  /@vitest/snapshot/0.34.3:
-    resolution: {integrity: sha512-QyPaE15DQwbnIBp/yNJ8lbvXTZxS00kRly0kfFgAD5EYmCbYcA+1EEyRalc93M0gosL/xHeg3lKAClIXYpmUiQ==}
+  /@vitest/snapshot/0.34.4:
+    resolution: {integrity: sha512-GCsh4coc3YUSL/o+BPUo7lHQbzpdttTxL6f4q0jRx2qVGoYz/cyTRDJHbnwks6TILi6560bVWoBpYC10PuTLHw==}
     dependencies:
       magic-string: 0.30.2
       pathe: 1.1.1
       pretty-format: 29.6.2
     dev: true
 
-  /@vitest/spy/0.34.3:
-    resolution: {integrity: sha512-N1V0RFQ6AI7CPgzBq9kzjRdPIgThC340DGjdKdPSE8r86aUSmeliTUgkTqLSgtEwWWsGfBQ+UetZWhK0BgJmkQ==}
+  /@vitest/spy/0.34.4:
+    resolution: {integrity: sha512-PNU+fd7DUPgA3Ya924b1qKuQkonAW6hL7YUjkON3wmBwSTIlhOSpy04SJ0NrRsEbrXgMMj6Morh04BMf8k+w0g==}
     dependencies:
       tinyspy: 2.1.1
     dev: true
 
-  /@vitest/utils/0.34.3:
-    resolution: {integrity: sha512-kiSnzLG6m/tiT0XEl4U2H8JDBjFtwVlaE8I3QfGiMFR0QvnRDfYfdP3YvTBWM/6iJDAyaPY6yVQiCTUc7ZzTHA==}
+  /@vitest/utils/0.34.4:
+    resolution: {integrity: sha512-yR2+5CHhp/K4ySY0Qtd+CAL9f5Yh1aXrKfAT42bq6CtlGPh92jIDDDSg7ydlRow1CP+dys4TrOrbELOyNInHSg==}
     dependencies:
       diff-sequences: 29.4.3
       loupe: 2.3.6
@@ -1236,6 +1240,36 @@ packages:
       is-date-object: 1.0.5
       is-symbol: 1.0.4
     dev: true
+
+  /esbuild/0.17.19:
+    resolution: {integrity: sha512-XQ0jAPFkK/u3LcVRcvVHQcTIqD6E2H1fvZMA5dQPSOWb3suUbWbfbRf94pjc0bNzRYLfIrDRQXr7X+LHIm5oHw==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    optionalDependencies:
+      '@esbuild/android-arm': 0.17.19
+      '@esbuild/android-arm64': 0.17.19
+      '@esbuild/android-x64': 0.17.19
+      '@esbuild/darwin-arm64': 0.17.19
+      '@esbuild/darwin-x64': 0.17.19
+      '@esbuild/freebsd-arm64': 0.17.19
+      '@esbuild/freebsd-x64': 0.17.19
+      '@esbuild/linux-arm': 0.17.19
+      '@esbuild/linux-arm64': 0.17.19
+      '@esbuild/linux-ia32': 0.17.19
+      '@esbuild/linux-loong64': 0.17.19
+      '@esbuild/linux-mips64el': 0.17.19
+      '@esbuild/linux-ppc64': 0.17.19
+      '@esbuild/linux-riscv64': 0.17.19
+      '@esbuild/linux-s390x': 0.17.19
+      '@esbuild/linux-x64': 0.17.19
+      '@esbuild/netbsd-x64': 0.17.19
+      '@esbuild/openbsd-x64': 0.17.19
+      '@esbuild/sunos-x64': 0.17.19
+      '@esbuild/win32-arm64': 0.17.19
+      '@esbuild/win32-ia32': 0.17.19
+      '@esbuild/win32-x64': 0.17.19
+    dev: false
 
   /esbuild/0.18.20:
     resolution: {integrity: sha512-ceqxoedUrcayh7Y7ZX6NdbbDzGROiyVBgC4PriJThBKSVPWnnFHZAkfI1lJT8QFkOwH4qOS2SJkS4wvpGl8BpA==}
@@ -2992,8 +3026,8 @@ packages:
       punycode: 2.3.0
     dev: true
 
-  /vite-node/0.34.3_@types+node@20.4.9:
-    resolution: {integrity: sha512-+0TzJf1g0tYXj6tR2vEyiA42OPq68QkRZCu/ERSo2PtsDJfBpDyEfuKbRvLmZqi/CgC7SCBtyC+WjTGNMRIaig==}
+  /vite-node/0.34.4_@types+node@20.4.9:
+    resolution: {integrity: sha512-ho8HtiLc+nsmbwZMw8SlghESEE3KxJNp04F/jPUCLVvaURwt0d+r9LxEqCX5hvrrOQ0GSyxbYr5ZfRYhQ0yVKQ==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
     dependencies:
@@ -3050,8 +3084,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.34.3:
-    resolution: {integrity: sha512-7+VA5Iw4S3USYk+qwPxHl8plCMhA5rtfwMjgoQXMT7rO5ldWcdsdo3U1QD289JgglGK4WeOzgoLTsGFu6VISyQ==}
+  /vitest/0.34.4:
+    resolution: {integrity: sha512-SE/laOsB6995QlbSE6BtkpXDeVNLJc1u2LHRG/OpnN4RsRzM3GQm4nm3PQCK5OBtrsUqnhzLdnT7se3aeNGdlw==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
     peerDependencies:
@@ -3084,11 +3118,11 @@ packages:
       '@types/chai': 4.3.5
       '@types/chai-subset': 1.3.3
       '@types/node': 20.4.9
-      '@vitest/expect': 0.34.3
-      '@vitest/runner': 0.34.3
-      '@vitest/snapshot': 0.34.3
-      '@vitest/spy': 0.34.3
-      '@vitest/utils': 0.34.3
+      '@vitest/expect': 0.34.4
+      '@vitest/runner': 0.34.4
+      '@vitest/snapshot': 0.34.4
+      '@vitest/spy': 0.34.4
+      '@vitest/utils': 0.34.4
       acorn: 8.10.0
       acorn-walk: 8.2.0
       cac: 6.7.14
@@ -3103,7 +3137,7 @@ packages:
       tinybench: 2.5.0
       tinypool: 0.7.0
       vite: 4.4.9_@types+node@20.4.9
-      vite-node: 0.34.3_@types+node@20.4.9
+      vite-node: 0.34.4_@types+node@20.4.9
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less
@@ -3408,7 +3442,7 @@ packages:
       '@commitlint/execute-rule': mirrors.tencent.com/@commitlint/execute-rule/17.4.0
       '@commitlint/resolve-extends': mirrors.tencent.com/@commitlint/resolve-extends/17.6.7
       '@commitlint/types': mirrors.tencent.com/@commitlint/types/17.4.4
-      '@types/node': mirrors.tencent.com/@types/node/20.4.7
+      '@types/node': 20.4.7
       chalk: 4.1.2
       cosmiconfig: mirrors.tencent.com/cosmiconfig/8.2.0
       cosmiconfig-typescript-loader: mirrors.tencent.com/cosmiconfig-typescript-loader/4.4.0_gbiyrvx3k7fzis77ggo7qanwci
@@ -3529,7 +3563,7 @@ packages:
     name: '@esbuild-kit/core-utils'
     version: 3.1.0
     dependencies:
-      esbuild: mirrors.tencent.com/esbuild/0.17.19
+      esbuild: 0.17.19
       source-map-support: mirrors.tencent.com/source-map-support/0.5.21
     dev: false
 
@@ -3975,19 +4009,13 @@ packages:
     version: 1.2.2
     dev: true
 
-  mirrors.tencent.com/@types/node/20.4.7:
-    resolution: {integrity: sha512-bUBrPjEry2QUTsnuEjzjbS7voGWCc30W0qzgMf90GPeDGFRakvrz47ju+oqDAKCXLUCe39u57/ORMl/O/04/9g==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@types/node/-/node-20.4.7.tgz}
-    name: '@types/node'
-    version: 20.4.7
-    dev: true
-
   mirrors.tencent.com/@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz}
     name: '@types/normalize-package-data'
     version: 2.4.1
     dev: true
 
-  mirrors.tencent.com/@vitest/coverage-v8/0.34.1_vitest@0.34.3:
+  mirrors.tencent.com/@vitest/coverage-v8/0.34.1_vitest@0.34.4:
     resolution: {integrity: sha512-lRgUwjTMr8idXEbUPSNH4jjRZJXJCVY3BqUa+LDXyJVe3pldxYMn/r0HMqatKUGTp0Kyf1j5LfFoY6kRqRp7jw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@vitest/coverage-v8/-/coverage-v8-0.34.1.tgz}
     id: mirrors.tencent.com/@vitest/coverage-v8/0.34.1
     name: '@vitest/coverage-v8'
@@ -4006,7 +4034,7 @@ packages:
       std-env: mirrors.tencent.com/std-env/3.3.3
       test-exclude: mirrors.tencent.com/test-exclude/6.0.0
       v8-to-istanbul: mirrors.tencent.com/v8-to-istanbul/9.1.0
-      vitest: 0.34.3
+      vitest: 0.34.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4354,7 +4382,7 @@ packages:
       ts-node: '>=10'
       typescript: '>=4'
     dependencies:
-      '@types/node': mirrors.tencent.com/@types/node/20.4.7
+      '@types/node': 20.4.7
       cosmiconfig: mirrors.tencent.com/cosmiconfig/8.2.0
       ts-node: mirrors.tencent.com/ts-node/10.9.1_jjsxl3z4jzcyq5yjro7btxsuqe
       typescript: 5.2.2
@@ -4582,38 +4610,6 @@ packages:
     dependencies:
       is-arrayish: mirrors.tencent.com/is-arrayish/0.2.1
     dev: true
-
-  mirrors.tencent.com/esbuild/0.17.19:
-    resolution: {integrity: sha512-XQ0jAPFkK/u3LcVRcvVHQcTIqD6E2H1fvZMA5dQPSOWb3suUbWbfbRf94pjc0bNzRYLfIrDRQXr7X+LHIm5oHw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/esbuild/-/esbuild-0.17.19.tgz}
-    name: esbuild
-    version: 0.17.19
-    engines: {node: '>=12'}
-    hasBin: true
-    requiresBuild: true
-    optionalDependencies:
-      '@esbuild/android-arm': 0.17.19
-      '@esbuild/android-arm64': 0.17.19
-      '@esbuild/android-x64': 0.17.19
-      '@esbuild/darwin-arm64': 0.17.19
-      '@esbuild/darwin-x64': 0.17.19
-      '@esbuild/freebsd-arm64': 0.17.19
-      '@esbuild/freebsd-x64': 0.17.19
-      '@esbuild/linux-arm': 0.17.19
-      '@esbuild/linux-arm64': 0.17.19
-      '@esbuild/linux-ia32': 0.17.19
-      '@esbuild/linux-loong64': 0.17.19
-      '@esbuild/linux-mips64el': 0.17.19
-      '@esbuild/linux-ppc64': 0.17.19
-      '@esbuild/linux-riscv64': 0.17.19
-      '@esbuild/linux-s390x': 0.17.19
-      '@esbuild/linux-x64': 0.17.19
-      '@esbuild/netbsd-x64': 0.17.19
-      '@esbuild/openbsd-x64': 0.17.19
-      '@esbuild/sunos-x64': 0.17.19
-      '@esbuild/win32-arm64': 0.17.19
-      '@esbuild/win32-ia32': 0.17.19
-      '@esbuild/win32-x64': 0.17.19
-    dev: false
 
   mirrors.tencent.com/escalade/3.1.1:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/escalade/-/escalade-3.1.1.tgz}
@@ -6496,7 +6492,7 @@ packages:
       '@tsconfig/node12': mirrors.tencent.com/@tsconfig/node12/1.0.11
       '@tsconfig/node14': mirrors.tencent.com/@tsconfig/node14/1.0.3
       '@tsconfig/node16': mirrors.tencent.com/@tsconfig/node16/1.0.4
-      '@types/node': mirrors.tencent.com/@types/node/20.4.7
+      '@types/node': 20.4.7
       acorn: 8.10.0
       acorn-walk: 8.2.0
       arg: mirrors.tencent.com/arg/4.1.3
