@@ -57,7 +57,7 @@
     "semantic-release": "^22.0.0",
     "typedoc": "0.25.1",
     "typescript": "5.2.2",
-    "vitest": "0.34.4",
+    "vitest": "0.34.5",
     "yaml": "2.3.2"
   },
   "commitlint": {
