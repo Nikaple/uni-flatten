@@ -14,7 +14,7 @@ specifiers:
   husky: 8.0.3
   lint-staged: 14.0.1
   prettier: 2.8.8
-  rimraf: 5.0.4
+  rimraf: 5.0.5
   semantic-release: ^22.0.0
   tsx: ^3.12.7
   typedoc: 0.25.1
@@ -39,7 +39,7 @@ devDependencies:
   husky: 8.0.3
   lint-staged: 14.0.1
   prettier: mirrors.tencent.com/prettier/2.8.8
-  rimraf: 5.0.4
+  rimraf: 5.0.5
   semantic-release: 22.0.0
   typedoc: 0.25.1_typescript@5.2.2
   typescript: 5.2.2
@@ -3781,8 +3781,8 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rimraf/5.0.4:
-    resolution: {integrity: sha512-rizQI/o/YAMM1us0Zyax0uRfIK39XR52EAjjOi0fzMolpGp0onj6CWzBAXuOx6+6Xi9Rgi0d9tUZojhJerLUmQ==}
+  /rimraf/5.0.5:
+    resolution: {integrity: sha512-CqDakW+hMe/Bz202FPEymy68P+G50RfMQK+Qo5YUqc9SPipvbGjCGKd0RSKEelbsfQuw3g5NZDSrlZZAJurH1A==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
