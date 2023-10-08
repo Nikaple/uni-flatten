@@ -55,7 +55,7 @@
     "prettier": "2.8.8",
     "rimraf": "5.0.5",
     "semantic-release": "^22.0.0",
-    "typedoc": "0.25.1",
+    "typedoc": "0.25.2",
     "typescript": "5.2.2",
     "vitest": "0.34.6",
     "yaml": "2.3.2"
