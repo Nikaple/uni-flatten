@@ -53,4 +53,17 @@ describe('parsePath', () => {
       '$%^&*()_+-={}|[]\\;\':"<>?,./',
     ]);
   });
+
+  it('should throw on invalid keys', () => {
+    const strictParse = (str: string) => parsePath(str, true);
+    expect(() => strictParse('foo.bar baz.qux')).toThrowError();
+    expect(() => strictParse('foo.bar-baz.qux')).toThrowError();
+    expect(() => strictParse('foo.[].qux')).toThrowError();
+    expect(() => strictParse('foo["].qux')).toThrowError();
+    expect(() => strictParse('foo.bar".qux')).toThrowError();
+    expect(() => strictParse('a - b')).toThrowError();
+    expect(() => strictParse('a.cb[]]')).toThrowError();
+    expect(() => strictParse('a["a]')).toThrowError();
+    expect(() => strictParse('a["a\\"]')).toThrowError();
+  });
 });

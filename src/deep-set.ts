@@ -2,6 +2,7 @@ import {
   extractCircularKey,
   extractCircularValue,
   isObject,
+  mergeConfig,
   parsePath,
 } from './internal';
 import { UniFlattenOptions } from './type';
@@ -23,7 +24,8 @@ export const deepSet = <T extends Record<string, unknown>>(
 ) => {
   if (!isObject(obj)) return obj;
 
-  const keys = parsePath(path);
+  const config = mergeConfig(options);
+  const keys = parsePath(path, config.strict);
   const lastIndex = keys.length - 1;
 
   let current: any = obj;
@@ -34,7 +36,7 @@ export const deepSet = <T extends Record<string, unknown>>(
       current[key] = isNextArray ? [] : {};
     }
     if (i === lastIndex) {
-      const circularKey = extractCircularKey(value, options?.circularReference);
+      const circularKey = extractCircularKey(value, config.circularReference);
       current[key] =
         circularKey === undefined
           ? value

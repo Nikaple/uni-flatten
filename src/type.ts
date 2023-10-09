@@ -1,3 +1,4 @@
 export interface UniFlattenOptions {
-  circularReference: 'string' | 'symbol' | 'null';
+  circularReference?: 'string' | 'symbol' | 'null';
+  strict?: boolean;
 }

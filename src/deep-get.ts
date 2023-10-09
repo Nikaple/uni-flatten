@@ -1,4 +1,5 @@
-import { parsePath } from './internal';
+import { mergeConfig, parsePath } from './internal';
+import { UniFlattenOptions } from './type';
 
 /**
  * Deeply get value by key.
@@ -9,8 +10,13 @@ import { parsePath } from './internal';
  * deepGet({ a: { b: [1] } }, "a.b.0") // 1
  * deepGet({ a: { '?': [1] } }， 'a["?"][0]') // 1
  */
-export const deepGet = (obj: Record<string, unknown>, path: string) => {
-  const keys = parsePath(path);
+export const deepGet = (
+  obj: Record<string, unknown>,
+  path: string,
+  options?: UniFlattenOptions,
+) => {
+  const config = mergeConfig(options);
+  const keys = parsePath(path, config.strict);
 
   let result: any = obj;
   keys.forEach(part => {

@@ -1,13 +1,50 @@
 import { deepGet } from './deep-get';
 import { UniFlattenOptions } from './type';
 
-export const parsePath = (str: string): (string | number)[] => {
+export const SPECIAL_CHARACTER_REGEX =
+  /[.'"\s\\\b\f\n\r\t\v{}()[\];,<>=!+\-*%&|^~?:]/;
+
+export const config = {
+  strict: false,
+  circularReference: 'string' as const,
+};
+
+export const mergeConfig = (options?: UniFlattenOptions) => ({
+  ...config,
+  ...options,
+});
+
+export const parsePath = (str: string, strict = false): (string | number)[] => {
   const tokens = [];
+  const parenthesis = [];
+  const panic = (idx: number) => {
+    if (strict) {
+      throw new Error(
+        `Cannot parse key: ${JSON.stringify(str)} at index ${idx}`,
+      );
+    }
+  };
   let i = 0;
   while (i < str.length) {
     let token = '';
     const char = str[i];
-    if (char === '.' || char === '[' || char === ']') {
+    if (char === '.') {
+      i++;
+      if (SPECIAL_CHARACTER_REGEX.test(str[i])) {
+        panic(i);
+      }
+      continue;
+    }
+    if (char === '[') {
+      parenthesis.push(char);
+      i++;
+      continue;
+    }
+    if (char === ']') {
+      if (parenthesis.length === 0) {
+        panic(i);
+      }
+      parenthesis.pop();
       i++;
       continue;
     }
@@ -18,7 +55,11 @@ export const parsePath = (str: string): (string | number)[] => {
         i += str[i] === '\\' ? 2 : 1;
       }
       i++;
-      tokens.push(JSON.parse(str.slice(start, i)));
+      try {
+        tokens.push(JSON.parse(str.slice(start, i)));
+      } catch (_) {
+        panic(start);
+      }
       continue;
     }
     while (
@@ -27,6 +68,9 @@ export const parsePath = (str: string): (string | number)[] => {
       str[i] !== '[' &&
       str[i] !== ']'
     ) {
+      if (SPECIAL_CHARACTER_REGEX.test(str[i])) {
+        panic(i);
+      }
       token += str[i];
       i++;
     }
@@ -35,6 +79,9 @@ export const parsePath = (str: string): (string | number)[] => {
     } else {
       tokens.push(token);
     }
+  }
+  if (parenthesis.length !== 0) {
+    panic(i);
   }
   return tokens;
 };

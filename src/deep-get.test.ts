@@ -45,7 +45,7 @@ describe('deepGet', () => {
   });
 
   it('should return undefined for non-existent keys', () => {
-    expect(deepGet(obj, 'a.b.c.d')).toBe(undefined);
+    expect(deepGet(obj, 'a.b.c.d.e.f')).toBe(undefined);
   });
 
   it('should return undefined if obj is not an object', () => {
