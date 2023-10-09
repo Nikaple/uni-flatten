@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [1.4.0](https://github.com/Nikaple/uni-flatten/compare/v1.3.1...v1.4.0) (2023-10-09)
+
+### ✨ Features
+
+- support strict mode [`fc6758d`](https://github.com/Nikaple/uni-flatten/commit/fc6758d22c0603d68eb9fac92c1980e936853493).
+
 ### [1.3.1](https://github.com/Nikaple/uni-flatten/compare/v1.3.0...v1.3.1) (2023-08-17)
 
 ### 🐛 Fixes
