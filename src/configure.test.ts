@@ -2,7 +2,7 @@ import { configureUniFlatten } from './configure';
 import { deepSet } from './deep-set';
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 
-describe('parsePath', () => {
+describe('configure', () => {
   beforeEach(() => {
     configureUniFlatten({ strict: true });
   });
