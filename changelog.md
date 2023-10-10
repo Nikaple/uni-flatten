@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [1.5.0](https://github.com/Nikaple/uni-flatten/compare/v1.4.0...v1.5.0) (2023-10-10)
+
+### ✨ Features
+
+- support validate strict key [`c97ab2b`](https://github.com/Nikaple/uni-flatten/commit/c97ab2b394b2ec4463c4521a681935447969f428).
+
+### 🐛 Fixes
+
+- export utilities [`7b0a509`](https://github.com/Nikaple/uni-flatten/commit/7b0a5095809e24b37c887b778f876ed8d9f5139e).
+
 ## [1.4.0](https://github.com/Nikaple/uni-flatten/compare/v1.3.1...v1.4.0) (2023-10-09)
 
 ### ✨ Features
