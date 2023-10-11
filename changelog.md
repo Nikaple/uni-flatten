@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+### [1.5.1](https://github.com/Nikaple/uni-flatten/compare/v1.5.0...v1.5.1) (2023-10-11)
+
+### 🐛 Fixes
+
+- support arrays [`41932ed`](https://github.com/Nikaple/uni-flatten/commit/41932ed333faa7468366229c4b2605aadc4594f8).
+
 ## [1.5.0](https://github.com/Nikaple/uni-flatten/compare/v1.4.0...v1.5.0) (2023-10-10)
 
 ### ✨ Features
