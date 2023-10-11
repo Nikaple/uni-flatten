@@ -53,6 +53,33 @@ describe('flattenObject', () => {
     );
   });
 
+  it('should handle arrays', () => {
+    testFlatten(
+      [
+        1,
+        {
+          a: {
+            b: {
+              c: 123,
+            },
+            d: [
+              {
+                e: { f: 456 },
+              },
+            ],
+          },
+          'a.b.c': 789,
+        },
+      ],
+      {
+        '[0]': 1,
+        '[1].a.b.c': 123,
+        '[1].a.d[0].e.f': 456,
+        '[1]["a.b.c"]': 789,
+      },
+    );
+  });
+
   it('should handle complex arrays', () => {
     testFlatten(
       { a: [0, { b: [1], c: { d: [2], 5: [6] } }] },

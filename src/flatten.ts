@@ -96,7 +96,6 @@ export const flatten = <T>(
  * flatten({ 'a["?"][0]': 1 }) // { a: { '?': [1] } }
  */
 export const unflatten = (obj: any, options?: UniFlattenOptions) => {
-  const result = {};
   const circularEntries: [string, any][] = [];
   const normalEntries: [string, any][] = [];
   Object.entries(obj).forEach(([key, value]) => {
@@ -107,7 +106,10 @@ export const unflatten = (obj: any, options?: UniFlattenOptions) => {
       normalEntries.push([key, value]);
     }
   });
-  normalEntries.concat(circularEntries).forEach(([key, value]) => {
+
+  const entries = normalEntries.concat(circularEntries);
+  const result = /^\[\d+\]/.test(entries[0][0]) ? [] : {};
+  entries.forEach(([key, value]) => {
     deepSet(result, key, value, options);
   });
   return result;
