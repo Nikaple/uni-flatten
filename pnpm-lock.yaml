@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@commitlint/cli': 17.7.2
+  '@commitlint/cli': 17.8.0
   '@latipun7/commitlintrc': 1.1.3
   '@latipun7/releaserc': ^2.1.0
   '@typescript-eslint/eslint-plugin': 6.7.5
@@ -26,8 +26,8 @@ dependencies:
   tsx: mirrors.tencent.com/tsx/3.12.7
 
 devDependencies:
-  '@commitlint/cli': 17.7.2
-  '@latipun7/commitlintrc': 1.1.3_@commitlint+cli@17.7.2
+  '@commitlint/cli': 17.8.0
+  '@latipun7/commitlintrc': 1.1.3_@commitlint+cli@17.8.0
   '@latipun7/releaserc': mirrors.tencent.com/@latipun7/releaserc/2.2.0_semantic-release@22.0.0
   '@typescript-eslint/eslint-plugin': 6.7.5_dptsdsdrndgxcj374v5aqgxpeq
   '@typescript-eslint/parser': 6.7.5_srhnpoqmhm6ulnern6fnsuapfi
@@ -82,14 +82,14 @@ packages:
     dev: true
     optional: true
 
-  /@commitlint/cli/17.7.2:
-    resolution: {integrity: sha512-t3N7TZq7lOeqTOyEgfGcaltHqEJf7YDlPg75MldeVPPyz14jZq/+mbGF9tueDLFX8R6RwdymrN6D+U5XwZ8Iwg==}
+  /@commitlint/cli/17.8.0:
+    resolution: {integrity: sha512-D3LdyZYbiRyAChfJMNlAd9f2P9vNQ7GWbI9gN2o7L5hF07QJDqj4z/pcJF3PjDbJWOaUUXla287RdDmmKqH2WQ==}
     engines: {node: '>=v14'}
     hasBin: true
     dependencies:
       '@commitlint/format': 17.4.4
-      '@commitlint/lint': 17.7.0
-      '@commitlint/load': 17.7.2
+      '@commitlint/lint': 17.8.0
+      '@commitlint/load': 17.8.0
       '@commitlint/read': 17.5.1
       '@commitlint/types': 17.4.4
       execa: 5.1.1
@@ -135,26 +135,26 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@commitlint/is-ignored/17.7.0:
-    resolution: {integrity: sha512-043rA7m45tyEfW7Zv2vZHF++176MLHH9h70fnPoYlB1slKBeKl8BwNIlnPg4xBdRBVNPaCqvXxWswx2GR4c9Hw==}
+  /@commitlint/is-ignored/17.8.0:
+    resolution: {integrity: sha512-8bR6rxNcWaNprPBdE4ePIOwbxutTQGOsRPYWssX+zjGxnEljzaZSGzFUOMxapYILlf8Tts/O1wPQgG549Rdvdg==}
     engines: {node: '>=v14'}
     dependencies:
       '@commitlint/types': 17.4.4
       semver: 7.5.4
     dev: true
 
-  /@commitlint/lint/17.7.0:
-    resolution: {integrity: sha512-TCQihm7/uszA5z1Ux1vw+Nf3yHTgicus/+9HiUQk+kRSQawByxZNESeQoX9ujfVd3r4Sa+3fn0JQAguG4xvvbA==}
+  /@commitlint/lint/17.8.0:
+    resolution: {integrity: sha512-4ihwnqOY4TcJN6iz5Jv1LeYavvBllONwFyGxOIWmCT5s4PNMb43cws2TUdbXTZL1Vq59etGKd5LWYDFPVbs5EA==}
     engines: {node: '>=v14'}
     dependencies:
-      '@commitlint/is-ignored': 17.7.0
+      '@commitlint/is-ignored': 17.8.0
       '@commitlint/parse': 17.7.0
       '@commitlint/rules': 17.7.0
       '@commitlint/types': 17.4.4
     dev: true
 
-  /@commitlint/load/17.7.2:
-    resolution: {integrity: sha512-XA7WTnsjHZ4YH6ZYsrnxgLdXzriwMMq+utZUET6spbOEEIPBCDLdOQXS26P+v3TTO4hUHOEhzUquaBv3jbBixw==}
+  /@commitlint/load/17.8.0:
+    resolution: {integrity: sha512-9VnGXYJCP4tXmR4YrwP8n5oX6T5ZsHfPQq6WuUQOvAI+QsDQMaTGgTRXr7us+xsjz+b+mMBSagogqfUx2aixyw==}
     engines: {node: '>=v14'}
     dependencies:
       '@commitlint/config-validator': 17.6.7
@@ -745,7 +745,7 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@latipun7/commitlintrc/1.1.3_@commitlint+cli@17.7.2:
+  /@latipun7/commitlintrc/1.1.3_@commitlint+cli@17.8.0:
     resolution: {integrity: sha512-9MMuq2Z7VZAzpCR9WxNhb3jGKqioj9AfEfOtN+X4XYw2D5huq8zrP8Vux+V6HQo60URYKMgwdC78KybbtPBsug==}
     engines: {node: '>=14.8.0'}
     peerDependencies:
@@ -761,7 +761,7 @@ packages:
       inquirer:
         optional: true
     dependencies:
-      '@commitlint/cli': 17.7.2
+      '@commitlint/cli': 17.8.0
       conventional-changelog-conventionalcommits: mirrors.tencent.com/conventional-changelog-conventionalcommits/4.6.3
     dev: true
 
@@ -4983,7 +4983,7 @@ packages:
       hosted-git-info: 4.1.0
       keytar: mirrors.tencent.com/keytar/7.9.0
       leven: mirrors.tencent.com/leven/3.1.0
-      lodash: mirrors.tencent.com/lodash/4.17.21
+      lodash: 4.17.21
       markdown-it: mirrors.tencent.com/markdown-it/10.0.0
       mime: 1.6.0
       minimatch: 3.1.2
@@ -5542,7 +5542,7 @@ packages:
     version: 5.3.0
     engines: {node: '>=8'}
     dependencies:
-      is-obj: mirrors.tencent.com/is-obj/2.0.0
+      is-obj: 2.0.0
     dev: true
 
   mirrors.tencent.com/end-of-stream/1.4.4:
@@ -5632,8 +5632,8 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       graceful-fs: 4.2.11
-      jsonfile: mirrors.tencent.com/jsonfile/6.1.0
-      universalify: mirrors.tencent.com/universalify/2.0.0
+      jsonfile: 6.1.0
+      universalify: 2.0.0
     dev: true
 
   mirrors.tencent.com/fs-extra/11.1.1:
@@ -5642,9 +5642,9 @@ packages:
     version: 11.1.1
     engines: {node: '>=14.14'}
     dependencies:
-      graceful-fs: mirrors.tencent.com/graceful-fs/4.2.11
-      jsonfile: mirrors.tencent.com/jsonfile/6.1.0
-      universalify: mirrors.tencent.com/universalify/2.0.0
+      graceful-fs: 4.2.11
+      jsonfile: 6.1.0
+      universalify: 2.0.0
     dev: true
 
   mirrors.tencent.com/get-tsconfig/4.7.0:
@@ -5659,12 +5659,6 @@ packages:
     resolution: {integrity: sha1-l/tdlr/eiXMxPyDoKI75oWf6ZM4=, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/github-from-package/-/github-from-package-0.0.0.tgz}
     name: github-from-package
     version: 0.0.0
-    dev: true
-
-  mirrors.tencent.com/graceful-fs/4.2.11:
-    resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/graceful-fs/-/graceful-fs-4.2.11.tgz}
-    name: graceful-fs
-    version: 4.2.11
     dev: true
 
   mirrors.tencent.com/html-escaper/2.0.2:
@@ -5697,13 +5691,6 @@ packages:
     hasBin: true
     dependencies:
       ci-info: mirrors.tencent.com/ci-info/2.0.0
-    dev: true
-
-  mirrors.tencent.com/is-obj/2.0.0:
-    resolution: {integrity: sha512-drqDG3cbczxxEJRoOXcOjtdp1J/lyp1mNn0xaznRs8+muBhgQcrnbspox5X5fOw0HnMnbfDzvnEMEtqDEJEo8w==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/is-obj/-/is-obj-2.0.0.tgz}
-    name: is-obj
-    version: 2.0.0
-    engines: {node: '>=8'}
     dev: true
 
   mirrors.tencent.com/istanbul-lib-coverage/3.2.0:
@@ -5751,16 +5738,6 @@ packages:
     resolution: {integrity: sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/json-parse-even-better-errors/-/json-parse-even-better-errors-2.3.1.tgz}
     name: json-parse-even-better-errors
     version: 2.3.1
-    dev: true
-
-  mirrors.tencent.com/jsonfile/6.1.0:
-    resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/jsonfile/-/jsonfile-6.1.0.tgz}
-    name: jsonfile
-    version: 6.1.0
-    dependencies:
-      universalify: mirrors.tencent.com/universalify/2.0.0
-    optionalDependencies:
-      graceful-fs: 4.2.11
     dev: true
 
   mirrors.tencent.com/keytar/7.9.0:
@@ -6259,13 +6236,6 @@ packages:
     resolution: {integrity: sha512-+A5Sja4HP1M08MaXya7p5LvjuM7K6q/2EaC0+iovj/wOcMsTzMvDFbasi/oSapiwOlt252IqsKqPjCl7huKS0A==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/underscore/-/underscore-1.13.6.tgz}
     name: underscore
     version: 1.13.6
-    dev: true
-
-  mirrors.tencent.com/universalify/2.0.0:
-    resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/universalify/-/universalify-2.0.0.tgz}
-    name: universalify
-    version: 2.0.0
-    engines: {node: '>= 10.0.0'}
     dev: true
 
   mirrors.tencent.com/v8-to-istanbul/9.1.0:
