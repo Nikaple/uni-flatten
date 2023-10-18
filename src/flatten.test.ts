@@ -9,6 +9,10 @@ describe('flattenObject', () => {
     expect(original).toEqual(source);
     expect(result).toEqual(expected);
   };
+  it('should work with empty object', () => {
+    testFlatten({}, {});
+  });
+
   it('should create an object of flattened properties', () => {
     testFlatten(
       {

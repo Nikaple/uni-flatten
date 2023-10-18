@@ -108,7 +108,7 @@ export const unflatten = (obj: any, options?: UniFlattenOptions) => {
   });
 
   const entries = normalEntries.concat(circularEntries);
-  const result = /^\[\d+\]/.test(entries[0][0]) ? [] : {};
+  const result = /^\[\d+\]/.test(entries[0]?.[0]) ? [] : {};
   entries.forEach(([key, value]) => {
     deepSet(result, key, value, options);
   });
