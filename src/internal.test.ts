@@ -7,6 +7,11 @@ describe('parsePath', () => {
     expect(result).toEqual(['foo', 'bar', 1, 'baz', 'qux']);
   });
 
+  it('should parse string starts with number', () => {
+    const result = parsePath('foo.1bc');
+    expect(result).toEqual(['foo', '1bc']);
+  });
+
   it('should parse escaped quotes correctly', () => {
     const result = parsePath('foo["bar\\"baz"]');
     expect(result).toEqual(['foo', 'bar"baz']);

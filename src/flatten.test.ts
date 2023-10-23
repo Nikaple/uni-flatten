@@ -19,6 +19,7 @@ describe('flattenObject', () => {
         a: {
           b: {
             c: 123,
+            '2c': 456,
           },
           d: [
             {
@@ -29,6 +30,7 @@ describe('flattenObject', () => {
       },
       {
         'a.b.c': 123,
+        'a.b["2c"]': 456,
         'a.d[0].e': 456,
       },
     );

@@ -26,7 +26,7 @@ export const flatten = <T>(
   const getKey = (key: string, prefix: string, isNumber: boolean) => {
     let k;
     if (
-      /[.'"\s\\\b\f\n\r\t\v{}()[\];,<>=!+\-*%&|^~?:]/.test(key) ||
+      /[.'"\s\\\b\f\n\r\t\v{}()[\];,<>=!+\-*%&|^~?:]|^\d+\D/.test(key) ||
       key === ''
     ) {
       // use brackets if key contains special characters
