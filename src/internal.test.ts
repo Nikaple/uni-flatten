@@ -69,6 +69,7 @@ describe('parsePath', () => {
     expect(() => strictParse('foo.bar".qux')).toThrowError();
     expect(() => strictParse('a - b')).toThrowError();
     expect(() => strictParse('a.1')).toThrowError();
+    expect(() => strictParse('a.')).toThrowError();
     expect(() => strictParse('a.cb[]]')).toThrowError();
     expect(() => strictParse('a["a]')).toThrowError();
     expect(() => strictParse('a["a\\"]')).toThrowError();

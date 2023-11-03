@@ -30,7 +30,11 @@ export const parsePath = (str: string, strict = false): (string | number)[] => {
     const char = str[i];
     if (char === '.') {
       i++;
-      if (SPECIAL_CHARACTER_REGEX.test(str[i]) || /[0-9]/.test(str[i])) {
+      if (
+        SPECIAL_CHARACTER_REGEX.test(str[i]) ||
+        /[0-9]/.test(str[i]) ||
+        !str[i]
+      ) {
         panic(i);
       }
       continue;
