@@ -58,7 +58,7 @@
     "typedoc": "0.25.3",
     "typescript": "5.2.2",
     "vitest": "0.34.6",
-    "yaml": "2.3.3"
+    "yaml": "2.3.4"
   },
   "commitlint": {
     "extends": [
