@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+### [1.5.4](https://github.com/Nikaple/uni-flatten/compare/v1.5.3...v1.5.4) (2023-11-03)
+
+### 🐛 Fixes
+
+- keys ends with dot [`5d26ef8`](https://github.com/Nikaple/uni-flatten/commit/5d26ef8af2e16ab5fa15c01a76e1fa4bbdd1786d).
+
 ### [1.5.3](https://github.com/Nikaple/uni-flatten/compare/v1.5.2...v1.5.3) (2023-10-23)
 
 ### 🐛 Fixes
