@@ -45,7 +45,7 @@
     "@latipun7/releaserc": "^2.1.0",
     "@typescript-eslint/eslint-plugin": "6.13.2",
     "@typescript-eslint/parser": "6.13.2",
-    "@vitest/coverage-v8": "^0.34.0",
+    "@vitest/coverage-v8": "^1.0.0",
     "eslint": "8.55.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.29.0",
@@ -57,7 +57,7 @@
     "semantic-release": "^22.0.0",
     "typedoc": "0.25.4",
     "typescript": "5.3.2",
-    "vitest": "0.34.6",
+    "vitest": "1.0.1",
     "yaml": "2.3.4"
   },
   "commitlint": {
