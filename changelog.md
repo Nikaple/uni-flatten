@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+### [1.6.1](https://github.com/Nikaple/uni-flatten/compare/v1.6.0...v1.6.1) (2024-03-22)
+
+### 🐛 Fixes
+
+- add canUseDotNotation in serializer meta, remove isEmpty [`c3548ce`](https://github.com/Nikaple/uni-flatten/commit/c3548ce320ac55214b13508769279370ec1dc61c).
+
 ## [1.6.0](https://github.com/Nikaple/uni-flatten/compare/v1.5.5...v1.6.0) (2024-03-22)
 
 ### ✨ Features
