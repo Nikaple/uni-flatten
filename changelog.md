@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [1.6.0](https://github.com/Nikaple/uni-flatten/compare/v1.5.5...v1.6.0) (2024-03-22)
+
+### ✨ Features
+
+- support custom key serializer [`b1c5bb8`](https://github.com/Nikaple/uni-flatten/commit/b1c5bb8463d906f9dae7bd407f0dfcbea5c14dca).
+
 ### [1.5.5](https://github.com/Nikaple/uni-flatten/compare/v1.5.4...v1.5.5) (2023-11-10)
 
 ### 🐛 Fixes
