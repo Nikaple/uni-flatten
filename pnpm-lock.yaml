@@ -12,7 +12,7 @@ specifiers:
   eslint-plugin-import: 2.29.1
   eslint-plugin-prettier: 4.2.1
   husky: 8.0.3
-  lint-staged: 15.2.0
+  lint-staged: 15.2.2
   prettier: 2.8.8
   rimraf: 5.0.5
   semantic-release: ^22.0.0
@@ -37,7 +37,7 @@ devDependencies:
   eslint-plugin-import: 2.29.1_gwrryp6rbgjivv6yd6arsho5zq
   eslint-plugin-prettier: 4.2.1_7qznrz5yhvfblvx24n5rsp6cuy
   husky: 8.0.3
-  lint-staged: 15.2.0
+  lint-staged: 15.2.2
   prettier: mirrors.tencent.com/prettier/2.8.8
   rimraf: 5.0.5
   semantic-release: 22.0.0
@@ -3348,8 +3348,8 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dev: true
 
-  /lint-staged/15.2.0:
-    resolution: {integrity: sha512-TFZzUEV00f+2YLaVPWBWGAMq7So6yQx+GG8YRMDeOEIf95Zn5RyiLMsEiX4KTNl9vq/w+NqRJkLA1kPIo15ufQ==}
+  /lint-staged/15.2.2:
+    resolution: {integrity: sha512-TiTt93OPh1OZOsb5B7k96A/ATl2AjIZo+vnzFZ6oHK5FuTk63ByDtxGQpHm+kFETjEWqgkF95M8FRXKR/LEBcw==}
     engines: {node: '>=18.12.0'}
     hasBin: true
     dependencies:
@@ -3358,7 +3358,7 @@ packages:
       debug: 4.3.4
       execa: 8.0.1
       lilconfig: 3.0.0
-      listr2: 8.0.0
+      listr2: 8.0.1
       micromatch: 4.0.5
       pidtree: 0.6.0
       string-argv: 0.3.2
@@ -3367,8 +3367,8 @@ packages:
       - supports-color
     dev: true
 
-  /listr2/8.0.0:
-    resolution: {integrity: sha512-u8cusxAcyqAiQ2RhYvV7kRKNLgUvtObIbhOX2NCXqvp1UU32xIg5CT22ykS2TPKJXZWJwtK3IKLiqAGlGNE+Zg==}
+  /listr2/8.0.1:
+    resolution: {integrity: sha512-ovJXBXkKGfq+CwmKTjluEqFi3p4h8xvkxGQQAQan22YCgef4KZ1mKGjzfGh6PL6AW5Csw0QiQPNuQyH+6Xk3hA==}
     engines: {node: '>=18.0.0'}
     dependencies:
       cli-truncate: 4.0.0
