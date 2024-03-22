@@ -7,7 +7,24 @@ export const SPECIAL_CHARACTER_REGEX =
 export const config = {
   strict: false,
   circularReference: 'string' as const,
-};
+  serializeFlattenKey: (
+    key: string,
+    prefix: string,
+    meta: {
+      isArrayIndex: boolean;
+      isEmpty: boolean;
+      hasSpecialCharacters: boolean;
+    },
+  ) => {
+    if (meta.isArrayIndex) {
+      return `${prefix}[${key}]`;
+    }
+    if (meta.hasSpecialCharacters || meta.isEmpty || /^\d+$/.test(key)) {
+      return `${prefix}[${JSON.stringify(key)}]`;
+    }
+    return prefix ? `${prefix}.${key}` : key;
+  },
+} satisfies UniFlattenOptions;
 
 export const mergeConfig = (options?: UniFlattenOptions) => ({
   ...config,
