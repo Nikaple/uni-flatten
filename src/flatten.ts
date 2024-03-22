@@ -1,5 +1,6 @@
 import { deepSet } from './deep-set';
 import {
+  config,
   extractCircularKey,
   formatCircularKey,
   isObject,
@@ -23,22 +24,7 @@ export const flatten = <T>(
   options?: UniFlattenOptions,
 ): Record<string, T> => {
   const seen = new Map();
-  const getKey = (key: string, prefix: string, isNumber: boolean) => {
-    let k;
-    if (
-      /[.'"\s\\\b\f\n\r\t\v{}()[\];,<>=!+\-*%&|^~?:]|^\d+\D/.test(key) ||
-      key === ''
-    ) {
-      // use brackets if key contains special characters
-      k = `[${JSON.stringify(key)}]`;
-    } else if (/^\d+$/.test(key)) {
-      // use [0] for arrays, and ["0"] for numeric keys
-      k = isNumber ? `[${key}]` : `["${key}"]`;
-    } else {
-      k = key;
-    }
-    return prefix ? `${prefix}${/^\[/.test(k) ? '' : '.'}${k}` : k;
-  };
+  const serializer = options?.serializeFlattenKey || config.serializeFlattenKey;
   const helper = (obj: any, prefix: string, result: any = {}) => {
     if (!isObject(obj)) {
       return result;
@@ -53,7 +39,11 @@ export const flatten = <T>(
     // recursively handle arrays
     if (Array.isArray(obj)) {
       obj.forEach((item, i) => {
-        const key = getKey(String(i), prefix, true);
+        const key = serializer(String(i), prefix, {
+          isArrayIndex: true,
+          isEmpty: false,
+          hasSpecialCharacters: false,
+        });
         if (isObject(item)) {
           const res = helper(item, key, result);
           return res;
@@ -66,7 +56,12 @@ export const flatten = <T>(
     // recursively handle plain objects
     if (isPlainObject(obj)) {
       Object.entries(obj).forEach(([k, item]) => {
-        const key = getKey(k, prefix, false);
+        const key = serializer(k, prefix, {
+          isEmpty: k === '',
+          isArrayIndex: false,
+          hasSpecialCharacters:
+            /[.'"\s\\\b\f\n\r\t\v{}()[\];,<>=!+\-*%&|^~?:]|^\d+\D/.test(k),
+        });
         if (isObject(item)) {
           const res = helper(item, key, result);
           return res;
