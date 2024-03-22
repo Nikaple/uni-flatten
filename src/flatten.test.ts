@@ -203,6 +203,34 @@ describe('flattenObject', () => {
     testFlatten({ cat }, { cat });
   });
 
+  it('should be able to custom key serializer', () => {
+    expect(
+      flatten(
+        { a: [0, { b: [1], c: { d: [2], 5: [6] } }] },
+        {
+          serializeFlattenKey(key, prefix, meta) {
+            if (meta.isArrayIndex) {
+              return `${prefix}.[${key}]`;
+            }
+            if (
+              meta.hasSpecialCharacters ||
+              meta.isEmpty ||
+              /^\d+$/.test(key)
+            ) {
+              return `${prefix}[${JSON.stringify(key)}]`;
+            }
+            return prefix ? `${prefix}.${key}` : key;
+          },
+        },
+      ),
+    ).toEqual({
+      'a.[0]': 0,
+      'a.[1].b.[0]': 1,
+      'a.[1].c.d.[0]': 2,
+      'a.[1].c["5"].[0]': 6,
+    });
+  });
+
   it('should not throw on illegal input', () => {
     expect(flatten('' as any)).toEqual({});
   });
