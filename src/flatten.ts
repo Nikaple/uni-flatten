@@ -1,5 +1,6 @@
 import { deepSet } from './deep-set';
 import {
+  SPECIAL_CHARACTER_REGEX,
   config,
   extractCircularKey,
   formatCircularKey,
@@ -41,8 +42,8 @@ export const flatten = <T>(
       obj.forEach((item, i) => {
         const key = serializer(String(i), prefix, {
           isArrayIndex: true,
-          isEmpty: false,
           hasSpecialCharacters: false,
+          canUseDotNotation: false,
         });
         if (isObject(item)) {
           const res = helper(item, key, result);
@@ -56,11 +57,14 @@ export const flatten = <T>(
     // recursively handle plain objects
     if (isPlainObject(obj)) {
       Object.entries(obj).forEach(([k, item]) => {
+        const hasSpecialCharacters = SPECIAL_CHARACTER_REGEX.test(k);
+        const startsWithNumber = /^\d/.test(k);
+        const isEmpty = k === '';
         const key = serializer(k, prefix, {
-          isEmpty: k === '',
           isArrayIndex: false,
-          hasSpecialCharacters:
-            /[.'"\s\\\b\f\n\r\t\v{}()[\];,<>=!+\-*%&|^~?:]|^\d+\D/.test(k),
+          hasSpecialCharacters,
+          canUseDotNotation:
+            !hasSpecialCharacters && !startsWithNumber && !isEmpty,
         });
         if (isObject(item)) {
           const res = helper(item, key, result);

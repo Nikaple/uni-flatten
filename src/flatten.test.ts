@@ -212,11 +212,7 @@ describe('flattenObject', () => {
             if (meta.isArrayIndex) {
               return `${prefix}.[${key}]`;
             }
-            if (
-              meta.hasSpecialCharacters ||
-              meta.isEmpty ||
-              /^\d+$/.test(key)
-            ) {
+            if (!meta.canUseDotNotation) {
               return `${prefix}[${JSON.stringify(key)}]`;
             }
             return prefix ? `${prefix}.${key}` : key;
