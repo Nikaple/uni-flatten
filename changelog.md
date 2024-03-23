@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+### [1.6.2](https://github.com/Nikaple/uni-flatten/compare/v1.6.1...v1.6.2) (2024-03-23)
+
+### 🐛 Fixes
+
+- **deps:** update dependency tsx to v4 [`5801887`](https://github.com/Nikaple/uni-flatten/commit/58018871cc71b3840b726b51cc6c7fe14dca0858).
+
 ### [1.6.1](https://github.com/Nikaple/uni-flatten/compare/v1.6.0...v1.6.1) (2024-03-22)
 
 ### 🐛 Fixes
