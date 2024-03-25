@@ -20,7 +20,7 @@ specifiers:
   typedoc: 0.25.12
   typescript: 5.4.3
   vitest: 1.4.0
-  yaml: 2.3.4
+  yaml: 2.4.1
 
 dependencies:
   tsx: 4.7.1
@@ -44,7 +44,7 @@ devDependencies:
   typedoc: 0.25.12_typescript@5.4.3
   typescript: 5.4.3
   vitest: 1.4.0
-  yaml: 2.3.4
+  yaml: 2.4.1
 
 packages:
 
@@ -5157,6 +5157,12 @@ packages:
   /yaml/2.3.4:
     resolution: {integrity: sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==}
     engines: {node: '>= 14'}
+    dev: true
+
+  /yaml/2.4.1:
+    resolution: {integrity: sha512-pIXzoImaqmfOrL7teGUBt/T7ZDnyeGBWyXQBvOVhLkWLN37GXv8NMLK406UY6dS51JfcQHsmcW5cJ441bHg6Lg==}
+    engines: {node: '>= 14'}
+    hasBin: true
     dev: true
 
   /yargs-parser/20.2.9:
