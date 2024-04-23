@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+### [1.6.3](https://github.com/Nikaple/uni-flatten/compare/v1.6.2...v1.6.3) (2024-04-23)
+
+### 🐛 Fixes
+
+- update docs of unflatten [`f861058`](https://github.com/Nikaple/uni-flatten/commit/f861058f998bbb18e889c923a08cf5d9ef1043fa).
+
 ### [1.6.2](https://github.com/Nikaple/uni-flatten/compare/v1.6.1...v1.6.2) (2024-03-23)
 
 ### 🐛 Fixes
