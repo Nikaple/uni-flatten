@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@commitlint/cli': 19.2.2
+  '@commitlint/cli': 19.3.0
   '@latipun7/commitlintrc': 1.1.3
   '@latipun7/releaserc': ^2.1.0
   '@typescript-eslint/eslint-plugin': 7.7.1
@@ -26,8 +26,8 @@ dependencies:
   tsx: 4.7.1
 
 devDependencies:
-  '@commitlint/cli': 19.2.2_typescript@5.4.5
-  '@latipun7/commitlintrc': 1.1.3_@commitlint+cli@19.2.2
+  '@commitlint/cli': 19.3.0_typescript@5.4.5
+  '@latipun7/commitlintrc': 1.1.3_@commitlint+cli@19.3.0
   '@latipun7/releaserc': mirrors.tencent.com/@latipun7/releaserc/2.2.0_semantic-release@23.0.6
   '@typescript-eslint/eslint-plugin': 7.7.1_z23mkqd7gzbipyxs63ket4booa
   '@typescript-eslint/parser': 7.7.1_te743w6atip6hhlha3uq43n2xe
@@ -117,12 +117,12 @@ packages:
     dev: true
     optional: true
 
-  /@commitlint/cli/19.2.2_typescript@5.4.5:
-    resolution: {integrity: sha512-P8cbOHfg2PQRzfICLSrzUVOCVMqjEZ8Hlth6mtJ4yOEjT47Q5PbIGymgX3rLVylNw+3IAT2Djn9IJ2wHbXFzBg==}
+  /@commitlint/cli/19.3.0_typescript@5.4.5:
+    resolution: {integrity: sha512-LgYWOwuDR7BSTQ9OLZ12m7F/qhNY+NpAyPBgo4YNMkACE7lGuUnuQq1yi9hz1KA4+3VqpOYl8H1rY/LYK43v7g==}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
-      '@commitlint/format': 19.0.3
+      '@commitlint/format': 19.3.0
       '@commitlint/lint': 19.2.2
       '@commitlint/load': 19.2.0_typescript@5.4.5
       '@commitlint/read': 19.2.1
@@ -159,8 +159,8 @@ packages:
     engines: {node: '>=v18'}
     dev: true
 
-  /@commitlint/format/19.0.3:
-    resolution: {integrity: sha512-QjjyGyoiVWzx1f5xOteKHNLFyhyweVifMgopozSgx1fGNrGV8+wp7k6n1t6StHdJ6maQJ+UUtO2TcEiBFRyR6Q==}
+  /@commitlint/format/19.3.0:
+    resolution: {integrity: sha512-luguk5/aF68HiF4H23ACAfk8qS8AHxl4LLN5oxPc24H+2+JRPsNr1OS3Gaea0CrH7PKhArBMKBz5RX9sA5NtTg==}
     engines: {node: '>=v18'}
     dependencies:
       '@commitlint/types': 19.0.3
@@ -572,7 +572,7 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@latipun7/commitlintrc/1.1.3_@commitlint+cli@19.2.2:
+  /@latipun7/commitlintrc/1.1.3_@commitlint+cli@19.3.0:
     resolution: {integrity: sha512-9MMuq2Z7VZAzpCR9WxNhb3jGKqioj9AfEfOtN+X4XYw2D5huq8zrP8Vux+V6HQo60URYKMgwdC78KybbtPBsug==}
     engines: {node: '>=14.8.0'}
     peerDependencies:
@@ -588,7 +588,7 @@ packages:
       inquirer:
         optional: true
     dependencies:
-      '@commitlint/cli': 19.2.2_typescript@5.4.5
+      '@commitlint/cli': 19.3.0_typescript@5.4.5
       conventional-changelog-conventionalcommits: mirrors.tencent.com/conventional-changelog-conventionalcommits/4.6.3
     dev: true
 
