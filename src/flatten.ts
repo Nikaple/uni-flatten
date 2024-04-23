@@ -90,9 +90,9 @@ export const flatten = <T>(
  *
  * @example
  *
- * flatten({ "a.b": 1 }) // { a: { b: 1 } }
- * flatten({ "a.b[0]": 1 }) // { a: { b: [1] } }
- * flatten({ 'a["?"][0]': 1 }) // { a: { '?': [1] } }
+ * unflatten({ "a.b": 1 }) // { a: { b: 1 } }
+ * unflatten({ "a.b[0]": 1 }) // { a: { b: [1] } }
+ * unflatten({ 'a["?"][0]': 1 }) // { a: { '?': [1] } }
  */
 export const unflatten = (obj: any, options?: UniFlattenOptions) => {
   const circularEntries: [string, any][] = [];
