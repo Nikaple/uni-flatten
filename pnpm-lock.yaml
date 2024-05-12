@@ -14,7 +14,7 @@ specifiers:
   husky: 9.0.11
   lint-staged: 15.2.2
   prettier: 2.8.8
-  rimraf: 5.0.5
+  rimraf: 5.0.7
   semantic-release: ^23.0.0
   tsx: ^4.0.0
   typedoc: 0.25.13
@@ -39,7 +39,7 @@ devDependencies:
   husky: 9.0.11
   lint-staged: 15.2.2
   prettier: mirrors.tencent.com/prettier/2.8.8
-  rimraf: 5.0.5
+  rimraf: 5.0.7
   semantic-release: 23.0.6_typescript@5.4.5
   typedoc: 0.25.13_typescript@5.4.5
   typescript: 5.4.5
@@ -2459,7 +2459,7 @@ packages:
     dependencies:
       foreground-child: 3.1.1
       jackspeak: 2.2.3
-      minimatch: 9.0.3
+      minimatch: 9.0.4
       minipass: 7.0.2
       path-scurry: 1.10.1
     dev: true
@@ -4020,9 +4020,9 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rimraf/5.0.5:
-    resolution: {integrity: sha512-CqDakW+hMe/Bz202FPEymy68P+G50RfMQK+Qo5YUqc9SPipvbGjCGKd0RSKEelbsfQuw3g5NZDSrlZZAJurH1A==}
-    engines: {node: '>=14'}
+  /rimraf/5.0.7:
+    resolution: {integrity: sha512-nV6YcJo5wbLW77m+8KjH8aB/7/rxQy9SZ0HY5shnwULfS+9nmTtVXAJET5NdZmCzA4fPI/Hm1wo/Po/4mopOdg==}
+    engines: {node: '>=14.18'}
     hasBin: true
     dependencies:
       glob: 10.3.7
