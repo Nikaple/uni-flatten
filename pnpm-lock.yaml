@@ -17,7 +17,7 @@ specifiers:
   rimraf: 5.0.7
   semantic-release: ^24.0.0
   tsx: ^4.0.0
-  typedoc: 0.25.13
+  typedoc: 0.26.1
   typescript: 5.5.2
   vitest: 1.6.0
   yaml: 2.4.5
@@ -41,7 +41,7 @@ devDependencies:
   prettier: mirrors.tencent.com/prettier/2.8.8
   rimraf: 5.0.7
   semantic-release: 24.0.0_typescript@5.5.2
-  typedoc: 0.25.13_typescript@5.5.2
+  typedoc: 0.26.1_typescript@5.5.2
   typescript: 5.5.2
   vitest: 1.6.0
   yaml: 2.4.5
@@ -939,6 +939,10 @@ packages:
       - supports-color
     dev: true
 
+  /@shikijs/core/1.9.0:
+    resolution: {integrity: sha512-cbSoY8P/jgGByG8UOl3jnP/CWg/Qk+1q+eAKWtcrU3pNoILF8wTsLB0jT44qUBV8Ce1SvA9uqcM9Xf+u3fJFBw==}
+    dev: true
+
   /@sinclair/typebox/0.27.8:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
@@ -1272,10 +1276,6 @@ packages:
   /ansi-regex/6.0.1:
     resolution: {integrity: sha512-n5M855fKb2SsfMIiFFoVrABHJC8QtHwVx+mHWP3QcEqBHYienj5dHSgjbxtC0WEZXYt4wcD6zrQElDPhFuZgfA==}
     engines: {node: '>=12'}
-    dev: true
-
-  /ansi-sequence-parser/1.1.1:
-    resolution: {integrity: sha512-vJXt3yiaUL4UU546s3rPXlsry/RnM730G1+HkpKE012AN0sx1eOrxSu95oKDIonskeLTijMgqWZ3uDEe3NFvyg==}
     dev: true
 
   /ansi-styles/3.2.1:
@@ -1830,6 +1830,15 @@ packages:
 
   /emojilib/2.4.0:
     resolution: {integrity: sha512-5U0rVMU5Y2n2+ykNLQqMoqklN9ICBT/KsvC1Gz6vqHbz2AXXGkG+Pm5rMWk/8Vjrr/mY9985Hi8DYzn1F09Nyw==}
+    dev: true
+
+  /entities/2.0.3:
+    resolution: {integrity: sha512-MyoZ0jgnLvB2X3Lg5HqpFmn1kybDiIfEQmKzTb5apr51Rb+T3KdmMiqa70T+bhGnyv7bQ6WMj2QMHpGMmlrUYQ==}
+    dev: true
+
+  /entities/4.5.0:
+    resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
+    engines: {node: '>=0.12'}
     dev: true
 
   /env-ci/11.0.0:
@@ -3134,6 +3143,18 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
+  /linkify-it/2.2.0:
+    resolution: {integrity: sha512-GnAl/knGn+i1U/wjBz3akz2stz+HrHLsxMwHQGofCDfPvlf+gDKN58UtfmUquTY4/MXeE2x7k19KQmeoZi94Iw==}
+    dependencies:
+      uc.micro: 1.0.6
+    dev: true
+
+  /linkify-it/5.0.0:
+    resolution: {integrity: sha512-5aHCbzQRADcdP+ATqnDuhhJ/MRIqDkZX5pyjFHRRysS8vZ5AbqGEoFIb6pYHPZ+L/OC2Lc+xT8uHVVR5CAK/wQ==}
+    dependencies:
+      uc.micro: 2.1.0
+    dev: true
+
   /lint-staged/15.2.7:
     resolution: {integrity: sha512-+FdVbbCZ+yoh7E/RosSdqKJyUM2OEjTciH0TFNkawKgvFp1zbGlEC39RADg+xKBG1R4mhoH2j85myBQZ5wR+lw==}
     engines: {node: '>=18.12.0'}
@@ -3320,6 +3341,29 @@ packages:
       semver: 7.6.0
     dev: true
 
+  /markdown-it/10.0.0:
+    resolution: {integrity: sha512-YWOP1j7UbDNz+TumYP1kpwnP0aEa711cJjrAQrzd0UXlbJfc5aAq0F/PZHjiioqDC1NKgvIMX+o+9Bk7yuM2dg==}
+    hasBin: true
+    dependencies:
+      argparse: 1.0.10
+      entities: 2.0.3
+      linkify-it: 2.2.0
+      mdurl: 1.0.1
+      uc.micro: 1.0.6
+    dev: true
+
+  /markdown-it/14.1.0:
+    resolution: {integrity: sha512-a54IwgWPaeBCAAsv13YgmALOF1elABB08FxO9i+r4VFk5Vl4pKokRPeX8u5TCgSsPi6ec1otfLjdOpVcgbpshg==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
+      entities: 4.5.0
+      linkify-it: 5.0.0
+      mdurl: 2.0.0
+      punycode.js: 2.3.1
+      uc.micro: 2.1.0
+    dev: true
+
   /marked-terminal/7.0.0_marked@12.0.1:
     resolution: {integrity: sha512-sNEx8nn9Ktcm6pL0TnRz8tnXq/mSS0Q1FRSwJOAqw4lAB4l49UeDf85Gm1n9RPFm5qurCPjwi1StAQT2XExhZw==}
     engines: {node: '>=16.0.0'}
@@ -3341,10 +3385,12 @@ packages:
     hasBin: true
     dev: true
 
-  /marked/4.3.0:
-    resolution: {integrity: sha512-PRsaiG84bK+AMvxziE/lCFss8juXjNaWzVbN5tXAm4XjeaS9NAHhop+PjQxz2A9h8Q4M/xGmzP8vqNwy6JeK0A==}
-    engines: {node: '>= 12'}
-    hasBin: true
+  /mdurl/1.0.1:
+    resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
+    dev: true
+
+  /mdurl/2.0.0:
+    resolution: {integrity: sha512-Lf+9+2r+Tdp5wXDXC4PcIBjTDtq4UKjCPMQhKIuzpJNW0b96kVqSwW0bT7FhRSfmAiFYgP+SCRvdrDozfh0U5w==}
     dev: true
 
   /meow/12.1.1:
@@ -3400,13 +3446,6 @@ packages:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
     dependencies:
       brace-expansion: 1.1.11
-    dev: true
-
-  /minimatch/9.0.3:
-    resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
-    engines: {node: '>=16 || 14 >=14.17'}
-    dependencies:
-      brace-expansion: 2.0.1
     dev: true
 
   /minimatch/9.0.4:
@@ -3825,7 +3864,7 @@ packages:
   /parse5/7.1.2:
     resolution: {integrity: sha512-Czj1WaSVpaoj0wbhMzLmWD69anp2WH7FXMB9n1Sy8/ZFF9jolSQVMu1Ij5WIyGmcBmhk7EOndpO4mIpihVqAXw==}
     dependencies:
-      entities: mirrors.tencent.com/entities/4.5.0
+      entities: 4.5.0
     dev: true
 
   /path-exists/3.0.0:
@@ -3960,6 +3999,11 @@ packages:
 
   /proto-list/1.2.4:
     resolution: {integrity: sha512-vtK/94akxsTMhe0/cbfpR+syPuszcuwhqVjJq26CuNDgFGj682oRBXOP5MJpv2r7JtE8MsiepGIqvvOTBwn2vA==}
+    dev: true
+
+  /punycode.js/2.3.1:
+    resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
+    engines: {node: '>=6'}
     dev: true
 
   /punycode/2.3.0:
@@ -4250,13 +4294,10 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /shiki/0.14.7:
-    resolution: {integrity: sha512-dNPAPrxSc87ua2sKJ3H5dQ/6ZaY8RNnaAqK+t0eG7p0Soi2ydiqbGOTaZCqaYvA/uZYfS1LJnemt3Q+mSfcPCg==}
+  /shiki/1.9.0:
+    resolution: {integrity: sha512-i6//Lqgn7+7nZA0qVjoYH0085YdNk4MC+tJV4bo+HgjgRMJ0JmkLZzFAuvVioJqLkcGDK5GAMpghZEZkCnwxpQ==}
     dependencies:
-      ansi-sequence-parser: 1.1.1
-      jsonc-parser: 3.2.0
-      vscode-oniguruma: 1.7.0
-      vscode-textmate: 8.0.0
+      '@shikijs/core': 1.9.0
     dev: true
 
   /side-channel/1.0.4:
@@ -4747,24 +4788,33 @@ packages:
       is-typed-array: 1.1.12
     dev: true
 
-  /typedoc/0.25.13_typescript@5.5.2:
-    resolution: {integrity: sha512-pQqiwiJ+Z4pigfOnnysObszLiU3mVLWAExSPf+Mu06G/qsc3wzbuM56SZQvONhHLncLUhYzOVkjFFpFfL5AzhQ==}
-    engines: {node: '>= 16'}
+  /typedoc/0.26.1_typescript@5.5.2:
+    resolution: {integrity: sha512-APsVXqh93jTlpkLuw6+/IORx7n5LN8hzJV8nvMIrYYaIva0VCq0CoDN7Z3hsRThEYVExI/qoFHnAAxrhG+Wd7Q==}
+    engines: {node: '>= 18'}
     hasBin: true
     peerDependencies:
-      typescript: 4.6.x || 4.7.x || 4.8.x || 4.9.x || 5.0.x || 5.1.x || 5.2.x || 5.3.x || 5.4.x
+      typescript: 4.6.x || 4.7.x || 4.8.x || 4.9.x || 5.0.x || 5.1.x || 5.2.x || 5.3.x || 5.4.x || 5.5.x
     dependencies:
       lunr: 2.3.9
-      marked: 4.3.0
-      minimatch: 9.0.3
-      shiki: 0.14.7
+      markdown-it: 14.1.0
+      minimatch: 9.0.4
+      shiki: 1.9.0
       typescript: 5.5.2
+      yaml: 2.4.5
     dev: true
 
   /typescript/5.5.2:
     resolution: {integrity: sha512-NcRtPEOsPFFWjobJEtfihkLCZCXZt/os3zf8nTxjVH3RvTSxjrCamJpbExGvYOF+tFHc3pA65qpdwPbzjohhew==}
     engines: {node: '>=14.17'}
     hasBin: true
+    dev: true
+
+  /uc.micro/1.0.6:
+    resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
+    dev: true
+
+  /uc.micro/2.1.0:
+    resolution: {integrity: sha512-ARDJmphmdvUk6Glw7y9DQ2bFkKBHwQHLi2lsaH6PPmz/Ka9sFOBsBluozhDltWmnv9u/cF6Rt87znRTPV+yp/A==}
     dev: true
 
   /ufo/1.3.2:
@@ -4979,7 +5029,7 @@ packages:
       keytar: mirrors.tencent.com/keytar/7.9.0
       leven: mirrors.tencent.com/leven/3.1.0
       lodash: 4.17.21
-      markdown-it: mirrors.tencent.com/markdown-it/10.0.0
+      markdown-it: 10.0.0
       mime: 1.6.0
       minimatch: 3.1.2
       osenv: mirrors.tencent.com/osenv/0.1.5
@@ -5007,7 +5057,7 @@ packages:
       glob: 7.2.3
       leven: mirrors.tencent.com/leven/3.1.0
       lodash: 4.17.21
-      markdown-it: mirrors.tencent.com/markdown-it/10.0.0
+      markdown-it: 10.0.0
       mime: 1.6.0
       minimatch: 3.1.2
       osenv: mirrors.tencent.com/osenv/0.1.5
@@ -5019,14 +5069,6 @@ packages:
       url-join: 1.1.0
       yauzl: mirrors.tencent.com/yauzl/2.10.0
       yazl: mirrors.tencent.com/yazl/2.5.1
-    dev: true
-
-  /vscode-oniguruma/1.7.0:
-    resolution: {integrity: sha512-L9WMGRfrjOhgHSdOYgCt/yRMsXzLDJSL7BPrOZt73gU0iWO4mpqzqQzOz5srxqTvMBaR0XZTSrVWo4j55Rc6cA==}
-    dev: true
-
-  /vscode-textmate/8.0.0:
-    resolution: {integrity: sha512-AFbieoL7a5LMqcnOF04ji+rpXadgOXnZsxQr//r83kLPr7biP7am3g9zbaZIaBGwBRWeSvoMD4mgPdX3e4NWBg==}
     dev: true
 
   /which-boxed-primitive/1.0.2:
@@ -5389,7 +5431,7 @@ packages:
     dependencies:
       domelementtype: mirrors.tencent.com/domelementtype/2.3.0
       domhandler: mirrors.tencent.com/domhandler/5.0.3
-      entities: mirrors.tencent.com/entities/4.5.0
+      entities: 4.5.0
     dev: true
 
   mirrors.tencent.com/domelementtype/2.3.0:
@@ -5423,19 +5465,6 @@ packages:
     version: 1.4.4
     dependencies:
       once: 1.4.0
-    dev: true
-
-  mirrors.tencent.com/entities/2.0.3:
-    resolution: {integrity: sha512-MyoZ0jgnLvB2X3Lg5HqpFmn1kybDiIfEQmKzTb5apr51Rb+T3KdmMiqa70T+bhGnyv7bQ6WMj2QMHpGMmlrUYQ==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/entities/-/entities-2.0.3.tgz}
-    name: entities
-    version: 2.0.3
-    dev: true
-
-  mirrors.tencent.com/entities/4.5.0:
-    resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/entities/-/entities-4.5.0.tgz}
-    name: entities
-    version: 4.5.0
-    engines: {node: '>=0.12'}
     dev: true
 
   mirrors.tencent.com/expand-template/2.0.3:
@@ -5491,7 +5520,7 @@ packages:
       domelementtype: mirrors.tencent.com/domelementtype/2.3.0
       domhandler: mirrors.tencent.com/domhandler/5.0.3
       domutils: mirrors.tencent.com/domutils/3.1.0
-      entities: mirrors.tencent.com/entities/4.5.0
+      entities: 4.5.0
     dev: true
 
   mirrors.tencent.com/ieee754/1.2.1:
@@ -5526,37 +5555,10 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  mirrors.tencent.com/linkify-it/2.2.0:
-    resolution: {integrity: sha512-GnAl/knGn+i1U/wjBz3akz2stz+HrHLsxMwHQGofCDfPvlf+gDKN58UtfmUquTY4/MXeE2x7k19KQmeoZi94Iw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/linkify-it/-/linkify-it-2.2.0.tgz}
-    name: linkify-it
-    version: 2.2.0
-    dependencies:
-      uc.micro: mirrors.tencent.com/uc.micro/1.0.6
-    dev: true
-
   mirrors.tencent.com/lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/lodash/-/lodash-4.17.21.tgz}
     name: lodash
     version: 4.17.21
-    dev: true
-
-  mirrors.tencent.com/markdown-it/10.0.0:
-    resolution: {integrity: sha512-YWOP1j7UbDNz+TumYP1kpwnP0aEa711cJjrAQrzd0UXlbJfc5aAq0F/PZHjiioqDC1NKgvIMX+o+9Bk7yuM2dg==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/markdown-it/-/markdown-it-10.0.0.tgz}
-    name: markdown-it
-    version: 10.0.0
-    hasBin: true
-    dependencies:
-      argparse: 1.0.10
-      entities: mirrors.tencent.com/entities/2.0.3
-      linkify-it: mirrors.tencent.com/linkify-it/2.2.0
-      mdurl: mirrors.tencent.com/mdurl/1.0.1
-      uc.micro: mirrors.tencent.com/uc.micro/1.0.6
-    dev: true
-
-  mirrors.tencent.com/mdurl/1.0.1:
-    resolution: {integrity: sha1-/oWy7HWlkDfyrf7BAP1sYBdhFS4=, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/mdurl/-/mdurl-1.0.1.tgz}
-    name: mdurl
-    version: 1.0.1
     dev: true
 
   mirrors.tencent.com/mimic-response/3.1.0:
@@ -5841,12 +5843,6 @@ packages:
       qs: mirrors.tencent.com/qs/6.11.2
       tunnel: 0.0.6
       underscore: mirrors.tencent.com/underscore/1.13.6
-    dev: true
-
-  mirrors.tencent.com/uc.micro/1.0.6:
-    resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/uc.micro/-/uc.micro-1.0.6.tgz}
-    name: uc.micro
-    version: 1.0.6
     dev: true
 
   mirrors.tencent.com/underscore/1.13.6:
