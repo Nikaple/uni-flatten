@@ -23,7 +23,7 @@ specifiers:
   yaml: 2.4.5
 
 dependencies:
-  tsx: 4.7.1
+  tsx: 4.7.2
 
 devDependencies:
   '@commitlint/cli': 19.3.0_typescript@5.5.2
@@ -4692,8 +4692,8 @@ packages:
       strip-bom: 3.0.0
     dev: true
 
-  /tsx/4.7.1:
-    resolution: {integrity: sha512-8d6VuibXHtlN5E3zFkgY8u4DX7Y3Z27zvvPKVmLon/D4AjuKzarkUBTLDBgj9iTQ0hg5xM7c/mYiRVM+HETf0g==}
+  /tsx/4.7.2:
+    resolution: {integrity: sha512-BCNd4kz6fz12fyrgCTEdZHGJ9fWTGeUzXmQysh0RVocDY3h4frk05ZNCXSy4kIenF7y/QnrdiVpTsyNRn6vlAw==}
     engines: {node: '>=18.0.0'}
     hasBin: true
     dependencies:
