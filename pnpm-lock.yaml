@@ -13,7 +13,7 @@ specifiers:
   eslint-plugin-prettier: 4.2.1
   husky: 9.0.11
   lint-staged: 15.2.7
-  prettier: 2.8.8
+  prettier: 3.3.2
   rimraf: 5.0.7
   semantic-release: ^24.0.0
   tsx: ^4.0.0
@@ -35,10 +35,10 @@ devDependencies:
   eslint: 8.57.0
   eslint-config-prettier: 9.1.0_eslint@8.57.0
   eslint-plugin-import: 2.29.1_jypevouolgoccvsb2ktsquw2jq
-  eslint-plugin-prettier: 4.2.1_zeqqbltizyzbm6db3c6p5ijw5i
+  eslint-plugin-prettier: 4.2.1_l5rqmuggcievdbel77zlrp73ji
   husky: 9.0.11
   lint-staged: 15.2.7
-  prettier: mirrors.tencent.com/prettier/2.8.8
+  prettier: 3.3.2
   rimraf: 5.0.7
   semantic-release: 24.0.0_typescript@5.5.3
   typedoc: 0.26.3_typescript@5.5.3
@@ -2062,7 +2062,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_zeqqbltizyzbm6db3c6p5ijw5i:
+  /eslint-plugin-prettier/4.2.1_l5rqmuggcievdbel77zlrp73ji:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -2075,7 +2075,7 @@ packages:
     dependencies:
       eslint: 8.57.0
       eslint-config-prettier: 9.1.0_eslint@8.57.0
-      prettier: mirrors.tencent.com/prettier/2.8.8
+      prettier: 3.3.2
       prettier-linter-helpers: mirrors.tencent.com/prettier-linter-helpers/1.0.0
     dev: true
 
@@ -3977,6 +3977,12 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
+  /prettier/3.3.2:
+    resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
+
   /pretty-format/29.7.0:
     resolution: {integrity: sha512-Pdlw/oPxN+aXdmM9R00JVC9WVFoCLTKJvDVLgmJ+qAffBMxsV85l/Lu7sNx4zSzPyoL2euImuEwHhOXdEgNFZQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -5691,14 +5697,6 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       fast-diff: mirrors.tencent.com/fast-diff/1.3.0
-    dev: true
-
-  mirrors.tencent.com/prettier/2.8.8:
-    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/prettier/-/prettier-2.8.8.tgz}
-    name: prettier
-    version: 2.8.8
-    engines: {node: '>=10.13.0'}
-    hasBin: true
     dev: true
 
   mirrors.tencent.com/pump/3.0.0:
