@@ -14,7 +14,7 @@ specifiers:
   husky: 9.0.11
   lint-staged: 15.2.7
   prettier: 2.8.8
-  rimraf: 5.0.7
+  rimraf: 5.0.8
   semantic-release: ^24.0.0
   tsx: ^4.0.0
   typedoc: 0.26.3
@@ -39,7 +39,7 @@ devDependencies:
   husky: 9.0.11
   lint-staged: 15.2.7
   prettier: mirrors.tencent.com/prettier/2.8.8
-  rimraf: 5.0.7
+  rimraf: 5.0.8
   semantic-release: 24.0.0_typescript@5.5.3
   typedoc: 0.26.3_typescript@5.5.3
   typescript: 5.5.3
@@ -2527,6 +2527,7 @@ packages:
 
   /glob/7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -4148,14 +4149,15 @@ packages:
 
   /rimraf/3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
     dependencies:
       glob: 7.2.3
     dev: true
 
-  /rimraf/5.0.7:
-    resolution: {integrity: sha512-nV6YcJo5wbLW77m+8KjH8aB/7/rxQy9SZ0HY5shnwULfS+9nmTtVXAJET5NdZmCzA4fPI/Hm1wo/Po/4mopOdg==}
-    engines: {node: '>=14.18'}
+  /rimraf/5.0.8:
+    resolution: {integrity: sha512-XSh0V2/yNhDEi8HwdIefD8MLgs4LQXPag/nEJWs3YUc3Upn+UHa1GyIkEg9xSSNt7HnkO5FjTvmcRzgf+8UZuw==}
+    engines: {node: '>=18'}
     hasBin: true
     dependencies:
       glob: 10.3.7
