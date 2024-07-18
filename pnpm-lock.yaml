@@ -11,7 +11,7 @@ specifiers:
   eslint-config-prettier: 9.1.0
   eslint-plugin-import: 2.29.1
   eslint-plugin-prettier: 4.2.1
-  husky: 9.1.0
+  husky: 9.1.1
   lint-staged: 15.2.7
   prettier: 2.8.8
   rimraf: 6.0.1
@@ -36,7 +36,7 @@ devDependencies:
   eslint-config-prettier: 9.1.0_eslint@8.57.0
   eslint-plugin-import: 2.29.1_hro6fjou66p7o4yxtcytlonwou
   eslint-plugin-prettier: 4.2.1_zeqqbltizyzbm6db3c6p5ijw5i
-  husky: 9.1.0
+  husky: 9.1.1
   lint-staged: 15.2.7
   prettier: mirrors.tencent.com/prettier/2.8.8
   rimraf: 6.0.1
@@ -2724,8 +2724,8 @@ packages:
     engines: {node: '>=18.18.0'}
     dev: true
 
-  /husky/9.1.0:
-    resolution: {integrity: sha512-8XCjbomYTGdNF2h50dio3T3zghmZ9f/ZNzr99YwSkvDdhEjJGs5qzy8tbFx+SG8yCx2wn9nMVfZxVrr/yT8gNQ==}
+  /husky/9.1.1:
+    resolution: {integrity: sha512-fCqlqLXcBnXa/TJXmT93/A36tJsjdJkibQ1MuIiFyCCYUlpYpIaj2mv1w+3KR6Rzu1IC3slFTje5f6DUp2A2rg==}
     engines: {node: '>=18'}
     hasBin: true
     dev: true
