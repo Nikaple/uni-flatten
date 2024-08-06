@@ -36,9 +36,6 @@
     "prerelease": "npm run build",
     "release": "semantic-release"
   },
-  "dependencies": {
-    "tsx": "^4.0.0"
-  },
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
     "@latipun7/commitlintrc": "1.1.3",
