@@ -1,6 +1,6 @@
 {
   "name": "uni-flatten",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "Flattens a nested object, or convert it back **perfectly**. ",
   "author": "Nikaple Zhou",
   "license": "MIT",
