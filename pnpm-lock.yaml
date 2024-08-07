@@ -1,5 +1,8 @@
 lockfileVersion: 5.4
 
+overrides:
+  conventional-changelog-conventionalcommits: '>= 8.0.0'
+
 specifiers:
   '@commitlint/cli': 19.3.0
   '@latipun7/commitlintrc': 1.1.3
@@ -719,7 +722,7 @@ packages:
         optional: true
     dependencies:
       '@commitlint/cli': mirrors.tencent.com/@commitlint/cli/19.3.0_typescript@5.5.4
-      conventional-changelog-conventionalcommits: mirrors.tencent.com/conventional-changelog-conventionalcommits/4.6.3
+      conventional-changelog-conventionalcommits: mirrors.tencent.com/conventional-changelog-conventionalcommits/8.0.0
     dev: true
 
   mirrors.tencent.com/@latipun7/releaserc/2.2.0_semantic-release@24.0.0:
@@ -737,7 +740,7 @@ packages:
     dependencies:
       '@semantic-release/changelog': mirrors.tencent.com/@semantic-release/changelog/6.0.3_semantic-release@24.0.0
       '@semantic-release/git': mirrors.tencent.com/@semantic-release/git/10.0.1_semantic-release@24.0.0
-      conventional-changelog-conventionalcommits: mirrors.tencent.com/conventional-changelog-conventionalcommits/4.6.3
+      conventional-changelog-conventionalcommits: mirrors.tencent.com/conventional-changelog-conventionalcommits/8.0.0
       read-pkg: mirrors.tencent.com/read-pkg/5.2.0
       semantic-release: mirrors.tencent.com/semantic-release/24.0.0_typescript@5.5.4
       semantic-release-vsce: mirrors.tencent.com/semantic-release-vsce/3.5.0_semantic-release@24.0.0
@@ -2221,15 +2224,13 @@ packages:
       compare-func: mirrors.tencent.com/compare-func/2.0.0
     dev: true
 
-  mirrors.tencent.com/conventional-changelog-conventionalcommits/4.6.3:
-    resolution: {integrity: sha512-LTTQV4fwOM4oLPad317V/QNQ1FY4Hju5qeBIM1uTHbrnCE+Eg4CdRZ3gO2pUeR+tzWdp80M2j3qFFEDWVqOV4g==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-4.6.3.tgz}
+  mirrors.tencent.com/conventional-changelog-conventionalcommits/8.0.0:
+    resolution: {integrity: sha512-eOvlTO6OcySPyyyk8pKz2dP4jjElYunj9hn9/s0OB+gapTO8zwS9UQWrZ1pmF2hFs3vw1xhonOLGcGjy/zgsuA==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-8.0.0.tgz}
     name: conventional-changelog-conventionalcommits
-    version: 4.6.3
-    engines: {node: '>=10'}
+    version: 8.0.0
+    engines: {node: '>=18'}
     dependencies:
       compare-func: mirrors.tencent.com/compare-func/2.0.0
-      lodash: mirrors.tencent.com/lodash/4.17.21
-      q: mirrors.tencent.com/q/1.5.1
     dev: true
 
   mirrors.tencent.com/conventional-changelog-writer/8.0.0:
@@ -5700,13 +5701,6 @@ packages:
     name: punycode
     version: 2.3.1
     engines: {node: '>=6'}
-    dev: true
-
-  mirrors.tencent.com/q/1.5.1:
-    resolution: {integrity: sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/q/-/q-1.5.1.tgz}
-    name: q
-    version: 1.5.1
-    engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
     dev: true
 
   mirrors.tencent.com/qs/6.13.0:

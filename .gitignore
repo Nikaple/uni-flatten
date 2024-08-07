@@ -20,3 +20,5 @@ dist
 
 # docs
 docs
+
+yarn-error.log
