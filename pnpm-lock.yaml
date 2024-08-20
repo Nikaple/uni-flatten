@@ -14,7 +14,7 @@ specifiers:
   eslint-config-prettier: 9.1.0
   eslint-plugin-import: 2.29.1
   eslint-plugin-prettier: 4.2.1
-  husky: 9.1.4
+  husky: 9.1.5
   lint-staged: 15.2.9
   prettier: 2.8.8
   rimraf: 6.0.1
@@ -34,7 +34,7 @@ devDependencies:
   eslint-config-prettier: mirrors.tencent.com/eslint-config-prettier/9.1.0_eslint@8.57.0
   eslint-plugin-import: mirrors.tencent.com/eslint-plugin-import/2.29.1_3rfxzsheworr7o6arqb3snpdiy
   eslint-plugin-prettier: mirrors.tencent.com/eslint-plugin-prettier/4.2.1_zeqqbltizyzbm6db3c6p5ijw5i
-  husky: mirrors.tencent.com/husky/9.1.4
+  husky: 9.1.5
   lint-staged: 15.2.9
   prettier: mirrors.tencent.com/prettier/2.8.8
   rimraf: mirrors.tencent.com/rimraf/6.0.1
@@ -1111,6 +1111,12 @@ packages:
   /human-signals/7.0.0:
     resolution: {integrity: sha512-74kytxOUSvNbjrT9KisAbaTZ/eJwD/LrbM/kh5j0IhPuJzwuA19dWvniFGwBzN9rVjg+O/e+F310PjObDXS+9Q==}
     engines: {node: '>=18.18.0'}
+    dev: true
+
+  /husky/9.1.5:
+    resolution: {integrity: sha512-rowAVRUBfI0b4+niA4SJMhfQwc107VLkBUgEYYAOQAbqDCnra1nYh83hF/MDmhYs9t9n1E3DuKOrs2LYNC+0Ag==}
+    engines: {node: '>=18'}
+    hasBin: true
     dev: true
 
   /import-fresh/3.3.0:
@@ -4516,14 +4522,6 @@ packages:
       debug: 4.3.6
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  mirrors.tencent.com/husky/9.1.4:
-    resolution: {integrity: sha512-bho94YyReb4JV7LYWRWxZ/xr6TtOTt8cMfmQ39MQYJ7f/YE268s3GdghGwi+y4zAeqewE5zYLvuhV0M0ijsDEA==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/husky/-/husky-9.1.4.tgz}
-    name: husky
-    version: 9.1.4
-    engines: {node: '>=18'}
-    hasBin: true
     dev: true
 
   mirrors.tencent.com/ieee754/1.2.1:
