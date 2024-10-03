@@ -12,7 +12,7 @@ specifiers:
   '@vitest/coverage-v8': ^2.0.0
   eslint: 8.57.1
   eslint-config-prettier: 9.1.0
-  eslint-plugin-import: 2.30.0
+  eslint-plugin-import: 2.31.0
   eslint-plugin-prettier: 4.2.1
   husky: 9.1.6
   lint-staged: 15.2.10
@@ -32,7 +32,7 @@ devDependencies:
   '@vitest/coverage-v8': mirrors.tencent.com/@vitest/coverage-v8/2.0.5_vitest@2.1.2
   eslint: 8.57.1
   eslint-config-prettier: mirrors.tencent.com/eslint-config-prettier/9.1.0_eslint@8.57.1
-  eslint-plugin-import: 2.30.0_olfayynnbksof5apoph6f3agwq
+  eslint-plugin-import: 2.31.0_olfayynnbksof5apoph6f3agwq
   eslint-plugin-prettier: mirrors.tencent.com/eslint-plugin-prettier/4.2.1_o6cgegp6polyisa35v7yglocei
   husky: 9.1.6
   lint-staged: 15.2.10
@@ -1461,8 +1461,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-module-utils/2.9.0_wchqizalz5gwmi4bip3o6jxw7u:
-    resolution: {integrity: sha512-McVbYmwA3NEKwRQY5g4aWMdcZE5xZxV8i8l7CqJSrameuGSQJtSWaL/LxTEzSKKaCcOhlpDR8XEfYXWPrdo/ZQ==}
+  /eslint-module-utils/2.12.0_wchqizalz5gwmi4bip3o6jxw7u:
+    resolution: {integrity: sha512-wALZ0HFoytlyh/1+4wuZ9FJCD/leWHQzzrxJ8+rebyReSLk7LApMyd3WJaLVoN+D5+WIdJyDK1c6JnE65V4Zyg==}
     engines: {node: '>=4'}
     peerDependencies:
       '@typescript-eslint/parser': '*'
@@ -1490,12 +1490,12 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-import/2.30.0_olfayynnbksof5apoph6f3agwq:
-    resolution: {integrity: sha512-/mHNE9jINJfiD2EKkg1BKyPyUk4zdnT54YgbOgfjSakWT5oyX/qQLVNTkehyfpcMxZXMy1zyonZ2v7hZTX43Yw==}
+  /eslint-plugin-import/2.31.0_olfayynnbksof5apoph6f3agwq:
+    resolution: {integrity: sha512-ixmkI62Rbc2/w8Vfxyh1jQRTdRTF52VxwRVHl/ykPAmqG+Nb7/kNn+byLP0LxPgI7zWA16Jt82SybJInmMia3A==}
     engines: {node: '>=4'}
     peerDependencies:
       '@typescript-eslint/parser': '*'
-      eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8
+      eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9
     peerDependenciesMeta:
       '@typescript-eslint/parser':
         optional: true
@@ -1510,7 +1510,7 @@ packages:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.9.0_wchqizalz5gwmi4bip3o6jxw7u
+      eslint-module-utils: 2.12.0_wchqizalz5gwmi4bip3o6jxw7u
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -1519,6 +1519,7 @@ packages:
       object.groupby: 1.0.3
       object.values: 1.2.0
       semver: 6.3.1
+      string.prototype.trimend: 1.0.8
       tsconfig-paths: 3.15.0
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
