@@ -7,8 +7,8 @@ specifiers:
   '@commitlint/cli': 19.6.0
   '@latipun7/commitlintrc': 1.1.3
   '@latipun7/releaserc': ^2.1.0
-  '@typescript-eslint/eslint-plugin': 7.18.0
-  '@typescript-eslint/parser': 7.18.0
+  '@typescript-eslint/eslint-plugin': 8.17.0
+  '@typescript-eslint/parser': 8.17.0
   '@vitest/coverage-v8': ^2.0.0
   eslint: 8.57.1
   eslint-config-prettier: 9.1.0
@@ -27,12 +27,12 @@ devDependencies:
   '@commitlint/cli': 19.6.0_typescript@5.7.2
   '@latipun7/commitlintrc': mirrors.tencent.com/@latipun7/commitlintrc/1.1.3_@commitlint+cli@19.6.0
   '@latipun7/releaserc': mirrors.tencent.com/@latipun7/releaserc/2.2.0_semantic-release@24.0.0
-  '@typescript-eslint/eslint-plugin': mirrors.tencent.com/@typescript-eslint/eslint-plugin/7.18.0_42mmuqown5buiycmzmdakhzdfm
-  '@typescript-eslint/parser': mirrors.tencent.com/@typescript-eslint/parser/7.18.0_6txzh3afdjfsavlpa2fczfkiua
+  '@typescript-eslint/eslint-plugin': 8.17.0_il57vo7kj2esdgyn7n2dgaksfq
+  '@typescript-eslint/parser': 8.17.0_6txzh3afdjfsavlpa2fczfkiua
   '@vitest/coverage-v8': mirrors.tencent.com/@vitest/coverage-v8/2.0.5_vitest@2.1.2
   eslint: 8.57.1
   eslint-config-prettier: mirrors.tencent.com/eslint-config-prettier/9.1.0_eslint@8.57.1
-  eslint-plugin-import: 2.31.0_olfayynnbksof5apoph6f3agwq
+  eslint-plugin-import: 2.31.0_h7eukosafzijufp7a6dgowsyhy
   eslint-plugin-prettier: mirrors.tencent.com/eslint-plugin-prettier/4.2.1_o6cgegp6polyisa35v7yglocei
   husky: 9.1.7
   lint-staged: 15.2.10
@@ -713,6 +713,137 @@ packages:
 
   /@types/unist/3.0.2:
     resolution: {integrity: sha512-dqId9J8K/vGi5Zr7oo212BGii5m3q5Hxlkwy3WpYuKPklmBEvsbMYYyLxAQpSffdLl/gdW0XUpKWFvYmyoWCoQ==}
+    dev: true
+
+  /@typescript-eslint/eslint-plugin/8.17.0_il57vo7kj2esdgyn7n2dgaksfq:
+    resolution: {integrity: sha512-HU1KAdW3Tt8zQkdvNoIijfWDMvdSweFYm4hWh+KwhPstv+sCmWb89hCIP8msFm9N1R/ooh9honpSuvqKWlYy3w==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      '@typescript-eslint/parser': ^8.0.0 || ^8.0.0-alpha.0
+      eslint: ^8.57.0 || ^9.0.0
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@eslint-community/regexpp': 4.11.0
+      '@typescript-eslint/parser': 8.17.0_6txzh3afdjfsavlpa2fczfkiua
+      '@typescript-eslint/scope-manager': 8.17.0
+      '@typescript-eslint/type-utils': 8.17.0_6txzh3afdjfsavlpa2fczfkiua
+      '@typescript-eslint/utils': 8.17.0_6txzh3afdjfsavlpa2fczfkiua
+      '@typescript-eslint/visitor-keys': 8.17.0
+      eslint: 8.57.1
+      graphemer: 1.4.0
+      ignore: 5.3.1
+      natural-compare: 1.4.0
+      ts-api-utils: 1.3.0_typescript@5.7.2
+      typescript: 5.7.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@typescript-eslint/parser/8.17.0_6txzh3afdjfsavlpa2fczfkiua:
+    resolution: {integrity: sha512-Drp39TXuUlD49F7ilHHCG7TTg8IkA+hxCuULdmzWYICxGXvDXmDmWEjJYZQYgf6l/TFfYNE167m7isnc3xlIEg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: ^8.57.0 || ^9.0.0
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@typescript-eslint/scope-manager': 8.17.0
+      '@typescript-eslint/types': 8.17.0
+      '@typescript-eslint/typescript-estree': 8.17.0_typescript@5.7.2
+      '@typescript-eslint/visitor-keys': 8.17.0
+      debug: 4.3.6
+      eslint: 8.57.1
+      typescript: 5.7.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@typescript-eslint/scope-manager/8.17.0:
+    resolution: {integrity: sha512-/ewp4XjvnxaREtqsZjF4Mfn078RD/9GmiEAtTeLQ7yFdKnqwTOgRMSvFz4et9U5RiJQ15WTGXPLj89zGusvxBg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    dependencies:
+      '@typescript-eslint/types': 8.17.0
+      '@typescript-eslint/visitor-keys': 8.17.0
+    dev: true
+
+  /@typescript-eslint/type-utils/8.17.0_6txzh3afdjfsavlpa2fczfkiua:
+    resolution: {integrity: sha512-q38llWJYPd63rRnJ6wY/ZQqIzPrBCkPdpIsaCfkR3Q4t3p6sb422zougfad4TFW9+ElIFLVDzWGiGAfbb/v2qw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: ^8.57.0 || ^9.0.0
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@typescript-eslint/typescript-estree': 8.17.0_typescript@5.7.2
+      '@typescript-eslint/utils': 8.17.0_6txzh3afdjfsavlpa2fczfkiua
+      debug: 4.3.6
+      eslint: 8.57.1
+      ts-api-utils: 1.3.0_typescript@5.7.2
+      typescript: 5.7.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@typescript-eslint/types/8.17.0:
+    resolution: {integrity: sha512-gY2TVzeve3z6crqh2Ic7Cr+CAv6pfb0Egee7J5UAVWCpVvDI/F71wNfolIim4FE6hT15EbpZFVUj9j5i38jYXA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    dev: true
+
+  /@typescript-eslint/typescript-estree/8.17.0_typescript@5.7.2:
+    resolution: {integrity: sha512-JqkOopc1nRKZpX+opvKqnM3XUlM7LpFMD0lYxTqOTKQfCWAmxw45e3qlOCsEqEB2yuacujivudOFpCnqkBDNMw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@typescript-eslint/types': 8.17.0
+      '@typescript-eslint/visitor-keys': 8.17.0
+      debug: 4.3.6
+      fast-glob: 3.3.2
+      is-glob: 4.0.3
+      minimatch: 9.0.5
+      semver: 7.6.3
+      ts-api-utils: 1.3.0_typescript@5.7.2
+      typescript: 5.7.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@typescript-eslint/utils/8.17.0_6txzh3afdjfsavlpa2fczfkiua:
+    resolution: {integrity: sha512-bQC8BnEkxqG8HBGKwG9wXlZqg37RKSMY7v/X8VEWD8JG2JuTHuNK0VFvMPMUKQcbk6B+tf05k+4AShAEtCtJ/w==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: ^8.57.0 || ^9.0.0
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@eslint-community/eslint-utils': 4.4.0_eslint@8.57.1
+      '@typescript-eslint/scope-manager': 8.17.0
+      '@typescript-eslint/types': 8.17.0
+      '@typescript-eslint/typescript-estree': 8.17.0_typescript@5.7.2
+      eslint: 8.57.1
+      typescript: 5.7.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@typescript-eslint/visitor-keys/8.17.0:
+    resolution: {integrity: sha512-1Hm7THLpO6ww5QU6H/Qp+AusUUl+z/CAm3cNZZ0jQvon9yicgO7Rwd+/WWRpMKLYV6p2UvdbR27c86rzCPpreg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    dependencies:
+      '@typescript-eslint/types': 8.17.0
+      eslint-visitor-keys: 4.2.0
     dev: true
 
   /@ungap/structured-clone/1.2.0:
@@ -1476,7 +1607,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-module-utils/2.12.0_wchqizalz5gwmi4bip3o6jxw7u:
+  /eslint-module-utils/2.12.0_myz5umdbmtlmusqe5bqumslexa:
     resolution: {integrity: sha512-wALZ0HFoytlyh/1+4wuZ9FJCD/leWHQzzrxJ8+rebyReSLk7LApMyd3WJaLVoN+D5+WIdJyDK1c6JnE65V4Zyg==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -1497,7 +1628,7 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
     dependencies:
-      '@typescript-eslint/parser': mirrors.tencent.com/@typescript-eslint/parser/7.18.0_6txzh3afdjfsavlpa2fczfkiua
+      '@typescript-eslint/parser': 8.17.0_6txzh3afdjfsavlpa2fczfkiua
       debug: 3.2.7
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
@@ -1505,7 +1636,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-import/2.31.0_olfayynnbksof5apoph6f3agwq:
+  /eslint-plugin-import/2.31.0_h7eukosafzijufp7a6dgowsyhy:
     resolution: {integrity: sha512-ixmkI62Rbc2/w8Vfxyh1jQRTdRTF52VxwRVHl/ykPAmqG+Nb7/kNn+byLP0LxPgI7zWA16Jt82SybJInmMia3A==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -1516,7 +1647,7 @@ packages:
         optional: true
     dependencies:
       '@rtsao/scc': 1.1.0
-      '@typescript-eslint/parser': mirrors.tencent.com/@typescript-eslint/parser/7.18.0_6txzh3afdjfsavlpa2fczfkiua
+      '@typescript-eslint/parser': 8.17.0_6txzh3afdjfsavlpa2fczfkiua
       array-includes: 3.1.8
       array.prototype.findlastindex: 1.2.5
       array.prototype.flat: 1.3.2
@@ -1525,7 +1656,7 @@ packages:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0_wchqizalz5gwmi4bip3o6jxw7u
+      eslint-module-utils: 2.12.0_myz5umdbmtlmusqe5bqumslexa
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -1553,6 +1684,11 @@ packages:
   /eslint-visitor-keys/3.4.3:
     resolution: {integrity: sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: true
+
+  /eslint-visitor-keys/4.2.0:
+    resolution: {integrity: sha512-UyLnSehNt62FFhSwjZlHmeokpRK59rcz29j+F1/aDgbkbRTk7wIc9XzdoasMUbRNKDM0qQt/+BJ4BrpFeABemw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dev: true
 
   /eslint/8.57.1:
@@ -1695,6 +1831,17 @@ packages:
 
   /fast-deep-equal/3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
+    dev: true
+
+  /fast-glob/3.3.2:
+    resolution: {integrity: sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==}
+    engines: {node: '>=8.6.0'}
+    dependencies:
+      '@nodelib/fs.stat': 2.0.5
+      '@nodelib/fs.walk': 1.2.8
+      glob-parent: 5.1.2
+      merge2: 1.4.1
+      micromatch: 4.0.8
     dev: true
 
   /fast-json-stable-stringify/2.1.0:
@@ -2480,6 +2627,11 @@ packages:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
     dev: true
 
+  /merge2/1.4.1:
+    resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
+    engines: {node: '>= 8'}
+    dev: true
+
   /micromatch/4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
@@ -3206,6 +3358,15 @@ packages:
       is-number: 7.0.0
     dev: true
 
+  /ts-api-utils/1.3.0_typescript@5.7.2:
+    resolution: {integrity: sha512-UQMIo7pb8WRomKR1/+MFVLTroIvDVtMX3K6OUir8ynLyzB8Jeriont2bTAtmNPa1ekAgN7YPDyf6V+ygrdU+eQ==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      typescript: '>=4.2.0'
+    dependencies:
+      typescript: 5.7.2
+    dev: true
+
   /tsconfig-paths/3.15.0:
     resolution: {integrity: sha512-2Ac2RgzDe/cn48GvOe3M+o82pEFewD3UPbyoUHHdKasHwJKjds4fLXWf/Ux5kATBKN20oaFGu+jbElp1pos0mg==}
     dependencies:
@@ -3636,13 +3797,6 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz}
     name: '@bcoe/v8-coverage'
     version: 0.2.3
-    dev: true
-
-  mirrors.tencent.com/@eslint-community/regexpp/4.11.0:
-    resolution: {integrity: sha512-G/M/tIiMrTAxEWRfLfQJMmGNX28IxBg4PBz8XqQhqUHLFI6TL2htpIB1iQCj144V5ee/JaKyT9/WZ0MGZWfA7A==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@eslint-community/regexpp/-/regexpp-4.11.0.tgz}
-    name: '@eslint-community/regexpp'
-    version: 4.11.0
-    engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     dev: true
 
   mirrors.tencent.com/@isaacs/cliui/8.0.2:
@@ -4092,154 +4246,6 @@ packages:
     version: 7.5.8
     dev: true
 
-  mirrors.tencent.com/@typescript-eslint/eslint-plugin/7.18.0_42mmuqown5buiycmzmdakhzdfm:
-    resolution: {integrity: sha512-94EQTWZ40mzBc42ATNIBimBEDltSJ9RQHCC8vc/PDbxi4k8dVwUAv4o98dk50M1zB+JGFxp43FP7f8+FP8R6Sw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@typescript-eslint/eslint-plugin/-/eslint-plugin-7.18.0.tgz}
-    id: mirrors.tencent.com/@typescript-eslint/eslint-plugin/7.18.0
-    name: '@typescript-eslint/eslint-plugin'
-    version: 7.18.0
-    engines: {node: ^18.18.0 || >=20.0.0}
-    peerDependencies:
-      '@typescript-eslint/parser': ^7.0.0
-      eslint: ^8.56.0
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@eslint-community/regexpp': mirrors.tencent.com/@eslint-community/regexpp/4.11.0
-      '@typescript-eslint/parser': mirrors.tencent.com/@typescript-eslint/parser/7.18.0_6txzh3afdjfsavlpa2fczfkiua
-      '@typescript-eslint/scope-manager': mirrors.tencent.com/@typescript-eslint/scope-manager/7.18.0
-      '@typescript-eslint/type-utils': mirrors.tencent.com/@typescript-eslint/type-utils/7.18.0_6txzh3afdjfsavlpa2fczfkiua
-      '@typescript-eslint/utils': mirrors.tencent.com/@typescript-eslint/utils/7.18.0_6txzh3afdjfsavlpa2fczfkiua
-      '@typescript-eslint/visitor-keys': mirrors.tencent.com/@typescript-eslint/visitor-keys/7.18.0
-      eslint: 8.57.1
-      graphemer: mirrors.tencent.com/graphemer/1.4.0
-      ignore: mirrors.tencent.com/ignore/5.3.1
-      natural-compare: mirrors.tencent.com/natural-compare/1.4.0
-      ts-api-utils: mirrors.tencent.com/ts-api-utils/1.3.0_typescript@5.7.2
-      typescript: 5.7.2
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  mirrors.tencent.com/@typescript-eslint/parser/7.18.0_6txzh3afdjfsavlpa2fczfkiua:
-    resolution: {integrity: sha512-4Z+L8I2OqhZV8qA132M4wNL30ypZGYOQVBfMgxDH/K5UX0PNqTu1c6za9ST5r9+tavvHiTWmBnKzpCJ/GlVFtg==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@typescript-eslint/parser/-/parser-7.18.0.tgz}
-    id: mirrors.tencent.com/@typescript-eslint/parser/7.18.0
-    name: '@typescript-eslint/parser'
-    version: 7.18.0
-    engines: {node: ^18.18.0 || >=20.0.0}
-    peerDependencies:
-      eslint: ^8.56.0
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@typescript-eslint/scope-manager': mirrors.tencent.com/@typescript-eslint/scope-manager/7.18.0
-      '@typescript-eslint/types': mirrors.tencent.com/@typescript-eslint/types/7.18.0
-      '@typescript-eslint/typescript-estree': mirrors.tencent.com/@typescript-eslint/typescript-estree/7.18.0_typescript@5.7.2
-      '@typescript-eslint/visitor-keys': mirrors.tencent.com/@typescript-eslint/visitor-keys/7.18.0
-      debug: mirrors.tencent.com/debug/4.3.6
-      eslint: 8.57.1
-      typescript: 5.7.2
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  mirrors.tencent.com/@typescript-eslint/scope-manager/7.18.0:
-    resolution: {integrity: sha512-jjhdIE/FPF2B7Z1uzc6i3oWKbGcHb87Qw7AWj6jmEqNOfDFbJWtjt/XfwCpvNkpGWlcJaog5vTR+VV8+w9JflA==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@typescript-eslint/scope-manager/-/scope-manager-7.18.0.tgz}
-    name: '@typescript-eslint/scope-manager'
-    version: 7.18.0
-    engines: {node: ^18.18.0 || >=20.0.0}
-    dependencies:
-      '@typescript-eslint/types': mirrors.tencent.com/@typescript-eslint/types/7.18.0
-      '@typescript-eslint/visitor-keys': mirrors.tencent.com/@typescript-eslint/visitor-keys/7.18.0
-    dev: true
-
-  mirrors.tencent.com/@typescript-eslint/type-utils/7.18.0_6txzh3afdjfsavlpa2fczfkiua:
-    resolution: {integrity: sha512-XL0FJXuCLaDuX2sYqZUUSOJ2sG5/i1AAze+axqmLnSkNEVMVYLF+cbwlB2w8D1tinFuSikHmFta+P+HOofrLeA==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@typescript-eslint/type-utils/-/type-utils-7.18.0.tgz}
-    id: mirrors.tencent.com/@typescript-eslint/type-utils/7.18.0
-    name: '@typescript-eslint/type-utils'
-    version: 7.18.0
-    engines: {node: ^18.18.0 || >=20.0.0}
-    peerDependencies:
-      eslint: ^8.56.0
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@typescript-eslint/typescript-estree': mirrors.tencent.com/@typescript-eslint/typescript-estree/7.18.0_typescript@5.7.2
-      '@typescript-eslint/utils': mirrors.tencent.com/@typescript-eslint/utils/7.18.0_6txzh3afdjfsavlpa2fczfkiua
-      debug: 4.3.6
-      eslint: 8.57.1
-      ts-api-utils: mirrors.tencent.com/ts-api-utils/1.3.0_typescript@5.7.2
-      typescript: 5.7.2
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  mirrors.tencent.com/@typescript-eslint/types/7.18.0:
-    resolution: {integrity: sha512-iZqi+Ds1y4EDYUtlOOC+aUmxnE9xS/yCigkjA7XpTKV6nCBd3Hp/PRGGmdwnfkV2ThMyYldP1wRpm/id99spTQ==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@typescript-eslint/types/-/types-7.18.0.tgz}
-    name: '@typescript-eslint/types'
-    version: 7.18.0
-    engines: {node: ^18.18.0 || >=20.0.0}
-    dev: true
-
-  mirrors.tencent.com/@typescript-eslint/typescript-estree/7.18.0_typescript@5.7.2:
-    resolution: {integrity: sha512-aP1v/BSPnnyhMHts8cf1qQ6Q1IFwwRvAQGRvBFkWlo3/lH29OXA3Pts+c10nxRxIBrDnoMqzhgdwVe5f2D6OzA==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@typescript-eslint/typescript-estree/-/typescript-estree-7.18.0.tgz}
-    id: mirrors.tencent.com/@typescript-eslint/typescript-estree/7.18.0
-    name: '@typescript-eslint/typescript-estree'
-    version: 7.18.0
-    engines: {node: ^18.18.0 || >=20.0.0}
-    peerDependencies:
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@typescript-eslint/types': mirrors.tencent.com/@typescript-eslint/types/7.18.0
-      '@typescript-eslint/visitor-keys': mirrors.tencent.com/@typescript-eslint/visitor-keys/7.18.0
-      debug: 4.3.6
-      globby: mirrors.tencent.com/globby/11.1.0
-      is-glob: 4.0.3
-      minimatch: 9.0.5
-      semver: 7.6.3
-      ts-api-utils: mirrors.tencent.com/ts-api-utils/1.3.0_typescript@5.7.2
-      typescript: 5.7.2
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  mirrors.tencent.com/@typescript-eslint/utils/7.18.0_6txzh3afdjfsavlpa2fczfkiua:
-    resolution: {integrity: sha512-kK0/rNa2j74XuHVcoCZxdFBMF+aq/vH83CXAOHieC+2Gis4mF8jJXT5eAfyD3K0sAxtPuwxaIOIOvhwzVDt/kw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@typescript-eslint/utils/-/utils-7.18.0.tgz}
-    id: mirrors.tencent.com/@typescript-eslint/utils/7.18.0
-    name: '@typescript-eslint/utils'
-    version: 7.18.0
-    engines: {node: ^18.18.0 || >=20.0.0}
-    peerDependencies:
-      eslint: ^8.56.0
-    dependencies:
-      '@eslint-community/eslint-utils': 4.4.0_eslint@8.57.1
-      '@typescript-eslint/scope-manager': mirrors.tencent.com/@typescript-eslint/scope-manager/7.18.0
-      '@typescript-eslint/types': mirrors.tencent.com/@typescript-eslint/types/7.18.0
-      '@typescript-eslint/typescript-estree': mirrors.tencent.com/@typescript-eslint/typescript-estree/7.18.0_typescript@5.7.2
-      eslint: 8.57.1
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
-    dev: true
-
-  mirrors.tencent.com/@typescript-eslint/visitor-keys/7.18.0:
-    resolution: {integrity: sha512-cDF0/Gf81QpY3xYyJKDV14Zwdmid5+uuENhjH2EqFaF0ni+yAyq/LzMaIJdhNJXZI7uLzwIlA+V7oWoyn6Curg==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@typescript-eslint/visitor-keys/-/visitor-keys-7.18.0.tgz}
-    name: '@typescript-eslint/visitor-keys'
-    version: 7.18.0
-    engines: {node: ^18.18.0 || >=20.0.0}
-    dependencies:
-      '@typescript-eslint/types': mirrors.tencent.com/@typescript-eslint/types/7.18.0
-      eslint-visitor-keys: 3.4.3
-    dev: true
-
   mirrors.tencent.com/@vitest/coverage-v8/2.0.5_vitest@2.1.2:
     resolution: {integrity: sha512-qeFcySCg5FLO2bHHSa0tAZAOnAUbp4L6/A5JDuj9+bt53JREl8hpLjLHEWF0e/gWc8INVpJaqA7+Ene2rclpZg==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@vitest/coverage-v8/-/coverage-v8-2.0.5.tgz}
     id: mirrors.tencent.com/@vitest/coverage-v8/2.0.5
@@ -4306,13 +4312,6 @@ packages:
     resolution: {integrity: sha512-F2+Hkm9xFaRg+GkaNnbwXNDV5O6pnCFEmqyhvfC/Ic5LbgOWjJh3L+mN/s91rxVL3znE7DYVpW0GJFT+4YBgWw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/argv-formatter/-/argv-formatter-1.0.0.tgz}
     name: argv-formatter
     version: 1.0.0
-    dev: true
-
-  mirrors.tencent.com/array-union/2.1.0:
-    resolution: {integrity: sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/array-union/-/array-union-2.1.0.tgz}
-    name: array-union
-    version: 2.1.0
-    engines: {node: '>=8'}
     dev: true
 
   mirrors.tencent.com/azure-devops-node-api/11.2.0:
@@ -4760,19 +4759,6 @@ packages:
     version: 1.3.0
     dev: true
 
-  mirrors.tencent.com/fast-glob/3.3.2:
-    resolution: {integrity: sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/fast-glob/-/fast-glob-3.3.2.tgz}
-    name: fast-glob
-    version: 3.3.2
-    engines: {node: '>=8.6.0'}
-    dependencies:
-      '@nodelib/fs.stat': 2.0.5
-      '@nodelib/fs.walk': 1.2.8
-      glob-parent: 5.1.2
-      merge2: mirrors.tencent.com/merge2/1.4.1
-      micromatch: 4.0.8
-    dev: true
-
   mirrors.tencent.com/fd-slicer/1.1.0:
     resolution: {integrity: sha512-cE1qsB/VwyQozZ+q1dGxR8LBYNZeofhEdUNGSMbQD3Gw2lAzX9Zb3uIU6Ebc/Fmyjo9AWWfnn0AUCHqtevs/8g==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/fd-slicer/-/fd-slicer-1.1.0.tgz}
     name: fd-slicer
@@ -4950,20 +4936,6 @@ packages:
       path-is-absolute: 1.0.1
     dev: true
 
-  mirrors.tencent.com/globby/11.1.0:
-    resolution: {integrity: sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/globby/-/globby-11.1.0.tgz}
-    name: globby
-    version: 11.1.0
-    engines: {node: '>=10'}
-    dependencies:
-      array-union: mirrors.tencent.com/array-union/2.1.0
-      dir-glob: mirrors.tencent.com/dir-glob/3.0.1
-      fast-glob: mirrors.tencent.com/fast-glob/3.3.2
-      ignore: 5.3.1
-      merge2: mirrors.tencent.com/merge2/1.4.1
-      slash: mirrors.tencent.com/slash/3.0.0
-    dev: true
-
   mirrors.tencent.com/globby/14.0.2:
     resolution: {integrity: sha512-s3Fq41ZVh7vbbe2PN3nrW7yC7U7MFVc5c98/iTl9c2GawNMKx/J648KQRW6WKkuU8GIbbh2IXfIRQjOZnXcTnw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/globby/-/globby-14.0.2.tgz}
     name: globby
@@ -4971,7 +4943,7 @@ packages:
     engines: {node: '>=18'}
     dependencies:
       '@sindresorhus/merge-streams': mirrors.tencent.com/@sindresorhus/merge-streams/2.3.0
-      fast-glob: mirrors.tencent.com/fast-glob/3.3.2
+      fast-glob: 3.3.2
       ignore: 5.3.1
       path-type: mirrors.tencent.com/path-type/5.0.0
       slash: mirrors.tencent.com/slash/5.1.0
@@ -4982,12 +4954,6 @@ packages:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/graceful-fs/-/graceful-fs-4.2.11.tgz}
     name: graceful-fs
     version: 4.2.11
-    dev: true
-
-  mirrors.tencent.com/graphemer/1.4.0:
-    resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/graphemer/-/graphemer-1.4.0.tgz}
-    name: graphemer
-    version: 1.4.0
     dev: true
 
   mirrors.tencent.com/handlebars/4.7.8:
@@ -5094,13 +5060,6 @@ packages:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/ieee754/-/ieee754-1.2.1.tgz}
     name: ieee754
     version: 1.2.1
-    dev: true
-
-  mirrors.tencent.com/ignore/5.3.1:
-    resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/ignore/-/ignore-5.3.1.tgz}
-    name: ignore
-    version: 5.3.1
-    engines: {node: '>= 4'}
     dev: true
 
   mirrors.tencent.com/import-from-esm/1.3.4:
@@ -5413,13 +5372,6 @@ packages:
     hasBin: true
     dev: true
 
-  mirrors.tencent.com/merge2/1.4.1:
-    resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/merge2/-/merge2-1.4.1.tgz}
-    name: merge2
-    version: 1.4.1
-    engines: {node: '>= 8'}
-    dev: true
-
   mirrors.tencent.com/micromatch/4.0.7:
     resolution: {integrity: sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/micromatch/-/micromatch-4.0.7.tgz}
     name: micromatch
@@ -5486,12 +5438,6 @@ packages:
     resolution: {integrity: sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/napi-build-utils/-/napi-build-utils-1.0.2.tgz}
     name: napi-build-utils
     version: 1.0.2
-    dev: true
-
-  mirrors.tencent.com/natural-compare/1.4.0:
-    resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/natural-compare/-/natural-compare-1.4.0.tgz}
-    name: natural-compare
-    version: 1.4.0
     dev: true
 
   mirrors.tencent.com/neo-async/2.6.2:
@@ -6214,13 +6160,6 @@ packages:
       unicode-emoji-modifier-base: mirrors.tencent.com/unicode-emoji-modifier-base/1.0.0
     dev: true
 
-  mirrors.tencent.com/slash/3.0.0:
-    resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/slash/-/slash-3.0.0.tgz}
-    name: slash
-    version: 3.0.0
-    engines: {node: '>=8'}
-    dev: true
-
   mirrors.tencent.com/slash/5.1.0:
     resolution: {integrity: sha512-ZA6oR3T/pEyuqwMgAKT0/hAv8oAXckzbkmR0UkUosQ+Mc4RxGoJkRmwHgHufaenlyAgE1Mxgpdcrf75y6XcnDg==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/slash/-/slash-5.1.0.tgz}
     name: slash
@@ -6457,18 +6396,6 @@ packages:
     name: traverse
     version: 0.6.8
     engines: {node: '>= 0.4'}
-    dev: true
-
-  mirrors.tencent.com/ts-api-utils/1.3.0_typescript@5.7.2:
-    resolution: {integrity: sha512-UQMIo7pb8WRomKR1/+MFVLTroIvDVtMX3K6OUir8ynLyzB8Jeriont2bTAtmNPa1ekAgN7YPDyf6V+ygrdU+eQ==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/ts-api-utils/-/ts-api-utils-1.3.0.tgz}
-    id: mirrors.tencent.com/ts-api-utils/1.3.0
-    name: ts-api-utils
-    version: 1.3.0
-    engines: {node: '>=16'}
-    peerDependencies:
-      typescript: '>=4.2.0'
-    dependencies:
-      typescript: 5.7.2
     dev: true
 
   mirrors.tencent.com/tunnel-agent/0.6.0:
