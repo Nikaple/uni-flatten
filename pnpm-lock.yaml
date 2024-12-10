@@ -15,7 +15,7 @@ specifiers:
   eslint-plugin-import: 2.31.0
   eslint-plugin-prettier: 4.2.1
   husky: 9.1.7
-  lint-staged: 15.2.10
+  lint-staged: 15.2.11
   prettier: 2.8.8
   rimraf: 6.0.1
   semantic-release: ^24.0.0
@@ -35,7 +35,7 @@ devDependencies:
   eslint-plugin-import: 2.31.0_olfayynnbksof5apoph6f3agwq
   eslint-plugin-prettier: mirrors.tencent.com/eslint-plugin-prettier/4.2.1_o6cgegp6polyisa35v7yglocei
   husky: 9.1.7
-  lint-staged: 15.2.10
+  lint-staged: 15.2.11
   prettier: mirrors.tencent.com/prettier/2.8.8
   rimraf: mirrors.tencent.com/rimraf/6.0.1
   semantic-release: mirrors.tencent.com/semantic-release/24.0.0_typescript@5.7.2
@@ -456,7 +456,7 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.6
+      debug: 4.4.0
       espree: 9.6.1
       globals: 13.24.0
       ignore: 5.3.1
@@ -487,7 +487,7 @@ packages:
     deprecated: Use @eslint/config-array instead
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
-      debug: 4.3.6
+      debug: 4.4.0
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -1233,6 +1233,18 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
+    dev: true
+
+  /debug/4.4.0:
+    resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.3
     dev: true
 
   /deep-eql/5.0.2:
@@ -2298,8 +2310,8 @@ packages:
       type-check: 0.4.0
     dev: true
 
-  /lilconfig/3.1.2:
-    resolution: {integrity: sha512-eop+wDAvpItUys0FWkHIKeC9ybYrTGbU41U5K7+bttZZeohvnY7M9dZ5kB21GNWiFT2q1OoPTvncPCgSOVO5ow==}
+  /lilconfig/3.1.3:
+    resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
     engines: {node: '>=14'}
     dev: true
 
@@ -2319,27 +2331,27 @@ packages:
       uc.micro: 2.1.0
     dev: true
 
-  /lint-staged/15.2.10:
-    resolution: {integrity: sha512-5dY5t743e1byO19P9I4b3x8HJwalIznL5E1FWYnU6OWw33KxNBSLAc6Cy7F2PsFEO8FKnLwjwm5hx7aMF0jzZg==}
+  /lint-staged/15.2.11:
+    resolution: {integrity: sha512-Ev6ivCTYRTGs9ychvpVw35m/bcNDuBN+mnTeObCL5h+boS5WzBEC6LHI4I9F/++sZm1m+J2LEiy0gxL/R9TBqQ==}
     engines: {node: '>=18.12.0'}
     hasBin: true
     dependencies:
       chalk: 5.3.0
       commander: 12.1.0
-      debug: 4.3.6
+      debug: 4.4.0
       execa: 8.0.1
-      lilconfig: 3.1.2
-      listr2: 8.2.4
+      lilconfig: 3.1.3
+      listr2: 8.2.5
       micromatch: 4.0.8
       pidtree: 0.6.0
       string-argv: 0.3.2
-      yaml: 2.5.0
+      yaml: 2.6.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /listr2/8.2.4:
-    resolution: {integrity: sha512-opevsywziHd3zHCVQGAj8zu+Z3yHNkkoYhWIGnq54RrCVwLz0MozotJEDnKsIBLvkfLGN6BLOyAeRrYI0pKA4g==}
+  /listr2/8.2.5:
+    resolution: {integrity: sha512-iyAZCeyD+c1gPyE9qpFu8af0Y+MRtmKOncdGoA2S5EY8iFq99dmmvkNnHiWo+pj0s7yH7l3KPIgee77tKpXPWQ==}
     engines: {node: '>=18.0.0'}
     dependencies:
       cli-truncate: 4.0.0
@@ -3353,7 +3365,7 @@ packages:
     hasBin: true
     dependencies:
       cac: 6.7.14
-      debug: 4.3.6
+      debug: 4.4.0
       pathe: 1.1.2
       vite: 5.3.5
     transitivePeerDependencies:
@@ -3534,12 +3546,6 @@ packages:
   /y18n/5.0.8:
     resolution: {integrity: sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==}
     engines: {node: '>=10'}
-    dev: true
-
-  /yaml/2.5.0:
-    resolution: {integrity: sha512-2wWLbGbYDiSqqIKoPjar3MPgB94ErzCtrNE1FdqGuaO0pi2JGjmE8aW8TDZwzU7vuxcGRdL/4gPQwQ7hD5AMSw==}
-    engines: {node: '>= 14'}
-    hasBin: true
     dev: true
 
   /yaml/2.6.1:
@@ -3929,7 +3935,7 @@ packages:
       conventional-changelog-writer: mirrors.tencent.com/conventional-changelog-writer/8.0.0
       conventional-commits-filter: mirrors.tencent.com/conventional-commits-filter/5.0.0
       conventional-commits-parser: 6.0.0
-      debug: 4.3.6
+      debug: 4.4.0
       import-from-esm: mirrors.tencent.com/import-from-esm/1.3.4
       lodash-es: mirrors.tencent.com/lodash-es/4.17.21
       micromatch: 4.0.8
@@ -3969,7 +3975,7 @@ packages:
     dependencies:
       '@semantic-release/error': mirrors.tencent.com/@semantic-release/error/3.0.0
       aggregate-error: mirrors.tencent.com/aggregate-error/3.1.0
-      debug: 4.3.6
+      debug: 4.4.0
       dir-glob: mirrors.tencent.com/dir-glob/3.0.1
       execa: 5.1.1
       lodash: mirrors.tencent.com/lodash/4.17.21
@@ -3995,7 +4001,7 @@ packages:
       '@octokit/plugin-throttling': mirrors.tencent.com/@octokit/plugin-throttling/9.3.1_@octokit+core@6.1.2
       '@semantic-release/error': mirrors.tencent.com/@semantic-release/error/4.0.0
       aggregate-error: mirrors.tencent.com/aggregate-error/5.0.0
-      debug: 4.3.6
+      debug: 4.4.0
       dir-glob: mirrors.tencent.com/dir-glob/3.0.1
       globby: mirrors.tencent.com/globby/14.0.2
       http-proxy-agent: mirrors.tencent.com/http-proxy-agent/7.0.2
@@ -4048,7 +4054,7 @@ packages:
       conventional-changelog-writer: mirrors.tencent.com/conventional-changelog-writer/8.0.0
       conventional-commits-filter: mirrors.tencent.com/conventional-commits-filter/5.0.0
       conventional-commits-parser: 6.0.0
-      debug: 4.3.6
+      debug: 4.4.0
       get-stream: 7.0.1
       import-from-esm: mirrors.tencent.com/import-from-esm/1.3.4
       into-stream: mirrors.tencent.com/into-stream/7.0.0
@@ -4171,7 +4177,7 @@ packages:
     dependencies:
       '@typescript-eslint/typescript-estree': mirrors.tencent.com/@typescript-eslint/typescript-estree/7.18.0_typescript@5.7.2
       '@typescript-eslint/utils': mirrors.tencent.com/@typescript-eslint/utils/7.18.0_6txzh3afdjfsavlpa2fczfkiua
-      debug: 4.3.6
+      debug: 4.4.0
       eslint: 8.57.1
       ts-api-utils: mirrors.tencent.com/ts-api-utils/1.3.0_typescript@5.7.2
       typescript: 5.7.2
@@ -4200,7 +4206,7 @@ packages:
     dependencies:
       '@typescript-eslint/types': mirrors.tencent.com/@typescript-eslint/types/7.18.0
       '@typescript-eslint/visitor-keys': mirrors.tencent.com/@typescript-eslint/visitor-keys/7.18.0
-      debug: 4.3.6
+      debug: 4.4.0
       globby: mirrors.tencent.com/globby/11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -4271,7 +4277,7 @@ packages:
     version: 7.1.1
     engines: {node: '>= 14'}
     dependencies:
-      debug: 4.3.6
+      debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5073,7 +5079,7 @@ packages:
     engines: {node: '>= 14'}
     dependencies:
       agent-base: mirrors.tencent.com/agent-base/7.1.1
-      debug: 4.3.6
+      debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5085,7 +5091,7 @@ packages:
     engines: {node: '>= 14'}
     dependencies:
       agent-base: mirrors.tencent.com/agent-base/7.1.1
-      debug: 4.3.6
+      debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5109,7 +5115,7 @@ packages:
     version: 1.3.4
     engines: {node: '>=16.20'}
     dependencies:
-      debug: 4.3.6
+      debug: 4.4.0
       import-meta-resolve: 4.1.0
     transitivePeerDependencies:
       - supports-color
@@ -5213,7 +5219,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       '@jridgewell/trace-mapping': mirrors.tencent.com/@jridgewell/trace-mapping/0.3.25
-      debug: 4.3.6
+      debug: 4.4.0
       istanbul-lib-coverage: mirrors.tencent.com/istanbul-lib-coverage/3.2.2
     transitivePeerDependencies:
       - supports-color
