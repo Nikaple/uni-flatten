@@ -15,7 +15,7 @@ specifiers:
   eslint-plugin-import: 2.31.0
   eslint-plugin-prettier: 4.2.1
   husky: 9.1.7
-  lint-staged: 15.2.11
+  lint-staged: 15.3.0
   prettier: 2.8.8
   rimraf: 6.0.1
   semantic-release: ^24.0.0
@@ -35,7 +35,7 @@ devDependencies:
   eslint-plugin-import: 2.31.0_olfayynnbksof5apoph6f3agwq
   eslint-plugin-prettier: mirrors.tencent.com/eslint-plugin-prettier/4.2.1_o6cgegp6polyisa35v7yglocei
   husky: 9.1.7
-  lint-staged: 15.2.11
+  lint-staged: 15.3.0
   prettier: mirrors.tencent.com/prettier/2.8.8
   rimraf: mirrors.tencent.com/rimraf/6.0.1
   semantic-release: mirrors.tencent.com/semantic-release/24.0.0_typescript@5.7.2
@@ -1023,6 +1023,11 @@ packages:
 
   /chalk/5.3.0:
     resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+    dev: true
+
+  /chalk/5.4.1:
+    resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 
@@ -2331,12 +2336,12 @@ packages:
       uc.micro: 2.1.0
     dev: true
 
-  /lint-staged/15.2.11:
-    resolution: {integrity: sha512-Ev6ivCTYRTGs9ychvpVw35m/bcNDuBN+mnTeObCL5h+boS5WzBEC6LHI4I9F/++sZm1m+J2LEiy0gxL/R9TBqQ==}
+  /lint-staged/15.3.0:
+    resolution: {integrity: sha512-vHFahytLoF2enJklgtOtCtIjZrKD/LoxlaUusd5nh7dWv/dkKQJY74ndFSzxCdv7g0ueGg1ORgTSt4Y9LPZn9A==}
     engines: {node: '>=18.12.0'}
     hasBin: true
     dependencies:
-      chalk: 5.3.0
+      chalk: 5.4.1
       commander: 12.1.0
       debug: 4.4.0
       execa: 8.0.1
@@ -5403,7 +5408,7 @@ packages:
       marked: '>=1 <14'
     dependencies:
       ansi-escapes: 7.0.0
-      chalk: 5.3.0
+      chalk: 5.4.1
       cli-highlight: mirrors.tencent.com/cli-highlight/2.1.11
       cli-table3: mirrors.tencent.com/cli-table3/0.6.5
       marked: mirrors.tencent.com/marked/12.0.2
