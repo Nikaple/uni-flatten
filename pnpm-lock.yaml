@@ -11,7 +11,7 @@ specifiers:
   '@typescript-eslint/parser': 7.18.0
   '@vitest/coverage-v8': ^2.0.0
   eslint: 8.57.1
-  eslint-config-prettier: 9.1.0
+  eslint-config-prettier: 10.0.1
   eslint-plugin-import: 2.31.0
   eslint-plugin-prettier: 4.2.1
   husky: 9.1.7
@@ -31,9 +31,9 @@ devDependencies:
   '@typescript-eslint/parser': mirrors.tencent.com/@typescript-eslint/parser/7.18.0_wbebvbc4plqodte3ww5qk5g2la
   '@vitest/coverage-v8': mirrors.tencent.com/@vitest/coverage-v8/2.0.5_vitest@2.1.2
   eslint: 8.57.1
-  eslint-config-prettier: mirrors.tencent.com/eslint-config-prettier/9.1.0_eslint@8.57.1
+  eslint-config-prettier: 10.0.1_eslint@8.57.1
   eslint-plugin-import: 2.31.0_olfayynnbksof5apoph6f3agwq
-  eslint-plugin-prettier: mirrors.tencent.com/eslint-plugin-prettier/4.2.1_o6cgegp6polyisa35v7yglocei
+  eslint-plugin-prettier: mirrors.tencent.com/eslint-plugin-prettier/4.2.1_oyapqo775x24g45xzi7rcs7fc4
   husky: 9.1.7
   lint-staged: 15.3.0
   prettier: mirrors.tencent.com/prettier/2.8.8
@@ -1481,6 +1481,15 @@ packages:
   /escape-string-regexp/5.0.0:
     resolution: {integrity: sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==}
     engines: {node: '>=12'}
+    dev: true
+
+  /eslint-config-prettier/10.0.1_eslint@8.57.1:
+    resolution: {integrity: sha512-lZBts941cyJyeaooiKxAtzoPHTN+GbQTJFAIdQbRhA4/8whaAraEh47Whw/ZFfrjNSnlAxqfm9i0XVAEkULjCw==}
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
+    dependencies:
+      eslint: 8.57.1
     dev: true
 
   /eslint-import-resolver-node/0.3.9:
@@ -4706,19 +4715,7 @@ packages:
       java-properties: mirrors.tencent.com/java-properties/1.0.2
     dev: true
 
-  mirrors.tencent.com/eslint-config-prettier/9.1.0_eslint@8.57.1:
-    resolution: {integrity: sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/eslint-config-prettier/-/eslint-config-prettier-9.1.0.tgz}
-    id: mirrors.tencent.com/eslint-config-prettier/9.1.0
-    name: eslint-config-prettier
-    version: 9.1.0
-    hasBin: true
-    peerDependencies:
-      eslint: '>=7.0.0'
-    dependencies:
-      eslint: 8.57.1
-    dev: true
-
-  mirrors.tencent.com/eslint-plugin-prettier/4.2.1_o6cgegp6polyisa35v7yglocei:
+  mirrors.tencent.com/eslint-plugin-prettier/4.2.1_oyapqo775x24g45xzi7rcs7fc4:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/eslint-plugin-prettier/-/eslint-plugin-prettier-4.2.1.tgz}
     id: mirrors.tencent.com/eslint-plugin-prettier/4.2.1
     name: eslint-plugin-prettier
@@ -4733,7 +4730,7 @@ packages:
         optional: true
     dependencies:
       eslint: 8.57.1
-      eslint-config-prettier: mirrors.tencent.com/eslint-config-prettier/9.1.0_eslint@8.57.1
+      eslint-config-prettier: 10.0.1_eslint@8.57.1
       prettier: mirrors.tencent.com/prettier/2.8.8
       prettier-linter-helpers: mirrors.tencent.com/prettier-linter-helpers/1.0.0
     dev: true
