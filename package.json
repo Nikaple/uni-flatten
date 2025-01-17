@@ -42,7 +42,7 @@
     "@latipun7/releaserc": "^2.1.0",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
-    "@vitest/coverage-v8": "^2.0.0",
+    "@vitest/coverage-v8": "^3.0.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "10.0.1",
     "eslint-plugin-import": "2.31.0",
@@ -54,7 +54,7 @@
     "semantic-release": "^24.0.0",
     "typedoc": "0.27.6",
     "typescript": "5.7.3",
-    "vitest": "2.1.2"
+    "vitest": "3.0.1"
   },
   "pnpm": {
     "overrides": {
