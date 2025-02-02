@@ -4,7 +4,7 @@
   "description": "Flattens a nested object, or convert it back **perfectly**. ",
   "author": "Nikaple Zhou",
   "license": "MIT",
-  "packageManager": "pnpm@7.33.1",
+  "packageManager": "pnpm@9.15.5",
   "url": "https://github.com/Nikaple/uni-flatten",
   "homepage": "https://github.com/Nikaple/uni-flatten",
   "files": [
