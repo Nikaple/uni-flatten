@@ -15,7 +15,7 @@ specifiers:
   eslint-plugin-import: 2.31.0
   eslint-plugin-prettier: 4.2.1
   husky: 9.1.7
-  lint-staged: 15.4.3
+  lint-staged: 15.5.0
   prettier: 2.8.8
   rimraf: 6.0.1
   semantic-release: ^24.0.0
@@ -35,7 +35,7 @@ devDependencies:
   eslint-plugin-import: 2.31.0_olfayynnbksof5apoph6f3agwq
   eslint-plugin-prettier: mirrors.tencent.com/eslint-plugin-prettier/4.2.1_tc64s675m4nnu5hou7vxvnwziu
   husky: 9.1.7
-  lint-staged: 15.4.3
+  lint-staged: 15.5.0
   prettier: mirrors.tencent.com/prettier/2.8.8
   rimraf: mirrors.tencent.com/rimraf/6.0.1
   semantic-release: mirrors.tencent.com/semantic-release/24.0.0_typescript@5.8.2
@@ -2526,8 +2526,8 @@ packages:
       uc.micro: 2.1.0
     dev: true
 
-  /lint-staged/15.4.3:
-    resolution: {integrity: sha512-FoH1vOeouNh1pw+90S+cnuoFwRfUD9ijY2GKy5h7HS3OR7JVir2N2xrsa0+Twc1B7cW72L+88geG5cW4wIhn7g==}
+  /lint-staged/15.5.0:
+    resolution: {integrity: sha512-WyCzSbfYGhK7cU+UuDDkzUiytbfbi0ZdPy2orwtM75P3WTtQBzmG40cCxIa8Ii2+XjfxzLH6Be46tUfWS85Xfg==}
     engines: {node: '>=18.12.0'}
     hasBin: true
     dependencies:
