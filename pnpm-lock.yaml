@@ -11,7 +11,7 @@ specifiers:
   '@typescript-eslint/parser': 7.18.0
   '@vitest/coverage-v8': ^3.0.0
   eslint: 8.57.1
-  eslint-config-prettier: 10.1.1
+  eslint-config-prettier: 10.1.2
   eslint-plugin-import: 2.31.0
   eslint-plugin-prettier: 4.2.1
   husky: 9.1.7
@@ -31,9 +31,9 @@ devDependencies:
   '@typescript-eslint/parser': mirrors.tencent.com/@typescript-eslint/parser/7.18.0_hzt6xcfnpp4qecssyxfdrtmoeu
   '@vitest/coverage-v8': 3.0.1_vitest@3.1.1
   eslint: 8.57.1
-  eslint-config-prettier: 10.1.1_eslint@8.57.1
+  eslint-config-prettier: 10.1.2_eslint@8.57.1
   eslint-plugin-import: 2.31.0_olfayynnbksof5apoph6f3agwq
-  eslint-plugin-prettier: mirrors.tencent.com/eslint-plugin-prettier/4.2.1_tc64s675m4nnu5hou7vxvnwziu
+  eslint-plugin-prettier: mirrors.tencent.com/eslint-plugin-prettier/4.2.1_jygrjwal2h3i7cnaoijj4pg5fy
   husky: 9.1.7
   lint-staged: 15.5.0
   prettier: mirrors.tencent.com/prettier/2.8.8
@@ -1603,8 +1603,8 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /eslint-config-prettier/10.1.1_eslint@8.57.1:
-    resolution: {integrity: sha512-4EQQr6wXwS+ZJSzaR5ZCrYgLxqvUjdXctaEtBqHcbkW944B1NQyO4qpdHQbXBONfwxXdkAY81HH4+LUfrg+zPw==}
+  /eslint-config-prettier/10.1.2_eslint@8.57.1:
+    resolution: {integrity: sha512-Epgp/EofAUeEpIdZkW60MHKvPyru1ruQJxPL+WIycnaPApuseK0Zpkrh/FwL9oIpQvIhJwV7ptOy0DWUjTlCiA==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -4858,7 +4858,7 @@ packages:
       java-properties: mirrors.tencent.com/java-properties/1.0.2
     dev: true
 
-  mirrors.tencent.com/eslint-plugin-prettier/4.2.1_tc64s675m4nnu5hou7vxvnwziu:
+  mirrors.tencent.com/eslint-plugin-prettier/4.2.1_jygrjwal2h3i7cnaoijj4pg5fy:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/eslint-plugin-prettier/-/eslint-plugin-prettier-4.2.1.tgz}
     id: mirrors.tencent.com/eslint-plugin-prettier/4.2.1
     name: eslint-plugin-prettier
@@ -4873,7 +4873,7 @@ packages:
         optional: true
     dependencies:
       eslint: 8.57.1
-      eslint-config-prettier: 10.1.1_eslint@8.57.1
+      eslint-config-prettier: 10.1.2_eslint@8.57.1
       prettier: mirrors.tencent.com/prettier/2.8.8
       prettier-linter-helpers: mirrors.tencent.com/prettier-linter-helpers/1.0.0
     dev: true
