@@ -19,7 +19,7 @@ specifiers:
   prettier: 2.8.8
   rimraf: 6.0.1
   semantic-release: ^24.0.0
-  typedoc: 0.28.2
+  typedoc: 0.28.3
   typescript: 5.8.3
   vitest: 3.1.1
 
@@ -39,7 +39,7 @@ devDependencies:
   prettier: mirrors.tencent.com/prettier/2.8.8
   rimraf: mirrors.tencent.com/rimraf/6.0.1
   semantic-release: mirrors.tencent.com/semantic-release/24.0.0_typescript@5.8.3
-  typedoc: 0.28.2_typescript@5.8.3
+  typedoc: 0.28.3_typescript@5.8.3
   typescript: 5.8.3
   vitest: 3.1.1
 
@@ -3574,8 +3574,8 @@ packages:
       possible-typed-array-names: 1.0.0
     dev: true
 
-  /typedoc/0.28.2_typescript@5.8.3:
-    resolution: {integrity: sha512-9Giuv+eppFKnJ0oi+vxqLM817b/IrIsEMYgy3jj6zdvppAfDqV3d6DXL2vXUg2TnlL62V48th25Zf/tcQKAJdg==}
+  /typedoc/0.28.3_typescript@5.8.3:
+    resolution: {integrity: sha512-5svOCTfXvVSh6zbZKSQluZhR8yN2tKpTeHZxlmWpE6N5vc3R8k/jhg9nnD6n5tN9/ObuQTojkONrOxFdUFUG9w==}
     engines: {node: '>= 18', pnpm: '>= 10'}
     hasBin: true
     peerDependencies:
