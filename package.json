@@ -54,7 +54,7 @@
     "semantic-release": "^24.0.0",
     "typedoc": "0.28.5",
     "typescript": "5.8.3",
-    "vitest": "3.1.4"
+    "vitest": "3.2.0"
   },
   "pnpm": {
     "overrides": {
