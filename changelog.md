@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [1.7.0](https://github.com/Nikaple/uni-flatten/compare/v1.6.4...v1.7.0) (2025-06-23)
+
+### ✨ Features
+
+- **flatten:** add support for flattening and unflattening class instances [`efe42b7`](https://github.com/Nikaple/uni-flatten/commit/efe42b7cb16dfe3f5cea8a6664493e9b65254f29).
+
+  Add new options `flattenClassInstances` and `unflattenToClassInstances` to handle class instances during flatten/unflatten operations. When enabled, class constructor information is preserved using a special symbol, allowing proper restoration of class instances with their prototype methods.
+
+  Add comprehensive test cases covering various scenarios including inheritance, circular references, private properties, and edge cases.
+
 ## [1.6.4](https://github.com/Nikaple/uni-flatten/compare/v1.6.3...v1.6.4) (2024-08-07)
 
 ### 🐛 Fixes
