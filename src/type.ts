@@ -2,6 +2,19 @@ export interface UniFlattenOptions {
   circularReference?: 'string' | 'symbol' | 'null';
   strict?: boolean;
   /**
+   * Whether to unflatten class instances.
+   * When enabled, a special symbol will be added to the flattened object.
+   * When unflattening, the symbol will be used to identify class instances.
+   * Default is false.
+   */
+  unflattenToClassInstances?: boolean;
+  /**
+   * Whether to flatten class instances.
+   * Properties on the prototype chain will not be flattened.
+   * Default is false.
+   */
+  flattenClassInstances?: boolean;
+  /**
    * Defines a custom serializer when flattening the object.
    * This may break `unflatten` function (depending on your serializer)
    * @param key current key to serialize

@@ -1,12 +1,17 @@
 import { deepGet } from './deep-get';
 import { UniFlattenOptions } from './type';
 
+// Use symbol to avoid conflicts with user-defined properties
+export const CLASS_MAPPING_SYMBOL = Symbol('ClassMapping');
+
 export const SPECIAL_CHARACTER_REGEX =
   /[.'"\s\\\b\f\n\r\t\v{}()[\];,<>=!+\-*%&|^~?:]/;
 
 export const config = {
   strict: false,
   circularReference: 'string' as const,
+  flattenClassInstances: false,
+  unflattenToClassInstances: false,
   serializeFlattenKey: (key, prefix, meta) => {
     if (meta.isArrayIndex) {
       return `${prefix}[${key}]`;
@@ -141,4 +146,8 @@ export function isPlainObject(obj: unknown) {
     Object.prototype.toString.call(obj) === '[object Object]' &&
     Object.getPrototypeOf(obj) === Object.prototype
   );
+}
+
+export function isClassInstance(obj: unknown) {
+  return isObject(obj) && obj.constructor !== Object;
 }
