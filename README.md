@@ -90,6 +90,52 @@ const flattened = flatten(obj); // { 'a.b.c': 1, 'a.d': '[Circular->"a"]' }
 const restored = unflatten(obj); // { a: <ref *1> { b: { c: 1 }, d: [Circular *1] }
 ```
 
+### Flatten and Unflatten Class Instances
+
+`uni-flatten` now supports flattening and unflattening class instances, preserving their constructor information for proper restoration. This is useful when you need to serialize and deserialize complex objects that are instances of custom classes.
+
+> [!NOTE]
+> When restoring class instances, `uni-flatten` will construct the object by `new <constructor>(...)` without any parameters. If constructor call fails, it will throw an error.
+
+```ts
+import { flatten, unflatten } from 'uni-flatten';
+
+class Cat {
+  constructor(public name: string) {}
+
+  meow() {
+    return `Meow! My name is ${this.name}.`;
+  }
+}
+
+const instance = new Cat('Whiskers');
+
+// Flatten the class instance
+const flattened = flatten(
+  { cat: instance },
+  {
+    flattenClassInstances: true,
+    // A special symbol is added to store the class constructor for unflattening.
+    // It's not enumerable, so Object.keys should work fine.
+    // If disabled, the special symbol will not be added.
+    unflattenToClassInstances: true,
+  },
+);
+/*
+result: { 'cat.name': 'Whiskers' }
+*/
+
+// Unflatten the object back into a class instance
+const restored = unflatten(flattened, {
+  flattenClassInstances: true,
+  unflattenToClassInstances: true,
+});
+
+console.log(restored instanceof Cat); // true
+console.log(restored.name); // 'Whiskers'
+console.log(restored.meow()); // 'Meow! My name is Whiskers.'
+```
+
 ## API
 
 Please refer to our [API website](https://nikaple.github.io/uni-flatten) for full documentation.

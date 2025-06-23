@@ -1,11 +1,13 @@
 import { deepSet } from './deep-set';
 import {
-  SPECIAL_CHARACTER_REGEX,
+  CLASS_MAPPING_SYMBOL,
   config,
   extractCircularKey,
   formatCircularKey,
+  isClassInstance,
   isObject,
   isPlainObject,
+  SPECIAL_CHARACTER_REGEX,
 } from './internal';
 import { UniFlattenOptions } from './type';
 
@@ -21,11 +23,16 @@ import { UniFlattenOptions } from './type';
  * flatten({ a: { '?': [1] } }) // { 'a["?"][0]': 1 }
  */
 export const flatten = <T>(
-  obj: Record<string, unknown>,
+  obj: object,
   options?: UniFlattenOptions,
 ): Record<string, T> => {
   const seen = new Map();
   const serializer = options?.serializeFlattenKey || config.serializeFlattenKey;
+  const flattenClassInstances =
+    options?.flattenClassInstances ?? config.flattenClassInstances;
+  const unflattenClassInstances =
+    options?.unflattenToClassInstances ?? config.unflattenToClassInstances;
+
   const helper = (obj: any, prefix: string, result: any = {}) => {
     if (!isObject(obj)) {
       return result;
@@ -54,8 +61,21 @@ export const flatten = <T>(
       return result;
     }
 
-    // recursively handle plain objects
-    if (isPlainObject(obj)) {
+    // recursively handle plain objects and class instances (if enabled)
+    if (isPlainObject(obj) || (flattenClassInstances && isClassInstance(obj))) {
+      if (unflattenClassInstances) {
+        if (!result[CLASS_MAPPING_SYMBOL]) {
+          Object.defineProperty(result, CLASS_MAPPING_SYMBOL, {
+            enumerable: false,
+            configurable: false,
+            writable: true,
+            value: {},
+          });
+        }
+        if (obj.constructor !== Object) {
+          result[CLASS_MAPPING_SYMBOL][prefix] = obj.constructor;
+        }
+      }
       Object.entries(obj).forEach(([k, item]) => {
         const hasSpecialCharacters = SPECIAL_CHARACTER_REGEX.test(k);
         const startsWithNumber = /^\d/.test(k);
@@ -94,7 +114,10 @@ export const flatten = <T>(
  * unflatten({ "a.b[0]": 1 }) // { a: { b: [1] } }
  * unflatten({ 'a["?"][0]': 1 }) // { a: { '?': [1] } }
  */
-export const unflatten = (obj: any, options?: UniFlattenOptions) => {
+export const unflatten = <T = any>(
+  obj: object,
+  options?: UniFlattenOptions,
+): T => {
   const circularEntries: [string, any][] = [];
   const normalEntries: [string, any][] = [];
   Object.entries(obj).forEach(([key, value]) => {
@@ -107,9 +130,18 @@ export const unflatten = (obj: any, options?: UniFlattenOptions) => {
   });
 
   const entries = normalEntries.concat(circularEntries);
-  const result = /^\[\d+\]/.test(entries[0]?.[0]) ? [] : {};
+  const classMapping = (obj as any)[CLASS_MAPPING_SYMBOL];
+  const RootClassCtor = classMapping?.[''];
+  const defaultObject =
+    typeof RootClassCtor === 'function' ? new RootClassCtor() : {};
+  if (CLASS_MAPPING_SYMBOL in obj) {
+    defaultObject[CLASS_MAPPING_SYMBOL] = classMapping;
+  }
+
+  const result = /^\[\d+\]/.test(entries[0]?.[0]) ? [] : defaultObject;
   entries.forEach(([key, value]) => {
     deepSet(result, key, value, options);
   });
+  delete result[CLASS_MAPPING_SYMBOL];
   return result;
 };
