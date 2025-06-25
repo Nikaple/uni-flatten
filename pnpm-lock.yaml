@@ -13,7 +13,7 @@ specifiers:
   eslint: 8.57.1
   eslint-config-prettier: 10.1.5
   eslint-plugin-import: 2.32.0
-  eslint-plugin-prettier: 5.5.0
+  eslint-plugin-prettier: 5.5.1
   husky: 9.1.7
   lint-staged: 16.1.2
   prettier: 3.5.3
@@ -33,7 +33,7 @@ devDependencies:
   eslint: 8.57.1
   eslint-config-prettier: 10.1.5_eslint@8.57.1
   eslint-plugin-import: 2.32.0_olfayynnbksof5apoph6f3agwq
-  eslint-plugin-prettier: 5.5.0_7swgcjrrimcy3qeha6cjk5ypt4
+  eslint-plugin-prettier: 5.5.1_7swgcjrrimcy3qeha6cjk5ypt4
   husky: 9.1.7
   lint-staged: 16.1.2
   prettier: 3.5.3
@@ -1780,8 +1780,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-prettier/5.5.0_7swgcjrrimcy3qeha6cjk5ypt4:
-    resolution: {integrity: sha512-8qsOYwkkGrahrgoUv76NZi23koqXOGiiEzXMrT8Q7VcYaUISR+5MorIUxfWqYXN0fN/31WbSrxCxFkVQ43wwrA==}
+  /eslint-plugin-prettier/5.5.1_7swgcjrrimcy3qeha6cjk5ypt4:
+    resolution: {integrity: sha512-dobTkHT6XaEVOo8IO90Q4DOSxnm3Y151QxPJlM/vKC0bVy+d6cVWQZLlFiuZPP0wS6vZwSKeJgKkcS+KfMBlRw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       '@types/eslint': '>=8.0.0'
