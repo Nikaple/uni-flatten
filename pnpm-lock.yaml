@@ -19,7 +19,7 @@ specifiers:
   prettier: 3.5.3
   rimraf: 6.0.1
   semantic-release: ^24.0.0
-  typedoc: 0.28.9
+  typedoc: 0.28.10
   typescript: 5.9.2
   vitest: 3.2.4
 
@@ -39,7 +39,7 @@ devDependencies:
   prettier: 3.5.3
   rimraf: mirrors.tencent.com/rimraf/6.0.1
   semantic-release: mirrors.tencent.com/semantic-release/24.0.0_typescript@5.9.2
-  typedoc: 0.28.9_typescript@5.9.2
+  typedoc: 0.28.10_typescript@5.9.2
   typescript: 5.9.2
   vitest: 3.2.4
 
@@ -3965,8 +3965,8 @@ packages:
       reflect.getprototypeof: 1.0.10
     dev: true
 
-  /typedoc/0.28.9_typescript@5.9.2:
-    resolution: {integrity: sha512-aw45vwtwOl3QkUAmWCnLV9QW1xY+FSX2zzlit4MAfE99wX+Jij4ycnpbAWgBXsRrxmfs9LaYktg/eX5Bpthd3g==}
+  /typedoc/0.28.10_typescript@5.9.2:
+    resolution: {integrity: sha512-zYvpjS2bNJ30SoNYfHSRaFpBMZAsL7uwKbWwqoCNFWjcPnI3e/mPLh2SneH9mX7SJxtDpvDgvd9/iZxGbo7daw==}
     engines: {node: '>= 18', pnpm: '>= 10'}
     hasBin: true
     peerDependencies:
@@ -3977,7 +3977,7 @@ packages:
       markdown-it: 14.1.0
       minimatch: 9.0.5
       typescript: 5.9.2
-      yaml: 2.8.0
+      yaml: 2.8.1
     dev: true
 
   /typescript/5.9.2:
@@ -4254,12 +4254,6 @@ packages:
   /y18n/5.0.8:
     resolution: {integrity: sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==}
     engines: {node: '>=10'}
-    dev: true
-
-  /yaml/2.8.0:
-    resolution: {integrity: sha512-4lLa/EcQCB0cJkyts+FpIRx5G/llPxfP6VQU5KByHEhLxY3IJCH0f0Hy1MHI8sClTvsIb8qwRJ6R/ZdlDJ/leQ==}
-    engines: {node: '>= 14.6'}
-    hasBin: true
     dev: true
 
   /yaml/2.8.1:
