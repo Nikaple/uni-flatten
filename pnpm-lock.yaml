@@ -17,7 +17,7 @@ specifiers:
   husky: 9.1.7
   lint-staged: 16.2.7
   prettier: 3.5.3
-  rimraf: 6.0.1
+  rimraf: 6.1.2
   semantic-release: ^24.0.0
   typedoc: 0.28.14
   typescript: 5.9.3
@@ -37,7 +37,7 @@ devDependencies:
   husky: 9.1.7
   lint-staged: 16.2.7
   prettier: 3.5.3
-  rimraf: mirrors.tencent.com/rimraf/6.0.1
+  rimraf: 6.1.2
   semantic-release: mirrors.tencent.com/semantic-release/24.0.0_typescript@5.9.3
   typedoc: 0.28.14_typescript@5.9.3
   typescript: 5.9.3
@@ -537,6 +537,18 @@ packages:
   /@humanwhocodes/object-schema/2.0.3:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
+    dev: true
+
+  /@isaacs/balanced-match/4.0.1:
+    resolution: {integrity: sha512-yzMTt9lEb8Gv7zRioUilSglI0c0smZ9k5D65677DLWLtWJaXIS3CqcGyUFByYKlnUj6TkjLVs54fBl6+TiGQDQ==}
+    engines: {node: 20 || >=22}
+    dev: true
+
+  /@isaacs/brace-expansion/5.0.0:
+    resolution: {integrity: sha512-ZT55BDLV0yv0RBm2czMiZ+SqCGO7AvmOM3G/w2xhVPH+te0aKgFjmBvGlL1dH+ql2tgGO3MVrbb3jCKyvpgnxA==}
+    engines: {node: 20 || >=22}
+    dependencies:
+      '@isaacs/balanced-match': 4.0.1
     dev: true
 
   /@isaacs/cliui/8.0.2:
@@ -2201,8 +2213,17 @@ packages:
       jackspeak: 3.4.3
       minimatch: 9.0.5
       minipass: 7.1.2
-      package-json-from-dist: 1.0.0
+      package-json-from-dist: 1.0.1
       path-scurry: 1.11.1
+    dev: true
+
+  /glob/13.0.0:
+    resolution: {integrity: sha512-tvZgpqk6fz4BaNZ66ZsRaZnbHvP/jG3uKJvAZOwEVUL4RTA5nJeeLYfyN9/VA8NX/V3IBG+hkeuGpKjvELkVhA==}
+    engines: {node: 20 || >=22}
+    dependencies:
+      minimatch: 10.1.1
+      minipass: 7.1.2
+      path-scurry: 2.0.0
     dev: true
 
   /glob/7.2.3:
@@ -2683,15 +2704,6 @@ packages:
       '@pkgjs/parseargs': 0.11.0
     dev: true
 
-  /jackspeak/4.0.1:
-    resolution: {integrity: sha512-cub8rahkh0Q/bw1+GxP7aeSe29hHHn2V4m29nnDlvCdlgU+3UGxkZp7Z53jLUdpX3jdTO0nJZUDl3xvbWc2Xog==}
-    engines: {node: 20 || >=22}
-    dependencies:
-      '@isaacs/cliui': 8.0.2
-    optionalDependencies:
-      '@pkgjs/parseargs': 0.11.0
-    dev: true
-
   /jiti/2.4.1:
     resolution: {integrity: sha512-yPBThwecp1wS9DmoA4x4KR2h3QoslacnDR8ypuFM962kI4/456Iy1oHx2RAgh4jfZNdn0bctsdadceiBUgpU1g==}
     hasBin: true
@@ -2991,11 +3003,11 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /minimatch/10.0.1:
-    resolution: {integrity: sha512-ethXTt3SGGR+95gudmqJ1eNhRO7eGEGIgYA9vnPatK4/etz2MEVDno5GMCibdMTuBMyElzIlgxMna3K94XDIDQ==}
+  /minimatch/10.1.1:
+    resolution: {integrity: sha512-enIvLvRAFZYXJzkCYG5RKmPfrFArdLv+R+lbQ53BmIMLIry74bjKzX6iHAm8WYamJkhSSEabrWN5D97XnKObjQ==}
     engines: {node: 20 || >=22}
     dependencies:
-      brace-expansion: 2.0.1
+      '@isaacs/brace-expansion': 5.0.0
     dev: true
 
   /minimatch/3.1.2:
@@ -3198,8 +3210,8 @@ packages:
       p-limit: 4.0.0
     dev: true
 
-  /package-json-from-dist/1.0.0:
-    resolution: {integrity: sha512-dATvCeZN/8wQsGywez1mzHtTlP22H8OEfPrVMLNr4/eGa+ijtLn/6M5f0dY8UKNrC2O9UCU6SSoG3qRKnt7STw==}
+  /package-json-from-dist/1.0.1:
+    resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
     dev: true
 
   /parent-module/1.0.1:
@@ -3439,6 +3451,15 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
+    dev: true
+
+  /rimraf/6.1.2:
+    resolution: {integrity: sha512-cFCkPslJv7BAXJsYlK1dZsbP8/ZNLkCAQ0bi1hf5EKX2QHegmDFEFA6QhuYJlk7UDdc+02JjO80YSOrWPpw06g==}
+    engines: {node: 20 || >=22}
+    hasBin: true
+    dependencies:
+      glob: 13.0.0
+      package-json-from-dist: 1.0.1
     dev: true
 
   /rollup/4.20.0:
@@ -5429,21 +5450,6 @@ packages:
     version: 0.0.0
     dev: true
 
-  mirrors.tencent.com/glob/11.0.0:
-    resolution: {integrity: sha512-9UiX/Bl6J2yaBbxKoEBRm4Cipxgok8kQYcOPEhScPwebu2I0HoQOuYdIO6S3hLuWoZgpDpwQZMzTFxgpkyT76g==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/glob/-/glob-11.0.0.tgz}
-    name: glob
-    version: 11.0.0
-    engines: {node: 20 || >=22}
-    hasBin: true
-    dependencies:
-      foreground-child: 3.2.1
-      jackspeak: 4.0.1
-      minimatch: 10.0.1
-      minipass: 7.1.2
-      package-json-from-dist: 1.0.0
-      path-scurry: 2.0.0
-    dev: true
-
   mirrors.tencent.com/globby/11.1.0:
     resolution: {integrity: sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/globby/-/globby-11.1.0.tgz}
     name: globby
@@ -6108,12 +6114,6 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  mirrors.tencent.com/package-json-from-dist/1.0.0:
-    resolution: {integrity: sha512-dATvCeZN/8wQsGywez1mzHtTlP22H8OEfPrVMLNr4/eGa+ijtLn/6M5f0dY8UKNrC2O9UCU6SSoG3qRKnt7STw==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/package-json-from-dist/-/package-json-from-dist-1.0.0.tgz}
-    name: package-json-from-dist
-    version: 1.0.0
-    dev: true
-
   mirrors.tencent.com/parse-json/5.2.0:
     resolution: {integrity: sha512-ayCKvm/phCGxOkYRSCM82iDwct8/EonSEgCSxWxD7ve6jHggsFl4fZVQBPRNgQoKiuV/odhFrGzQXZwbifC8Rg==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/parse-json/-/parse-json-5.2.0.tgz}
     name: parse-json
@@ -6388,17 +6388,6 @@ packages:
       is-core-module: 2.15.1
       path-parse: mirrors.tencent.com/path-parse/1.0.7
       supports-preserve-symlinks-flag: mirrors.tencent.com/supports-preserve-symlinks-flag/1.0.0
-    dev: true
-
-  mirrors.tencent.com/rimraf/6.0.1:
-    resolution: {integrity: sha512-9dkvaxAsk/xNXSJzMgFqqMCuFgt2+KsOFek3TMLfo8NCPfWpBmqwyNn5Y+NX56QUYfCtsyhF3ayiboEoUmJk/A==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/rimraf/-/rimraf-6.0.1.tgz}
-    name: rimraf
-    version: 6.0.1
-    engines: {node: 20 || >=22}
-    hasBin: true
-    dependencies:
-      glob: mirrors.tencent.com/glob/11.0.0
-      package-json-from-dist: mirrors.tencent.com/package-json-from-dist/1.0.0
     dev: true
 
   mirrors.tencent.com/safe-buffer/5.1.2:
