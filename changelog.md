@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [1.7.1](https://github.com/Nikaple/uni-flatten/compare/v1.7.0...v1.7.1) (2026-05-29)
+
+### 🐛 Fixes
+
+- trigger proto pollution release [`3d078d4`](https://github.com/Nikaple/uni-flatten/commit/3d078d4db7cf502281f62b9b82fbe759aadd5eab).
+
+  Added a check for restricted keys to prevent proto pollution.
+
 ## [1.7.0](https://github.com/Nikaple/uni-flatten/compare/v1.6.4...v1.7.0) (2025-06-23)
 
 ### ✨ Features
