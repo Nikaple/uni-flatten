@@ -9,6 +9,8 @@ import {
 } from './internal';
 import { UniFlattenOptions } from './type';
 
+export const RESTRICTED_KEYS = ['__proto__', 'constructor', 'prototype'];
+
 /**
  * Deeply set value by key. This method mutates the original object.
  *
@@ -36,6 +38,10 @@ export const deepSet = <T extends Record<string, unknown>>(
   let currentKey = '';
 
   keys.forEach((key, i, arr) => {
+    if (typeof key === 'string' && RESTRICTED_KEYS.includes(key)) {
+      throw new Error(`Access to restricted key "${key}" blocked!`);
+    }
+
     const isNextArray = typeof arr[i + 1] === 'number';
     const keyString = String(key);
     const hasSpecialCharacters = SPECIAL_CHARACTER_REGEX.test(keyString);
