@@ -38,7 +38,7 @@ export const deepSet = <T extends Record<string, unknown>>(
   let currentKey = '';
 
   keys.forEach((key, i, arr) => {
-    if (typeof key === "string" && RESTRICTED_KEYS.includes(key)) {
+    if (typeof key === 'string' && RESTRICTED_KEYS.includes(key)) {
       throw new Error(`Access to restricted key "${key}" blocked!`);
     }
     
