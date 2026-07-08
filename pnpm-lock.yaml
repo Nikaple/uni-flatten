@@ -4,7 +4,7 @@ overrides:
   conventional-changelog-conventionalcommits: '>= 8.0.0'
 
 specifiers:
-  '@commitlint/cli': 21.2.0
+  '@commitlint/cli': 21.2.1
   '@latipun7/commitlintrc': 1.1.3
   '@latipun7/releaserc': ^2.1.0
   '@typescript-eslint/eslint-plugin': 7.18.0
@@ -24,8 +24,8 @@ specifiers:
   vitest: 3.2.7
 
 devDependencies:
-  '@commitlint/cli': 21.2.0_typescript@6.0.3
-  '@latipun7/commitlintrc': mirrors.tencent.com/@latipun7/commitlintrc/1.1.3_@commitlint+cli@21.2.0
+  '@commitlint/cli': 21.2.1_typescript@6.0.3
+  '@latipun7/commitlintrc': mirrors.tencent.com/@latipun7/commitlintrc/1.1.3_@commitlint+cli@21.2.1
   '@latipun7/releaserc': mirrors.tencent.com/@latipun7/releaserc/2.2.0_semantic-release@25.0.3
   '@typescript-eslint/eslint-plugin': mirrors.tencent.com/@typescript-eslint/eslint-plugin/7.18.0_46djenoozm6zuc4us2eutuuy2q
   '@typescript-eslint/parser': mirrors.tencent.com/@typescript-eslint/parser/7.18.0_c3chdd2it6hsjvbnyur5kul6oq
@@ -142,8 +142,8 @@ packages:
     dev: true
     optional: true
 
-  /@commitlint/cli/21.2.0_typescript@6.0.3:
-    resolution: {integrity: sha512-4GLVIhUaT3c3GBlQ0GB80/5H3xXdn/Tgw4lrsuoOQVDu2wl4Xw0GuzSar8xZKSMv4H3xaKaQXmvH91GmdyYBZA==}
+  /@commitlint/cli/21.2.1_typescript@6.0.3:
+    resolution: {integrity: sha512-blsZGe29hJ72VGEFVl72IVYX+1vsfINpjA9yWQA6i7OKD/McGEOXg08sKIRKjFk4JvzhV/9n0l3i6NooPLTNfg==}
     engines: {node: '>=22.12.0'}
     hasBin: true
     dependencies:
@@ -151,7 +151,7 @@ packages:
       '@commitlint/format': 21.2.0
       '@commitlint/lint': 21.2.0
       '@commitlint/load': 21.2.0_typescript@6.0.3
-      '@commitlint/read': 21.2.0
+      '@commitlint/read': 21.2.1
       '@commitlint/types': 21.2.0
       tinyexec: 1.2.4
       yargs: 18.0.0
@@ -249,13 +249,13 @@ packages:
       conventional-commits-parser: 7.0.0
     dev: true
 
-  /@commitlint/read/21.2.0:
-    resolution: {integrity: sha512-ELx8Ovh/JoAw5lpvDgxc6Y0We9skf2IPI2RFN+gnYgDGjRdMSF8zeodxhZmcclLWzfUIF7hXLOa8gOlllYcvBA==}
+  /@commitlint/read/21.2.1:
+    resolution: {integrity: sha512-hUW7EJQnNTL0vPOmVMNK4CrnrNBN0nN+JJHReFkdHO5y4iyHeEmTBwuC15OCqUTjxWo7idnH1LftfpWVIaPWIA==}
     engines: {node: '>=22.12.0'}
     dependencies:
       '@commitlint/top-level': 21.2.0
       '@commitlint/types': 21.2.0
-      git-raw-commits: 5.0.1
+      '@conventional-changelog/git-client': 3.1.0
       tinyexec: 1.2.4
     transitivePeerDependencies:
       - conventional-commits-filter
@@ -303,20 +303,20 @@ packages:
       picocolors: 1.1.1
     dev: true
 
-  /@conventional-changelog/git-client/2.6.0:
-    resolution: {integrity: sha512-T+uPDciKf0/ioNNDpMGc8FDsehJClZP0yR3Q5MN6wE/Y/1QZ7F+80OgznnTCOlMEG4AV0LvH2UJi3C/nBnaBUg==}
-    engines: {node: '>=18'}
+  /@conventional-changelog/git-client/3.1.0:
+    resolution: {integrity: sha512-Tqa/gHco2WJWa740NRjOrfKVvzIqxkZpecb8bemaQ8sKM5PXb1UK4uTyTb/1wIqNuOVaDOFxyBdhTIQZn6gdjQ==}
+    engines: {node: '>=22'}
     peerDependencies:
-      conventional-commits-filter: ^5.0.0
-      conventional-commits-parser: ^6.3.0
+      conventional-commits-filter: ^6.0.1
+      conventional-commits-parser: ^7.0.1
     peerDependenciesMeta:
       conventional-commits-filter:
         optional: true
       conventional-commits-parser:
         optional: true
     dependencies:
-      '@simple-libs/child-process-utils': 1.0.2
-      '@simple-libs/stream-utils': 1.2.0
+      '@simple-libs/child-process-utils': 2.0.0
+      '@simple-libs/stream-utils': 2.0.0
       semver: 7.6.3
     dev: true
 
@@ -1062,11 +1062,11 @@ packages:
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
     dev: true
 
-  /@simple-libs/child-process-utils/1.0.2:
-    resolution: {integrity: sha512-/4R8QKnd/8agJynkNdJmNw2MBxuFTRcNFnE5Sg/G+jkSsV8/UBgULMzhizWWW42p8L5H7flImV2ATi79Ove2Tw==}
-    engines: {node: '>=18'}
+  /@simple-libs/child-process-utils/2.0.0:
+    resolution: {integrity: sha512-dvNoRKLijXnD0XoJAz94pbNuB5GQgDr55UhpSPhffDkTT0Cmcqh9jSCOtwfT2d4H6MI9E7c4SgtMuJXZ6F3c6A==}
+    engines: {node: '>=22'}
     dependencies:
-      '@simple-libs/stream-utils': 1.2.0
+      '@simple-libs/stream-utils': 2.0.0
     dev: true
 
   /@simple-libs/stream-utils/1.2.0:
@@ -2675,19 +2675,6 @@ packages:
       stream-combiner2: 1.1.1
       through2: 2.0.5
       traverse: 0.6.8
-    dev: true
-
-  /git-raw-commits/5.0.1:
-    resolution: {integrity: sha512-Y+csSm2GD/PCSh6Isd/WiMjNAydu0VBiG9J7EdQsNA5P9uXvLayqjmTsNlK5Gs9IhblFZqOU0yid5Il5JPoLiQ==}
-    engines: {node: '>=18'}
-    deprecated: Deprecated and no longer maintained. Use @conventional-changelog/git-client instead.
-    hasBin: true
-    dependencies:
-      '@conventional-changelog/git-client': 2.6.0
-      meow: 13.2.0
-    transitivePeerDependencies:
-      - conventional-commits-filter
-      - conventional-commits-parser
     dev: true
 
   /glob-parent/5.1.2:
@@ -5512,7 +5499,7 @@ packages:
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     dev: true
 
-  mirrors.tencent.com/@latipun7/commitlintrc/1.1.3_@commitlint+cli@21.2.0:
+  mirrors.tencent.com/@latipun7/commitlintrc/1.1.3_@commitlint+cli@21.2.1:
     resolution: {integrity: sha512-9MMuq2Z7VZAzpCR9WxNhb3jGKqioj9AfEfOtN+X4XYw2D5huq8zrP8Vux+V6HQo60URYKMgwdC78KybbtPBsug==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@latipun7/commitlintrc/-/commitlintrc-1.1.3.tgz}
     id: mirrors.tencent.com/@latipun7/commitlintrc/1.1.3
     name: '@latipun7/commitlintrc'
@@ -5531,7 +5518,7 @@ packages:
       inquirer:
         optional: true
     dependencies:
-      '@commitlint/cli': 21.2.0_typescript@6.0.3
+      '@commitlint/cli': 21.2.1_typescript@6.0.3
       conventional-changelog-conventionalcommits: mirrors.tencent.com/conventional-changelog-conventionalcommits/8.0.0
     dev: true
 
