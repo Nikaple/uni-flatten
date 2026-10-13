@@ -13,7 +13,7 @@ specifiers:
   eslint: 8.57.1
   eslint-config-prettier: 10.1.8
   eslint-plugin-import: 2.32.0
-  eslint-plugin-prettier: 5.5.6
+  eslint-plugin-prettier: 5.5.7
   husky: 9.1.7
   lint-staged: 17.6.0
   prettier: 3.9.10
@@ -33,7 +33,7 @@ devDependencies:
   eslint: 8.57.1
   eslint-config-prettier: 10.1.8_eslint@8.57.1
   eslint-plugin-import: 2.32.0_olfayynnbksof5apoph6f3agwq
-  eslint-plugin-prettier: 5.5.6_yglzpftql7br2dyro7wpmk4quy
+  eslint-plugin-prettier: 5.5.7_yglzpftql7br2dyro7wpmk4quy
   husky: 9.1.7
   lint-staged: 17.6.0
   prettier: 3.9.10
@@ -323,6 +323,10 @@ packages:
   /@conventional-changelog/template/1.2.0:
     resolution: {integrity: sha512-12qHxvlKjHmP0PQ+17EREgC7lWyLwbph1RKcZQZ7k7ZWGmrxfxC9gadHGfvzr0g0u8BhiBGg3tks93txodlyRQ==}
     engines: {node: '>=22'}
+    dev: true
+
+  /@dual-bundle/import-meta-resolve/4.2.1:
+    resolution: {integrity: sha512-id+7YRUgoUX6CgV0DtuhirQWodeeA7Lf4i2x71JS/vtA5pRb/hIGWlw+G6MeXvsM+MXrz0VAydTGElX1rAfgPg==}
     dev: true
 
   /@esbuild/aix-ppc64/0.21.5:
@@ -2219,8 +2223,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-prettier/5.5.6_yglzpftql7br2dyro7wpmk4quy:
-    resolution: {integrity: sha512-ifetmTcxWfz+4qRW3pH/ujdTq2jQIj59AxJMIN26K5avYgU8dxycUETQonWiW+wPrYXA0j3Try0l1CnwVQtDqQ==}
+  /eslint-plugin-prettier/5.5.7_yglzpftql7br2dyro7wpmk4quy:
+    resolution: {integrity: sha512-WjHyn3GrFd+ZR0rzsLiM4zJZ35PZMOE0SUIxzGmnWNG0126yNfJKJzObmmkYDwHJfGlkz3PSlzyG9ez/LJntwg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       '@types/eslint': '>=8.0.0'
@@ -2237,7 +2241,7 @@ packages:
       eslint-config-prettier: 10.1.8_eslint@8.57.1
       prettier: 3.9.10
       prettier-linter-helpers: 1.0.1
-      synckit: 0.11.13
+      synckit: 0.12.3
     dev: true
 
   /eslint-scope/7.2.2:
@@ -4774,10 +4778,11 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /synckit/0.11.13:
-    resolution: {integrity: sha512-eNRKgb3z66Yp3D2CixVujOUvXLFUTij/zVnV8KRyvFdQwpz7I5DS8UfRkTeLzb64u+dkzDSdelE24izu+zSSUg==}
+  /synckit/0.12.3:
+    resolution: {integrity: sha512-U+/AXT6LWsxnj2vz9HeUuPWBNgdWxjyIEjEPdbJARC9txmgPzo2VEdqnFo4hHaNyMPtycyVJrSaQYeQv/PoyyA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     dependencies:
+      '@dual-bundle/import-meta-resolve': 4.2.1
       '@pkgr/core': 0.3.6
     dev: true
 
