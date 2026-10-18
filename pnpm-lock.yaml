@@ -4,7 +4,7 @@ overrides:
   conventional-changelog-conventionalcommits: '>= 8.0.0'
 
 specifiers:
-  '@commitlint/cli': 21.2.3
+  '@commitlint/cli': 21.2.4
   '@latipun7/commitlintrc': 1.1.3
   '@latipun7/releaserc': ^2.1.0
   '@typescript-eslint/eslint-plugin': 7.18.0
@@ -24,8 +24,8 @@ specifiers:
   vitest: 3.2.7
 
 devDependencies:
-  '@commitlint/cli': 21.2.3_typescript@6.0.3
-  '@latipun7/commitlintrc': mirrors.tencent.com/@latipun7/commitlintrc/1.1.3_@commitlint+cli@21.2.3
+  '@commitlint/cli': 21.2.4_typescript@6.0.3
+  '@latipun7/commitlintrc': mirrors.tencent.com/@latipun7/commitlintrc/1.1.3_@commitlint+cli@21.2.4
   '@latipun7/releaserc': mirrors.tencent.com/@latipun7/releaserc/2.2.0_semantic-release@25.0.3
   '@typescript-eslint/eslint-plugin': mirrors.tencent.com/@typescript-eslint/eslint-plugin/7.18.0_46djenoozm6zuc4us2eutuuy2q
   '@typescript-eslint/parser': mirrors.tencent.com/@typescript-eslint/parser/7.18.0_c3chdd2it6hsjvbnyur5kul6oq
@@ -142,28 +142,27 @@ packages:
     dev: true
     optional: true
 
-  /@commitlint/cli/21.2.3_typescript@6.0.3:
-    resolution: {integrity: sha512-5yOX6IRjcrIReCxpyAd04hgI/yhUMpVBJ/ouwFV0wk9yx5+fYRDWZWJ5h55Tbedgfol+5m2mU5nqzbB8g3v0vQ==}
+  /@commitlint/cli/21.2.4_typescript@6.0.3:
+    resolution: {integrity: sha512-g3M/wrQdElqGH5vROIeL2QiYIxrzqUkhCgsDyDlWfKEyQdCt10OyMB28W2cJtpZ+VNGMvmaN923infr1hOfyrg==}
     engines: {node: '>=22.12.0'}
     hasBin: true
     dependencies:
-      '@commitlint/config-conventional': 21.2.3
+      '@commitlint/config-conventional': 21.2.4
       '@commitlint/format': 21.2.3
-      '@commitlint/lint': 21.2.3
-      '@commitlint/load': 21.2.3_typescript@6.0.3
+      '@commitlint/lint': 21.2.4
+      '@commitlint/load': 21.2.4_typescript@6.0.3
       '@commitlint/read': 21.2.3
       '@commitlint/types': 21.2.3
       tinyexec: 1.3.1
       yargs: 18.0.0
     transitivePeerDependencies:
-      - '@types/node'
       - conventional-commits-filter
       - conventional-commits-parser
       - typescript
     dev: true
 
-  /@commitlint/config-conventional/21.2.3:
-    resolution: {integrity: sha512-EP2n5DN2GwRWNVrLX0Jx3mpQlW5PfFi9HnD9OJ8hN/H0xFqpCFyHeGDhg+0P8/21iMMcdkcQgbNqmVklebqYsQ==}
+  /@commitlint/config-conventional/21.2.4:
+    resolution: {integrity: sha512-IRldtwgNmR0SySR7wizFbhRmq45lPt6H3XCNTMyVN7jrPLgi8JlTRR6Eg1HLWUQt9P1Lh3k6eY25ilDa47EE6w==}
     engines: {node: '>=22.12.0'}
     dependencies:
       '@commitlint/types': 21.2.3
@@ -178,8 +177,8 @@ packages:
       ajv: 8.17.1
     dev: true
 
-  /@commitlint/ensure/21.2.3:
-    resolution: {integrity: sha512-gEjNKgRocbODI5/sMx2Qc9XOf2/zFTNV2aEK1QZ4gKDKxDC/VR7us3QtIX1C5d5xxHxx0I/tEbYbdSP1Am2LwA==}
+  /@commitlint/ensure/21.2.4:
+    resolution: {integrity: sha512-woLOLV4pBMUBLyr5+MDM3WSG1r+eb2DObkysFSDxqyDUE4c6hZUOrpebJb2f8XcP3zKGJLb8H5w2suERVGI+Ag==}
     engines: {node: '>=22.12.0'}
     dependencies:
       '@commitlint/types': 21.2.3
@@ -207,18 +206,18 @@ packages:
       semver: 7.6.3
     dev: true
 
-  /@commitlint/lint/21.2.3:
-    resolution: {integrity: sha512-lUZcSuVLLEDkhge9ERk8Rp+FXQtrUhCK+h328BFnzKXrTuXGdqiYMEpTlNWdZaOrjyMhMJaz354ZaWEGJxcLeg==}
+  /@commitlint/lint/21.2.4:
+    resolution: {integrity: sha512-HR8SGl1oEGfi/cqyBipanVY0a9CfEzIcJjPC37t7oQedaUUngw3d5E17g5Cfr2S3p6KsZM7UOHFq5fXHLRh7DQ==}
     engines: {node: '>=22.12.0'}
     dependencies:
       '@commitlint/is-ignored': 21.2.3
       '@commitlint/parse': 21.2.3
-      '@commitlint/rules': 21.2.3
+      '@commitlint/rules': 21.2.4
       '@commitlint/types': 21.2.3
     dev: true
 
-  /@commitlint/load/21.2.3_typescript@6.0.3:
-    resolution: {integrity: sha512-cDrL8lOo23Lk7knGzQdjbFcq7z2JgvjwV6PhbESVvEc+Fe21MeLjPKBJi8nKjg7j+jh79CVbVSUbZc104thXRw==}
+  /@commitlint/load/21.2.4_typescript@6.0.3:
+    resolution: {integrity: sha512-Gi+aAW9nL8XPgvg8kIO0gZOw1/ePvpDLkv1bm8tj0RqenhNtCzk0frtctJhl41uIAP7OSx9bgQ6HCOa9En4g2Q==}
     engines: {node: '>=22.12.0'}
     dependencies:
       '@commitlint/config-validator': 21.2.3
@@ -226,12 +225,11 @@ packages:
       '@commitlint/resolve-extends': 21.2.3
       '@commitlint/types': 21.2.3
       cosmiconfig: 9.0.1_typescript@6.0.3
-      cosmiconfig-typescript-loader: 6.1.0_o5j4zi3osjmj4y2lq6xhsikhte
       es-toolkit: 1.47.0
       is-plain-obj: 4.1.0
+      jiti: 2.7.0
       picocolors: 1.1.1
     transitivePeerDependencies:
-      - '@types/node'
       - typescript
     dev: true
 
@@ -273,11 +271,11 @@ packages:
       resolve-from: 5.0.0
     dev: true
 
-  /@commitlint/rules/21.2.3:
-    resolution: {integrity: sha512-5+YnI/LuTx3JDl9GjqfP2z9x96M8KKDrd+4jOel/T0L1BB3oAmBlSN8xppf63QsudiVEgR8C0gRoAMrPVrms6g==}
+  /@commitlint/rules/21.2.4:
+    resolution: {integrity: sha512-wranK/aevXs/WiW4N3orQlXY4sU2pQWjRSjN7I3TsZmP146Rr4CpsG38lpyqVcbNfMgvUVGy7ffYm7nCziTUwg==}
     engines: {node: '>=22.12.0'}
     dependencies:
-      '@commitlint/ensure': 21.2.3
+      '@commitlint/ensure': 21.2.4
       '@commitlint/message': 21.2.0
       '@commitlint/to-lines': 21.0.1
       '@commitlint/types': 21.2.3
@@ -1706,19 +1704,6 @@ packages:
 
   /core-util-is/1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
-    dev: true
-
-  /cosmiconfig-typescript-loader/6.1.0_o5j4zi3osjmj4y2lq6xhsikhte:
-    resolution: {integrity: sha512-tJ1w35ZRUiM5FeTzT7DtYWAFFv37ZLqSRkGi2oeCK1gPhvaWjkAtfXvLmvE1pRfxxp9aQo6ba/Pvg1dKj05D4g==}
-    engines: {node: '>=v18'}
-    peerDependencies:
-      '@types/node': '*'
-      cosmiconfig: '>=9'
-      typescript: '>=5'
-    dependencies:
-      cosmiconfig: 9.0.1_typescript@6.0.3
-      jiti: 2.4.1
-      typescript: 6.0.3
     dev: true
 
   /cosmiconfig/9.0.1_typescript@6.0.3:
@@ -3288,8 +3273,8 @@ packages:
     engines: {node: '>= 0.6.0'}
     dev: true
 
-  /jiti/2.4.1:
-    resolution: {integrity: sha512-yPBThwecp1wS9DmoA4x4KR2h3QoslacnDR8ypuFM962kI4/456Iy1oHx2RAgh4jfZNdn0bctsdadceiBUgpU1g==}
+  /jiti/2.7.0:
+    resolution: {integrity: sha512-AC/7JofJvZGrrneWNaEnJeOLUx+JlGt7tNa0wZiRPT4MY1wmfKjt2+6O2p2uz2+skll8OZZmJMNqeke7kKbNgQ==}
     hasBin: true
     dev: true
 
@@ -5411,7 +5396,7 @@ packages:
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     dev: true
 
-  mirrors.tencent.com/@latipun7/commitlintrc/1.1.3_@commitlint+cli@21.2.3:
+  mirrors.tencent.com/@latipun7/commitlintrc/1.1.3_@commitlint+cli@21.2.4:
     resolution: {integrity: sha512-9MMuq2Z7VZAzpCR9WxNhb3jGKqioj9AfEfOtN+X4XYw2D5huq8zrP8Vux+V6HQo60URYKMgwdC78KybbtPBsug==, registry: http://r.tnpm.oa.com/, tarball: https://mirrors.tencent.com/npm/@latipun7/commitlintrc/-/commitlintrc-1.1.3.tgz}
     id: mirrors.tencent.com/@latipun7/commitlintrc/1.1.3
     name: '@latipun7/commitlintrc'
@@ -5430,7 +5415,7 @@ packages:
       inquirer:
         optional: true
     dependencies:
-      '@commitlint/cli': 21.2.3_typescript@6.0.3
+      '@commitlint/cli': 21.2.4_typescript@6.0.3
       conventional-changelog-conventionalcommits: mirrors.tencent.com/conventional-changelog-conventionalcommits/8.0.0
     dev: true
 
